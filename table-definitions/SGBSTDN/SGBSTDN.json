@@ -1,0 +1,692 @@
+{
+  "name": "SGBSTDN",
+  "description": "Student Base Table",
+  "type": "data",
+  "tags": [],
+  "columns": [
+    {
+      "name": "SGBSTDN_STST_CODE",
+      "type": "VARCHAR2(2 CHAR)",
+      "description": "This field identifies the students status for the effective term.",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_LEVL_CODE",
+      "type": "VARCHAR2(2 CHAR)",
+      "description": "This field identifies the level of the student for the effective term.",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_STYP_CODE",
+      "type": "VARCHAR2(1 CHAR)",
+      "description": "This field identifies the student type for the effective term.",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_TERM_CODE_MATRIC",
+      "type": "VARCHAR2(6 CHAR)",
+      "description": "This field identifies the effective term of matriculation.",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_TERM_CODE_ADMIT",
+      "type": "VARCHAR2(6 CHAR)",
+      "description": "This field identifies the term student was first admitted to institution.",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_EXP_GRAD_DATE",
+      "type": "DATE",
+      "description": "This field identifies expected graduation date.",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_CAMP_CODE",
+      "type": "VARCHAR2(3 CHAR)",
+      "description": "This field identifies the campus location associated with the student for the effective term.",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_FULL_PART_IND",
+      "type": "VARCHAR2(1 CHAR)",
+      "description": "This field identifies whether the student is a full or part-time student.",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_SESS_CODE",
+      "type": "VARCHAR2(1 CHAR)",
+      "description": "This field identifies the session student is attending for the effective term.",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_RESD_CODE",
+      "type": "VARCHAR2(1 CHAR)",
+      "description": "This field identifies the residency status of the student for the effective term.",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_COLL_CODE_1",
+      "type": "VARCHAR2(2 CHAR)",
+      "description": "This field identifies the college associated with the primary curriculum for the effective term..",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_DEGC_CODE_1",
+      "type": "VARCHAR2(6 CHAR)",
+      "description": "This field identifies the degree within the primary curriculum for the effective term.",
+      "definition_table": "STVDEGC"
+    },
+    {
+      "name": "SGBSTDN_MAJR_CODE_1",
+      "type": "VARCHAR2(4 CHAR)",
+      "description": "This field identifies the primary major within the primary curriculum for the effective term.",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_MAJR_CODE_MINR_1",
+      "type": "VARCHAR2(4 CHAR)",
+      "description": "This field identifies the primary minor within the primary curriculum for the effective term.",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_MAJR_CODE_MINR_1_2",
+      "type": "VARCHAR2(4 CHAR)",
+      "description": "This field identifies the secondary minor of the student for the effective term.",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_MAJR_CODE_CONC_1",
+      "type": "VARCHAR2(4 CHAR)",
+      "description": "This field identifies the primary concentration within the primary curriculum for the effective term.",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_MAJR_CODE_CONC_1_2",
+      "type": "VARCHAR2(4 CHAR)",
+      "description": "This field identifies the secondary concentration within the primary curriculum for the effective term.",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_MAJR_CODE_CONC_1_3",
+      "type": "VARCHAR2(4 CHAR)",
+      "description": "This field identifies the third concentration within the primary curriculum for the effective term.",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_COLL_CODE_2",
+      "type": "VARCHAR2(2 CHAR)",
+      "description": "This field identifies the college within the secondary curriculum for the effective term.",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_DEGC_CODE_2",
+      "type": "VARCHAR2(6 CHAR)",
+      "description": "This field identifies the degree within the secondary curriculum for the effective term.",
+      "definition_table": "STVDEGC"
+    },
+    {
+      "name": "SGBSTDN_MAJR_CODE_2",
+      "type": "VARCHAR2(4 CHAR)",
+      "description": "This field identifies the primary major within the secondary curriculum for the effective term.",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_MAJR_CODE_MINR_2",
+      "type": "VARCHAR2(4 CHAR)",
+      "description": "This field identifies the primary minor within the secondary curriculum for the effective term.",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_MAJR_CODE_MINR_2_2",
+      "type": "VARCHAR2(4 CHAR)",
+      "description": "This field identifies the secondary minor within the secondary curriculum for the effective term.",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_MAJR_CODE_CONC_2",
+      "type": "VARCHAR2(4 CHAR)",
+      "description": "This field identifies the primary concentration within the secondary curriculum for the effective term.",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_MAJR_CODE_CONC_2_2",
+      "type": "VARCHAR2(4 CHAR)",
+      "description": "This field identifies the secondary concentration within the secondary curriculum for the effective term.",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_MAJR_CODE_CONC_2_3",
+      "type": "VARCHAR2(4 CHAR)",
+      "description": "This field identifies the third concentration within the secondary curriculum for the effective term.",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_ORSN_CODE",
+      "type": "VARCHAR2(1 CHAR)",
+      "description": "This field identifies the orientation session assigned to the student for the effective term.",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_PRAC_CODE",
+      "type": "VARCHAR2(2 CHAR)",
+      "description": "This field identifies the practical training experience of the student for the effective term.",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_ADVR_PIDM",
+      "type": "NUMBER(8,0)",
+      "description": "This field identifies the internal identification number for the advisor assigned to the student for the effective term.",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_GRAD_CREDIT_APPR_IND",
+      "type": "VARCHAR2(1 CHAR)",
+      "description": "This field identifies eligibility of student to take graduate courses for credit for the effective term. Valid values are Y or blank only.",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_CAPL_CODE",
+      "type": "VARCHAR2(2 CHAR)",
+      "description": "This field identifies career plan of the student for the effective term.",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_LEAV_CODE",
+      "type": "VARCHAR2(1 CHAR)",
+      "description": "This field identifies reason of leave of absence of student for the effective term.",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_LEAV_FROM_DATE",
+      "type": "DATE",
+      "description": "This field identifies the begin date of leave of absence of student for the effective term.",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_LEAV_TO_DATE",
+      "type": "DATE",
+      "description": "This field identifies the end date of leave of absence of student for the effective term.",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_ASTD_CODE",
+      "type": "VARCHAR2(2 CHAR)",
+      "description": "This field identifies the academic standing override for a student for the effective term.",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_TERM_CODE_ASTD",
+      "type": "VARCHAR2(6 CHAR)",
+      "description": "This field identifies the term associated with the academic standing override.",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_RATE_CODE",
+      "type": "VARCHAR2(5 CHAR)",
+      "description": "This field identifies a specific assessment rate of the student for the effective term.",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_ACTIVITY_DATE",
+      "type": "DATE",
+      "description": "This field identifies the most current date record was created or updated.",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_MAJR_CODE_1_2",
+      "type": "VARCHAR2(4 CHAR)",
+      "description": "This field identifies the secondary major within the primary curriculum for the effective term.",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_MAJR_CODE_2_2",
+      "type": "VARCHAR2(4 CHAR)",
+      "description": "This field identifies the secondary major within the secondary curriculum for the effective term.",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_EDLV_CODE",
+      "type": "VARCHAR2(3 CHAR)",
+      "description": "A two position alphanumeric field which indicate the highest level of the education that the student completed",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_INCM_CODE",
+      "type": "VARCHAR2(2 CHAR)",
+      "description": "A two position alphanumeric field which indicate the income range of the student",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_ADMT_CODE",
+      "type": "VARCHAR2(2 CHAR)",
+      "description": "Admissions type from the admissions application",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_EMEX_CODE",
+      "type": "VARCHAR2(2 CHAR)",
+      "description": "General Student Employment Expectation Code",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_APRN_CODE",
+      "type": "VARCHAR2(2 CHAR)",
+      "description": "General Student Apprenticeship Code",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_TRCN_CODE",
+      "type": "VARCHAR2(2 CHAR)",
+      "description": "General Student Transfer Center Code",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_GAIN_CODE",
+      "type": "VARCHAR2(2 CHAR)",
+      "description": "This field identifies the employment and training code of the student for the effective term.",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_VOED_CODE",
+      "type": "VARCHAR2(2 CHAR)",
+      "description": "General Student Vocation Eduaction Status Code",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_BLCK_CODE",
+      "type": "VARCHAR2(10 CHAR)",
+      "description": "Block Schedule Code",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_TERM_CODE_GRAD",
+      "type": "VARCHAR2(6 CHAR)",
+      "description": "Term student intends to graduate.",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_ACYR_CODE",
+      "type": "VARCHAR2(4 CHAR)",
+      "description": "Year student intends to graduate.",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_DEPT_CODE",
+      "type": "VARCHAR2(4 CHAR)",
+      "description": "Department Code.",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_SITE_CODE",
+      "type": "VARCHAR2(3 CHAR)",
+      "description": "Site Code.",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_DEPT_CODE_2",
+      "type": "VARCHAR2(4 CHAR)",
+      "description": "Department Code for second curriculum.",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_EGOL_CODE",
+      "type": "VARCHAR2(2 CHAR)",
+      "description": "Educational Goal code.",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_DEGC_CODE_DUAL",
+      "type": "VARCHAR2(6 CHAR)",
+      "description": "",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_LEVL_CODE_DUAL",
+      "type": "VARCHAR2(2 CHAR)",
+      "description": "",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_DEPT_CODE_DUAL",
+      "type": "VARCHAR2(4 CHAR)",
+      "description": "",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_COLL_CODE_DUAL",
+      "type": "VARCHAR2(2 CHAR)",
+      "description": "",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_MAJR_CODE_DUAL",
+      "type": "VARCHAR2(4 CHAR)",
+      "description": "",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_BSKL_CODE",
+      "type": "VARCHAR2(2 CHAR)",
+      "description": "Student Basic Skills Code",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_PRIM_ROLL_IND",
+      "type": "VARCHAR2(1 CHAR)",
+      "description": "Indicates whether the Primary Curriculum should be Rolled to Academic History",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_PROGRAM_1",
+      "type": "VARCHAR2(12 CHAR)",
+      "description": "Curriculum 1 Program Code",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_TERM_CODE_CTLG_1",
+      "type": "VARCHAR2(6 CHAR)",
+      "description": "Curriculum 1 Catalog Term Code",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_DEPT_CODE_1_2",
+      "type": "VARCHAR2(4 CHAR)",
+      "description": "Curriculum 1 - Department 2",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_MAJR_CODE_CONC_121",
+      "type": "VARCHAR2(4 CHAR)",
+      "description": "Concentration Code 1 on Second Major of First Curriculum",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_MAJR_CODE_CONC_122",
+      "type": "VARCHAR2(4 CHAR)",
+      "description": "Concentration Code 2 on Second Major on First Curriculum",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_MAJR_CODE_CONC_123",
+      "type": "VARCHAR2(4 CHAR)",
+      "description": "Concentration Code 3 on Second Major on First Curriculum",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_SECD_ROLL_IND",
+      "type": "VARCHAR2(1 CHAR)",
+      "description": "Indicates whether the Secondary Curriculum should be Rolled to Academic History",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_TERM_CODE_ADMIT_2",
+      "type": "VARCHAR2(6 CHAR)",
+      "description": "Admission Term Code associated with the Secondary Curriculum",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_ADMT_CODE_2",
+      "type": "VARCHAR2(2 CHAR)",
+      "description": "Admissions Type Code associated with the Secondary Curriculum",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_PROGRAM_2",
+      "type": "VARCHAR2(12 CHAR)",
+      "description": "Curriculum 2 Program Code",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_TERM_CODE_CTLG_2",
+      "type": "VARCHAR2(6 CHAR)",
+      "description": "Curriculum 2 Catalog Term Code",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_LEVL_CODE_2",
+      "type": "VARCHAR2(2 CHAR)",
+      "description": "Curriculum 2 Level Code",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_CAMP_CODE_2",
+      "type": "VARCHAR2(3 CHAR)",
+      "description": "Curriculum 2 Campus Code",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_DEPT_CODE_2_2",
+      "type": "VARCHAR2(4 CHAR)",
+      "description": "Curriculum 2 - Department 2",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_MAJR_CODE_CONC_221",
+      "type": "VARCHAR2(4 CHAR)",
+      "description": "Concentration 1 on Second Major of Second Curriculum",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_MAJR_CODE_CONC_222",
+      "type": "VARCHAR2(4 CHAR)",
+      "description": "Concentration 2 on Second Major of Second Curriculum",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_MAJR_CODE_CONC_223",
+      "type": "VARCHAR2(4 CHAR)",
+      "description": "Concentration 3 on Second Major of Second Curriculum",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_CURR_RULE_1",
+      "type": "NUMBER(8,0)",
+      "description": "Curriculum 1 Rule reference",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_CMJR_RULE_1_1",
+      "type": "NUMBER(8,0)",
+      "description": "Curriculum 1 Major 1 Rule Reference",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_CCON_RULE_11_1",
+      "type": "NUMBER(8,0)",
+      "description": "Concentration 1, Major 1, Curriculum 1 Rule Reference",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_CCON_RULE_11_2",
+      "type": "NUMBER(8,0)",
+      "description": "Concentration 2, Major 1, Curriculum 1 Rule Reference",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_CCON_RULE_11_3",
+      "type": "NUMBER(8,0)",
+      "description": "Concentration 3, Major 1, Curriculum 1 Rule Reference",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_CMJR_RULE_1_2",
+      "type": "NUMBER(8,0)",
+      "description": "Major 2, Curriculum Rule Reference",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_CCON_RULE_12_1",
+      "type": "NUMBER(8,0)",
+      "description": "Concentration 1, Major 2, Curriculum 1 Rule Reference",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_CCON_RULE_12_2",
+      "type": "NUMBER(8,0)",
+      "description": "Concentration 2, Major 2, Curriculum 1 Rule Reference",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_CCON_RULE_12_3",
+      "type": "NUMBER(8,0)",
+      "description": "Concentration 3, Major 2, Curriculum 1 Rule Reference",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_CMNR_RULE_1_1",
+      "type": "NUMBER(8,0)",
+      "description": "Minor 1, Curriculum 1 Rule Reference",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_CMNR_RULE_1_2",
+      "type": "NUMBER(8,0)",
+      "description": "Minor 2, Curriculum 1 Rule Reference",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_CURR_RULE_2",
+      "type": "NUMBER(8,0)",
+      "description": "Curriculum 2 Rule Reference",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_CMJR_RULE_2_1",
+      "type": "NUMBER(8,0)",
+      "description": "Major 1, Curriculum 2 Rule Reference",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_CCON_RULE_21_1",
+      "type": "NUMBER(8,0)",
+      "description": "Concentration 1, Major 1, Curriculum 2 Rule Reference",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_CCON_RULE_21_2",
+      "type": "NUMBER(8,0)",
+      "description": "Concentration 2, Major 1, Curriculum 2 Rule Reference",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_CCON_RULE_21_3",
+      "type": "NUMBER(8,0)",
+      "description": "Concentration 3, Major 1, Curriculum 2 Rule Reference",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_CMJR_RULE_2_2",
+      "type": "NUMBER(8,0)",
+      "description": "Major 2, Curriculum 2 Rule Reference",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_CCON_RULE_22_1",
+      "type": "NUMBER(8,0)",
+      "description": "Concentration 1, Major 2, Curriculum 2 Rule Reference",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_CCON_RULE_22_2",
+      "type": "NUMBER(8,0)",
+      "description": "Concentration 2, Major 2, Curriculum 2 Rule Reference",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_CCON_RULE_22_3",
+      "type": "NUMBER(8,0)",
+      "description": "Concentration 3, Major 2, Curriculum 2 Rule Reference",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_CMNR_RULE_2_1",
+      "type": "NUMBER(8,0)",
+      "description": "Minor 1, Curriculum 2 Rule Reference",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_CMNR_RULE_2_2",
+      "type": "NUMBER(8,0)",
+      "description": "Minor 2, Curriculum 2 Rule Reference",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_PREV_CODE",
+      "type": "VARCHAR2(2 CHAR)",
+      "description": "General Student record Progress Evaluation code. This code overrides the code in SHRTTRM.",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_TERM_CODE_PREV",
+      "type": "VARCHAR2(6 CHAR)",
+      "description": "General Student record Progress Evaluation term. This is the term for which the progress evaluation code override becomes effective.",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_CAST_CODE",
+      "type": "VARCHAR2(2 CHAR)",
+      "description": "General Student record Combined Academic Standing code. This code overrides the code in SHRTTRM.",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_TERM_CODE_CAST",
+      "type": "VARCHAR2(6 CHAR)",
+      "description": "General Student record Combined Academic Standing term. This is the term for which the combined academic standing code override becomes effective.",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_DATA_ORIGIN",
+      "type": "VARCHAR2(30 CHAR)",
+      "description": "DATA SOURCE: Source system that created or updated the row",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_USER_ID",
+      "type": "VARCHAR2(30 CHAR)",
+      "description": "USER ID: The most recent user to create or update a record.",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_SCPC_CODE",
+      "type": "VARCHAR2(6 CHAR)",
+      "description": "STUDENT CENTRIC PERIOD CYCLE CODE: Cycle Code for the student centric period.",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_SURROGATE_ID",
+      "type": "NUMBER(19,0)",
+      "description": "SURROGATE ID: Immutable unique key",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_VERSION",
+      "type": "NUMBER(19,0)",
+      "description": "VERSION: Optimistic lock token.",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_VPDI_CODE",
+      "type": "VARCHAR2(6 CHAR)",
+      "description": "VPDI CODE: Multi-entity processing code.",
+      "definition_table": ""
+    },
+    {
+      "name": "SGBSTDN_GUID",
+      "type": "VARCHAR2(36 BYTE)",
+      "description": "GUID: Global Unique Identifier to uniquely identify the record of a resource for integration.",
+      "definition_table": ""
+    }
+  ],
+  "queries": [
+    {
+      "file": "most_recent.sql",
+      "name": "Most Recent Record for Student",
+      "description": "Find the most recent SGBSTDN record for each student."
+    },
+    {
+      "file": "majr_minor_conc.sql",
+      "name": "1st Major, Minor, Concentration for Student",
+      "description": "Find the 1st major, minor, and concentration for each student based on the most recent SGBSTDN record."
+    }
+  ]
+}

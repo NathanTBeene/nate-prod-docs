@@ -1,0 +1,30 @@
+/* Full width content when nav and toc are hidden */
+.md-content {
+    max-width: none;
+}
+
+/* Schema tables */
+.md-typeset table:not([class]) {
+    width: 100%;
+    display: table;
+}
+
+.md-typeset table:not([class]) th:first-child,
+.md-typeset table:not([class]) td:first-child {
+    white-space: nowrap;
+}
+
+.md-typeset table:not([class]) th:nth-child(2),
+.md-typeset table:not([class]) td:nth-child(2) {
+    white-space: nowrap;
+}
+
+.md-typeset table:not([class]) th:nth-child(3),
+.md-typeset table:not([class]) td:nth-child(3) {
+    white-space: normal;
+    min-width: 300px;
+}
+
+.md-sidebar {
+  display: none;
+}

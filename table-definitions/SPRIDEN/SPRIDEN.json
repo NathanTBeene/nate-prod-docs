@@ -1,0 +1,165 @@
+{
+  "name": "SPRIDEN",
+  "description": "Person Identification/Name Repeating Table",
+  "type": "data",
+  "tags": [],
+  "columns": [
+    {
+      "name": "SPRIDEN_PIDM",
+      "type": "NUMBER(8,0)",
+      "description": "Internal identification number of the person.",
+      "definition_table": ""
+    },
+    {
+      "name": "SPRIDEN_ID",
+      "type": "VARCHAR2(9 CHAR)",
+      "description": "This field defines the identification number used to access person on-line.",
+      "definition_table": ""
+    },
+    {
+      "name": "SPRIDEN_LAST_NAME",
+      "type": "VARCHAR2(60 CHAR)",
+      "description": "This field defines the last name of person.",
+      "definition_table": ""
+    },
+    {
+      "name": "SPRIDEN_FIRST_NAME",
+      "type": "VARCHAR2(60 CHAR)",
+      "description": "This field identifies the first name of person.",
+      "definition_table": ""
+    },
+    {
+      "name": "SPRIDEN_MI",
+      "type": "VARCHAR2(60 CHAR)",
+      "description": "This field identifies the middle name of person.",
+      "definition_table": ""
+    },
+    {
+      "name": "SPRIDEN_CHANGE_IND",
+      "type": "VARCHAR2(1 CHAR)",
+      "description": "This field identifies whether type of change made to the record was an ID number change or a name change. Valid values: I - ID change, N - name change.",
+      "definition_table": ""
+    },
+    {
+      "name": "SPRIDEN_ENTITY_IND",
+      "type": "VARCHAR2(1 CHAR)",
+      "description": "This field identifies whether record is person or non-person record. It does not display on the form. Valid values: P - person, C - non-person.",
+      "definition_table": ""
+    },
+    {
+      "name": "SPRIDEN_ACTIVITY_DATE",
+      "type": "DATE",
+      "description": "This field defines the most current date record is created or changed.",
+      "definition_table": ""
+    },
+    {
+      "name": "SPRIDEN_USER",
+      "type": "VARCHAR2(30 CHAR)",
+      "description": "USER: The ID for the user that most recently updated the record.",
+      "definition_table": ""
+    },
+    {
+      "name": "SPRIDEN_ORIGIN",
+      "type": "VARCHAR2(30 CHAR)",
+      "description": "ORIGIN: The name of the Banner Object that was used most recently to update the row in the spriden table.",
+      "definition_table": ""
+    },
+    {
+      "name": "SPRIDEN_SEARCH_LAST_NAME",
+      "type": "VARCHAR2(60 CHAR)",
+      "description": "The Last Name field with all spaces and punctuation removed and all letters capitalized.",
+      "definition_table": ""
+    },
+    {
+      "name": "SPRIDEN_SEARCH_FIRST_NAME",
+      "type": "VARCHAR2(60 CHAR)",
+      "description": "The First Name field with all spaces and punctuation removed and all letters capitalized.",
+      "definition_table": ""
+    },
+    {
+      "name": "SPRIDEN_SEARCH_MI",
+      "type": "VARCHAR2(60 CHAR)",
+      "description": "The MI (Middle Initial) field with all spaces and punctuation removed and all letters capitalized.",
+      "definition_table": ""
+    },
+    {
+      "name": "SPRIDEN_SOUNDEX_LAST_NAME",
+      "type": "CHAR(4 CHAR)",
+      "description": "The Last Name field in SOUNDEX phonetic format.",
+      "definition_table": ""
+    },
+    {
+      "name": "SPRIDEN_SOUNDEX_FIRST_NAME",
+      "type": "CHAR(4 CHAR)",
+      "description": "The First Name field in SOUNDEX phonetic format.",
+      "definition_table": ""
+    },
+    {
+      "name": "SPRIDEN_NTYP_CODE",
+      "type": "VARCHAR2(4 CHAR)",
+      "description": "NAME TYPE CODE: The field is used to store the code that represents the name type associated with a person's name.",
+      "definition_table": ""
+    },
+    {
+      "name": "SPRIDEN_CREATE_USER",
+      "type": "VARCHAR2(30 CHAR)",
+      "description": "Record Create User: This field contains Banner User ID which created new record",
+      "definition_table": ""
+    },
+    {
+      "name": "SPRIDEN_CREATE_DATE",
+      "type": "DATE",
+      "description": "Record Create Date: This field contains date new record created",
+      "definition_table": ""
+    },
+    {
+      "name": "SPRIDEN_DATA_ORIGIN",
+      "type": "VARCHAR2(30 CHAR)",
+      "description": "DATA SOURCE: Source system that generated the data",
+      "definition_table": ""
+    },
+    {
+      "name": "SPRIDEN_CREATE_FDMN_CODE",
+      "type": "VARCHAR2(30 CHAR)",
+      "description": "PII DOMAIN: PII Domain of the user who created the spriden row.",
+      "definition_table": ""
+    },
+    {
+      "name": "SPRIDEN_SURNAME_PREFIX",
+      "type": "VARCHAR2(60 CHAR)",
+      "description": "SURNAME PREFIX: Name tag preceding the last name or surname. (Van, Von, Mac, etc.)",
+      "definition_table": ""
+    },
+    {
+      "name": "SPRIDEN_SURROGATE_ID",
+      "type": "NUMBER(19,0)",
+      "description": "SURROGATE ID: Immutable unique key",
+      "definition_table": ""
+    },
+    {
+      "name": "SPRIDEN_VERSION",
+      "type": "NUMBER(19,0)",
+      "description": "VERSION: Optimistic lock token.",
+      "definition_table": ""
+    },
+    {
+      "name": "SPRIDEN_USER_ID",
+      "type": "VARCHAR2(30 CHAR)",
+      "description": "USER ID: The user ID of the person who inserted or last updated this record.",
+      "definition_table": ""
+    },
+    {
+      "name": "SPRIDEN_VPDI_CODE",
+      "type": "VARCHAR2(6 CHAR)",
+      "description": "VPDI CODE: Multi-entity processing code.",
+      "definition_table": ""
+    }
+  ],
+  "queries": [
+    {
+      "file": "find_name.sql",
+      "name": "Find Name by ID",
+      "description": "Find a person's name by their ID."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+site_name: Database Documentation
+site_description: Internal database schema and query reference
+site_url: https://nathantbeene.github.io/nate-prod-docs/
+
+theme:
+  name: material
+  custom_dir: docs/overrides
+  palette:
+    # Light/dark mode toggle
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - search.suggest          # autocomplete in search
+    - search.highlight        # highlight matches on page
+    - search.share            # shareable search links
+    - navigation.instant      # SPA-style navigation
+    - navigation.tabs         # top-level nav as tabs
+    - navigation.sections     # group items in sidebar
+    - content.code.copy       # copy button on code blocks
+    - content.code.annotate   # inline code annotations
+    - content.tabs.link       # linked content tabs
+
+markdown_extensions:
+  # Syntax highlighting
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.superfences     # fenced code blocks
+  - pymdownx.inlinehilite    # inline code highlighting
+
+  # Import external files (SQL snippets)
+  - pymdownx.snippets:
+      base_path: .
+
+  # Content tabs (e.g., show query variants side by side)
+  - pymdownx.tabbed:
+      alternate_style: true
+
+  # Admonitions (info boxes, warnings, tips)
+  - admonition
+  - pymdownx.details          # collapsible admonitions
+
+  # Tables
+  - tables
+
+  # Tags
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - search
+  - tags:
+      tags_file: tags.md
+
+nav:
+  - Home: index.md
+  - Data Tables: data-tables.md
+  - Definition Tables: definition-tables.md
+  - Tags: tags.md
+
+extra_css:
+  - stylesheets/extra.css

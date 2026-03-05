@@ -1,0 +1,115 @@
+{
+  "name": "STVDEGC",
+  "description": "Degree Code Validation Table",
+  "type": "definition",
+  "definition_headers": [
+    "STVDEGC_CODE",
+    "STVDEGC_DESC"
+  ],
+  "tags": [],
+  "columns": [
+    {
+      "name": "STVDEGC_CODE",
+      "type": "VARCHAR2(6 CHAR)",
+      "description": "This field identifies the degree code referenced in the Recruiting, Admissions, Gen. Student, Registration, Academic History and Degree Audit Modules. 000000 - Degree Not Declared.",
+      "definition_table": "TEST"
+    },
+    {
+      "name": "STVDEGC_DESC",
+      "type": "VARCHAR2(30 CHAR)",
+      "description": "This field specifies the degree (e.g. Bachelor of Business Administration, Master of Arts, Juris Doctor, etc.) associated with the degree code.",
+      "definition_table": ""
+    },
+    {
+      "name": "STVDEGC_LEVEL_ONE",
+      "type": "VARCHAR2(2 CHAR)",
+      "description": "This field is not currently in use.",
+      "definition_table": ""
+    },
+    {
+      "name": "STVDEGC_LEVEL_TWO",
+      "type": "VARCHAR2(2 CHAR)",
+      "description": "This field is not currently in use.",
+      "definition_table": ""
+    },
+    {
+      "name": "STVDEGC_LEVEL_THREE",
+      "type": "VARCHAR2(2 CHAR)",
+      "description": "This field is not currently in use.",
+      "definition_table": ""
+    },
+    {
+      "name": "STVDEGC_FA_COUNT_IND",
+      "type": "VARCHAR2(1 CHAR)",
+      "description": "This field indicates whether the degree will count toward financial aid. Y - Count in financial aid.",
+      "definition_table": ""
+    },
+    {
+      "name": "STVDEGC_ACTIVITY_DATE",
+      "type": "DATE",
+      "description": "This field identifies the most recent date a record was created or updated.",
+      "definition_table": ""
+    },
+    {
+      "name": "STVDEGC_ACAT_CODE",
+      "type": "VARCHAR2(2 CHAR)",
+      "description": "Degree Award Catagory Code.",
+      "definition_table": ""
+    },
+    {
+      "name": "STVDEGC_SYSTEM_REQ_IND",
+      "type": "VARCHAR2(1 CHAR)",
+      "description": "System Required Indicator",
+      "definition_table": ""
+    },
+    {
+      "name": "STVDEGC_DLEV_CODE",
+      "type": "VARCHAR2(2 CHAR)",
+      "description": "Degree Level Code.",
+      "definition_table": ""
+    },
+    {
+      "name": "STVDEGC_VR_MSG_NO",
+      "type": "NUMBER(6,0)",
+      "description": "The Voice Response message number assigned to the recorded message that describes the degree code.",
+      "definition_table": ""
+    },
+    {
+      "name": "STVDEGC_DISP_WEB_IND",
+      "type": "VARCHAR2(1 CHAR)",
+      "description": "'N' Web display indicator",
+      "definition_table": ""
+    },
+    {
+      "name": "STVDEGC_SURROGATE_ID",
+      "type": "NUMBER(19,0)",
+      "description": "SURROGATE ID: Immutable unique key",
+      "definition_table": ""
+    },
+    {
+      "name": "STVDEGC_VERSION",
+      "type": "NUMBER(19,0)",
+      "description": "VERSION: Optimistic lock token.",
+      "definition_table": ""
+    },
+    {
+      "name": "STVDEGC_USER_ID",
+      "type": "VARCHAR2(30 CHAR)",
+      "description": "USER ID: The user ID of the person who inserted or last updated this record.",
+      "definition_table": ""
+    },
+    {
+      "name": "STVDEGC_DATA_ORIGIN",
+      "type": "VARCHAR2(30 CHAR)",
+      "description": "DATA ORIGIN: Source system that created or updated the data.",
+      "definition_table": ""
+    },
+    {
+      "name": "STVDEGC_VPDI_CODE",
+      "type": "VARCHAR2(6 CHAR)",
+      "description": "VPDI CODE: Multi-entity processing code.",
+      "definition_table": ""
+    }
+  ],
+  "queries": []
+}
