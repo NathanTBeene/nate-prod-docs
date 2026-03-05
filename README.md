@@ -1,6 +1,6 @@
-# Database Documentation
+# NSU Banner Table Documentation
 
-Internal database schema and query reference built with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/).
+Built with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/).
 
 ## Local Development
 
