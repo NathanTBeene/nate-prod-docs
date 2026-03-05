@@ -1,4 +1,7 @@
 site/
+docs/tables/
+docs/sql/
+tools/info-converter/converted/
 __pycache__/
 *.pyc
 .venv/
