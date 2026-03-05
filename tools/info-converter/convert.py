@@ -29,8 +29,8 @@ def parse_info(filepath: str) -> dict:
         "description": "",
         "type": "data",
         "tags": [],
-        "columns": [],
         "queries": []
+        "columns": [],
     }
 
     # Extract table name

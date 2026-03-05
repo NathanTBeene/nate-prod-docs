@@ -3,6 +3,13 @@
   "description": "Person Identification/Name Repeating Table",
   "type": "data",
   "tags": [],
+  "queries": [
+    {
+      "file": "find_name.sql",
+      "name": "Find Name by ID",
+      "description": "Find a person's name by their ID."
+    }
+  ],
   "columns": [
     {
       "name": "SPRIDEN_PIDM",
@@ -153,13 +160,6 @@
       "type": "VARCHAR2(6 CHAR)",
       "description": "VPDI CODE: Multi-entity processing code.",
       "definition_table": ""
-    }
-  ],
-  "queries": [
-    {
-      "file": "find_name.sql",
-      "name": "Find Name by ID",
-      "description": "Find a person's name by their ID."
     }
   ]
 }

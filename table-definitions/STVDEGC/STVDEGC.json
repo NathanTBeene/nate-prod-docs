@@ -7,12 +7,13 @@
     "STVDEGC_DESC"
   ],
   "tags": [],
+  "queries": [],
   "columns": [
     {
       "name": "STVDEGC_CODE",
       "type": "VARCHAR2(6 CHAR)",
       "description": "This field identifies the degree code referenced in the Recruiting, Admissions, Gen. Student, Registration, Academic History and Degree Audit Modules. 000000 - Degree Not Declared.",
-      "definition_table": "TEST"
+      "definition_table": ""
     },
     {
       "name": "STVDEGC_DESC",
@@ -110,6 +111,5 @@
       "description": "VPDI CODE: Multi-entity processing code.",
       "definition_table": ""
     }
-  ],
-  "queries": []
+  ]
 }

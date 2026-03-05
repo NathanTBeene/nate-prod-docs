@@ -3,6 +3,7 @@
   "description": "Term Code Validation Table",
   "type": "data",
   "tags": [],
+  "queries": [],
   "columns": [
     {
       "name": "STVTERM_DESC",
@@ -160,6 +161,5 @@
       "description": "CATALOG GUID: Global Unique Identifier to uniquely identify the record of a resource for integration.",
       "definition_table": ""
     }
-  ],
-  "queries": []
+  ]
 }

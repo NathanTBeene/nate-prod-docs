@@ -32,20 +32,31 @@ def read_definitions_file(file_path: Path, headers: list[str] | None = None) -> 
             continue
 
         if "\t" in line:
-            parts = line.split("\t", 1)
+            parts = line.split("\t")
         else:
-            parts = re.split(r"\s{2,}", line, maxsplit=1)
-
-        while len(parts) < 2:
-            parts.append("")
+            parts = re.split(r"\s{2,}", line)
 
         rows.append([p.strip() for p in parts])
 
     if not rows:
         return None
 
+    # Determine column count from widest row
+    col_count = max(len(row) for row in rows)
+
+    # Pad short rows
+    for row in rows:
+        while len(row) < col_count:
+            row.append("")
+
+    # Generate default headers if not provided
     if not headers:
-        headers = ["Code", "Description"]
+        if col_count == 1:
+            headers = ["Value"]
+        elif col_count == 2:
+            headers = ["Code", "Description"]
+        else:
+            headers = ["Index"] + [f"Value{i}" for i in range(1, col_count)]
 
     header_row = "| " + " | ".join(headers) + " |"
     separator = "| " + " | ".join("---" for _ in headers) + " |"

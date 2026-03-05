@@ -3,6 +3,18 @@
   "description": "Student Course Registration Repeating Table",
   "type": "data",
   "tags": [],
+  "queries": [
+    {
+      "file": "student_classes_by_term.sql",
+      "name": "Student Classes By Term",
+      "description": "Get each student enrolled for the term and all of their valid classes."
+    },
+    {
+      "file": "student_hours_by_term.sql",
+      "name": "Student Hours By Term",
+      "description": "Get each student enrolled for the term and their total hours enrolled."
+    }
+  ],
   "columns": [
     {
       "name": "SFRSTCR_CRN",
@@ -411,18 +423,6 @@
       "type": "TIMESTAMP(9)",
       "description": "CURRENT TIME: The current time of the registration.",
       "definition_table": ""
-    }
-  ],
-  "queries": [
-    {
-      "file": "student_classes_by_term.sql",
-      "name": "Student Classes By Term",
-      "description": "Get each student enrolled for the term and all of their valid classes."
-    },
-    {
-      "file": "student_hours_by_term.sql",
-      "name": "Student Hours By Term",
-      "description": "Get each student enrolled for the term and their total hours enrolled."
     }
   ]
 }

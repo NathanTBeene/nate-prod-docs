@@ -3,6 +3,18 @@
   "description": "Student Base Table",
   "type": "data",
   "tags": [],
+  "queries": [
+    {
+      "file": "most_recent.sql",
+      "name": "Most Recent Record for Student",
+      "description": "Find the most recent SGBSTDN record for each student."
+    },
+    {
+      "file": "majr_minor_conc.sql",
+      "name": "1st Major, Minor, Concentration for Student",
+      "description": "Find the 1st major, minor, and concentration for each student based on the most recent SGBSTDN record."
+    }
+  ],
   "columns": [
     {
       "name": "SGBSTDN_STST_CODE",
@@ -675,18 +687,6 @@
       "type": "VARCHAR2(36 BYTE)",
       "description": "GUID: Global Unique Identifier to uniquely identify the record of a resource for integration.",
       "definition_table": ""
-    }
-  ],
-  "queries": [
-    {
-      "file": "most_recent.sql",
-      "name": "Most Recent Record for Student",
-      "description": "Find the most recent SGBSTDN record for each student."
-    },
-    {
-      "file": "majr_minor_conc.sql",
-      "name": "1st Major, Minor, Concentration for Student",
-      "description": "Find the 1st major, minor, and concentration for each student based on the most recent SGBSTDN record."
     }
   ]
 }
