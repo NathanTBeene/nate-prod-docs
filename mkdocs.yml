@@ -63,7 +63,7 @@ markdown_extensions:
 
 plugins:
   - search:
-      separator: '[\s\-]+'
+      separator: '[\s\-_]+'
   - tags:
       tags_file: tags.md
 
