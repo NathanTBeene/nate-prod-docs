@@ -146,6 +146,7 @@ hide:
 
 {definitions_section}
 ## Queries
+- - -
 {queries_section}"""
 
     return md
