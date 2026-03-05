@@ -82,9 +82,9 @@ def generate_table_page(table: dict, table_dir: Path) -> str:
                 def_link = f"[{def_table}]({def_table}.md)"
             else:
                 def_link = ""
-            col_rows.append(f"| `{col['name']}` | `{col['type']}` | {desc} | {def_link} |")
+            col_rows.append(f"| {col['name']} | `{col['type']}` | {desc} | {def_link} |")
         else:
-            col_rows.append(f"| `{col['name']}` | `{col['type']}` | {desc} |")
+            col_rows.append(f"| {col['name']} | `{col['type']}` | {desc} |")
 
     schema_table = header + "\n" + "\n".join(col_rows)
 
@@ -117,14 +117,6 @@ def generate_table_page(table: dict, table_dir: Path) -> str:
     if not table.get("queries"):
         queries_section = "\n*No queries documented yet.*\n"
 
-    # Build search index content - column names and descriptions
-    search_terms = []
-    for col in table["columns"]:
-        search_terms.append(col["name"])
-        if col.get("description"):
-            search_terms.append(col["description"])
-    search_block = " ".join(search_terms)
-
     md = f"""---
 tags:
 {tags_yaml}
@@ -133,8 +125,6 @@ hide:
 ---
 
 # {table_name}
-
-<div style="display:none">{search_block}</div>
 
 {table['description']}
 
