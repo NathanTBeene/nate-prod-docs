@@ -1,0 +1,510 @@
+{
+  "name": "SHRDGMR",
+  "description": "Graduation Degree Table",
+  "type": "data",
+  "tags": [
+    "student",
+    "graduation",
+    "degree"
+  ],
+  "queries": [
+    {
+      "file": "get_grad_date.sql",
+      "name": "Get Student Graduation Date",
+      "description": "Query to get graduation date for a given pidm."
+    },
+    {
+      "file": "get_graduating.sql",
+      "name": "Get Graduating Students",
+      "description": "Query to get students graduating in a given term."
+    }
+  ],
+  "columns": [
+    {
+      "name": "SHRDGMR_PIDM",
+      "type": "NUMBER(8,0)",
+      "description": "Internal identification number of the person",
+      "definition_table": ""
+    },
+    {
+      "name": "SHRDGMR_SEQ_NO",
+      "type": "NUMBER(2,0)",
+      "description": "Degree Sequence Number. Number assigned to each degree student has.",
+      "definition_table": ""
+    },
+    {
+      "name": "SHRDGMR_DEGC_CODE",
+      "type": "VARCHAR2(6 CHAR)",
+      "description": "Degree Code. Students degree code (BS, BA, etc.).",
+      "definition_table": "STVDEGC"
+    },
+    {
+      "name": "SHRDGMR_DEGS_CODE",
+      "type": "VARCHAR2(2 CHAR)",
+      "description": "Degree Status Code. Status of students degree, for example sought, awarded, etc.",
+      "definition_table": "STVDEGS"
+    },
+    {
+      "name": "SHRDGMR_LEVL_CODE",
+      "type": "VARCHAR2(2 CHAR)",
+      "description": "Degree Level Code. Level to which degree applies (undergraduate, graduate, etc).",
+      "definition_table": "STVLEVL"
+    },
+    {
+      "name": "SHRDGMR_COLL_CODE_1",
+      "type": "VARCHAR2(2 CHAR)",
+      "description": "Degree College Code 1. College offering the degree.",
+      "definition_table": "STVCOLL"
+    },
+    {
+      "name": "SHRDGMR_MAJR_CODE_1",
+      "type": "VARCHAR2(4 CHAR)",
+      "description": "Degree Major Code 1. First major associated with the degree.",
+      "definition_table": "STVMAJR"
+    },
+    {
+      "name": "SHRDGMR_MAJR_CODE_MINR_1",
+      "type": "VARCHAR2(4 CHAR)",
+      "description": "Degree Minor Code 1. First minor associated with the degree.",
+      "definition_table": "STVMAJR"
+    },
+    {
+      "name": "SHRDGMR_MAJR_CODE_CONC_1",
+      "type": "VARCHAR2(4 CHAR)",
+      "description": "Degree Concentration Code 1. First concentration associated with the degree.",
+      "definition_table": "STVMAJR"
+    },
+    {
+      "name": "SHRDGMR_COLL_CODE_2",
+      "type": "VARCHAR2(2 CHAR)",
+      "description": "Degree College Code Secondary. Secondary college offering the degree.",
+      "definition_table": "STVCOLL"
+    },
+    {
+      "name": "SHRDGMR_MAJR_CODE_2",
+      "type": "VARCHAR2(4 CHAR)",
+      "description": "Degree Major Code 1 Secondary. First major for the secondary curriculum associated with the degree.",
+      "definition_table": "STVMAJR"
+    },
+    {
+      "name": "SHRDGMR_MAJR_CODE_MINR_2",
+      "type": "VARCHAR2(4 CHAR)",
+      "description": "Degree Minor Code 1 Secondary. First minor for the secondary curriculum associated with the degree.",
+      "definition_table": "STVMAJR"
+    },
+    {
+      "name": "SHRDGMR_MAJR_CODE_CONC_2",
+      "type": "VARCHAR2(4 CHAR)",
+      "description": "Degree Concentration Code 1 Secondary. First concentration for the secondary curriculum associated with the degree.",
+      "definition_table": "STVMAJR"
+    },
+    {
+      "name": "SHRDGMR_APPL_DATE",
+      "type": "DATE",
+      "description": "Degee Application Date. Date of degree application. Defaults to current date on entry of degree.",
+      "definition_table": ""
+    },
+    {
+      "name": "SHRDGMR_GRAD_DATE",
+      "type": "DATE",
+      "description": "Graduation Date. Graduation date of student.",
+      "definition_table": ""
+    },
+    {
+      "name": "SHRDGMR_ACYR_CODE_BULLETIN",
+      "type": "VARCHAR2(4 CHAR)",
+      "description": "Degree Bulletin Year. Year of bulletin or catalog under which degree is being offered.",
+      "definition_table": "STVACYR"
+    },
+    {
+      "name": "SHRDGMR_ACTIVITY_DATE",
+      "type": "DATE",
+      "description": "Activity Date. Specifies the date record was created or updated.",
+      "definition_table": ""
+    },
+    {
+      "name": "SHRDGMR_MAJR_CODE_MINR_1_2",
+      "type": "VARCHAR2(4 CHAR)",
+      "description": "Degree Minor Code 2. Second minor associated with the degree.",
+      "definition_table": "STVMAJR"
+    },
+    {
+      "name": "SHRDGMR_MAJR_CODE_CONC_1_2",
+      "type": "VARCHAR2(4 CHAR)",
+      "description": "Degree Concentration Code 2. Second concentration associated with the degree.",
+      "definition_table": "STVMAJR"
+    },
+    {
+      "name": "SHRDGMR_MAJR_CODE_CONC_1_3",
+      "type": "VARCHAR2(4 CHAR)",
+      "description": "Degree Concentration Code 3. Third concentration associated with the degree.",
+      "definition_table": "STVMAJR"
+    },
+    {
+      "name": "SHRDGMR_MAJR_CODE_MINR_2_2",
+      "type": "VARCHAR2(4 CHAR)",
+      "description": "Degree Minor Code 2 Secondary. Second minor for the secondary curriculum associated with the degree.",
+      "definition_table": "STVMAJR"
+    },
+    {
+      "name": "SHRDGMR_MAJR_CODE_CONC_2_2",
+      "type": "VARCHAR2(4 CHAR)",
+      "description": "Degree Concentration Code 2 Secondary. Second concentration for the secondary curriculum associated with the degree.",
+      "definition_table": "STVMAJR"
+    },
+    {
+      "name": "SHRDGMR_MAJR_CODE_CONC_2_3",
+      "type": "VARCHAR2(4 CHAR)",
+      "description": "Degree Concentration Code 3 Secondary. Third concentration for the secondary curriculum associated with the degree.",
+      "definition_table": "STVMAJR"
+    },
+    {
+      "name": "SHRDGMR_TERM_CODE_STUREC",
+      "type": "VARCHAR2(6 CHAR)",
+      "description": "Term Code. The term associated with the general student record when degree information is defaulted.",
+      "definition_table": ""
+    },
+    {
+      "name": "SHRDGMR_MAJR_CODE_1_2",
+      "type": "VARCHAR2(4 CHAR)",
+      "description": "Degree Major Code 2. Second major associated with the degree.",
+      "definition_table": "STVMAJR"
+    },
+    {
+      "name": "SHRDGMR_MAJR_CODE_2_2",
+      "type": "VARCHAR2(4 CHAR)",
+      "description": "Degree Major Code 2 Secondary. Second major for the secondary curriculum associated with the degree.",
+      "definition_table": "STVMAJR"
+    },
+    {
+      "name": "SHRDGMR_CAMP_CODE",
+      "type": "VARCHAR2(3 CHAR)",
+      "description": "Degree Campus Code. Campus offering the degree.",
+      "definition_table": "STVCAMP"
+    },
+    {
+      "name": "SHRDGMR_TERM_CODE_GRAD",
+      "type": "VARCHAR2(6 CHAR)",
+      "description": "Term in which the student graduates.",
+      "definition_table": ""
+    },
+    {
+      "name": "SHRDGMR_ACYR_CODE",
+      "type": "VARCHAR2(4 CHAR)",
+      "description": "Year in which the student graduates.",
+      "definition_table": ""
+    },
+    {
+      "name": "SHRDGMR_GRST_CODE",
+      "type": "VARCHAR2(3 CHAR)",
+      "description": "Graduation status.",
+      "definition_table": "STVGRST"
+    },
+    {
+      "name": "SHRDGMR_FEE_IND",
+      "type": "VARCHAR2(1 CHAR)",
+      "description": "This field identifies whether a graduation fee has been assessed.",
+      "definition_table": ""
+    },
+    {
+      "name": "SHRDGMR_FEE_DATE",
+      "type": "DATE",
+      "description": "This field identifies the date graduation fee has been assessed.",
+      "definition_table": ""
+    },
+    {
+      "name": "SHRDGMR_AUTHORIZED",
+      "type": "VARCHAR2(33 CHAR)",
+      "description": "This field identifies the user and the grad status joined together as one field to identify the person who authorized graduation adds or changes.",
+      "definition_table": ""
+    },
+    {
+      "name": "SHRDGMR_TERM_CODE_COMPLETED",
+      "type": "VARCHAR2(6 CHAR)",
+      "description": "Term designated as the term in which graduate work must be completed.",
+      "definition_table": ""
+    },
+    {
+      "name": "SHRDGMR_DEGC_CODE_DUAL",
+      "type": "VARCHAR2(6 CHAR)",
+      "description": "Degree code for dual degree",
+      "definition_table": "STVDEGC"
+    },
+    {
+      "name": "SHRDGMR_LEVL_CODE_DUAL",
+      "type": "VARCHAR2(2 CHAR)",
+      "description": "Level code for dual degree",
+      "definition_table": "STVLEVL"
+    },
+    {
+      "name": "SHRDGMR_DEPT_CODE_DUAL",
+      "type": "VARCHAR2(4 CHAR)",
+      "description": "Department code for dual degree",
+      "definition_table": "STVDEPT"
+    },
+    {
+      "name": "SHRDGMR_COLL_CODE_DUAL",
+      "type": "VARCHAR2(2 CHAR)",
+      "description": "College code for dual degree",
+      "definition_table": "STVCOLL"
+    },
+    {
+      "name": "SHRDGMR_MAJR_CODE_DUAL",
+      "type": "VARCHAR2(4 CHAR)",
+      "description": "Major code for dual degree",
+      "definition_table": "STVMAJR"
+    },
+    {
+      "name": "SHRDGMR_DEPT_CODE",
+      "type": "VARCHAR2(4 CHAR)",
+      "description": "Department code for degree",
+      "definition_table": "STVDEPT"
+    },
+    {
+      "name": "SHRDGMR_DEPT_CODE_2",
+      "type": "VARCHAR2(4 CHAR)",
+      "description": "2nd department code for degree",
+      "definition_table": "STVDEPT"
+    },
+    {
+      "name": "SHRDGMR_PROGRAM",
+      "type": "VARCHAR2(12 CHAR)",
+      "description": "Curriculum 1 Program Code",
+      "definition_table": ""
+    },
+    {
+      "name": "SHRDGMR_TERM_CODE_CTLG_1",
+      "type": "VARCHAR2(6 CHAR)",
+      "description": "Curriculum 1 Catalog Term Code",
+      "definition_table": "STVTERM"
+    },
+    {
+      "name": "SHRDGMR_DEPT_CODE_1_2",
+      "type": "VARCHAR2(4 CHAR)",
+      "description": "Department 2, Curriculum 1 Code",
+      "definition_table": "STVDEPT"
+    },
+    {
+      "name": "SHRDGMR_DEPT_CODE_2_2",
+      "type": "VARCHAR2(4 CHAR)",
+      "description": "Department 2, Curriculum 2 Code",
+      "definition_table": "STVDEPT"
+    },
+    {
+      "name": "SHRDGMR_MAJR_CODE_CONC_121",
+      "type": "VARCHAR2(4 CHAR)",
+      "description": "Concentration Code 1 on Major 2, Curriculum 1 Code",
+      "definition_table": "STVMAJR"
+    },
+    {
+      "name": "SHRDGMR_MAJR_CODE_CONC_122",
+      "type": "VARCHAR2(4 CHAR)",
+      "description": "Concentration Code 2 on Major 2, Curriculum 1",
+      "definition_table": "STVMAJR"
+    },
+    {
+      "name": "SHRDGMR_MAJR_CODE_CONC_123",
+      "type": "VARCHAR2(4 CHAR)",
+      "description": "Concentration Code 3 on Major 2, Curriculum 1",
+      "definition_table": "STVMAJR"
+    },
+    {
+      "name": "SHRDGMR_TERM_CODE_CTLG_2",
+      "type": "VARCHAR2(6 CHAR)",
+      "description": "Curriculum 2 Catalog Term Code",
+      "definition_table": "STVTERM"
+    },
+    {
+      "name": "SHRDGMR_CAMP_CODE_2",
+      "type": "VARCHAR2(3 CHAR)",
+      "description": "Curriculum 2 Campus Code",
+      "definition_table": "STVCAMP"
+    },
+    {
+      "name": "SHRDGMR_MAJR_CODE_CONC_221",
+      "type": "VARCHAR2(4 CHAR)",
+      "description": "Concentration Code 1 on Major 2, Curriculum 2",
+      "definition_table": "STVMAJR"
+    },
+    {
+      "name": "SHRDGMR_MAJR_CODE_CONC_222",
+      "type": "VARCHAR2(4 CHAR)",
+      "description": "Concentration Code 2 on Major 2, Curriculum 2",
+      "definition_table": "STVMAJR"
+    },
+    {
+      "name": "SHRDGMR_MAJR_CODE_CONC_223",
+      "type": "VARCHAR2(4 CHAR)",
+      "description": "Concentration Code 3 on Major 2, Curriculum 2",
+      "definition_table": "STVMAJR"
+    },
+    {
+      "name": "SHRDGMR_CURR_RULE_1",
+      "type": "NUMBER(8,0)",
+      "description": "Curriculum 1 Rule reference",
+      "definition_table": ""
+    },
+    {
+      "name": "SHRDGMR_CMJR_RULE_1_1",
+      "type": "NUMBER(8,0)",
+      "description": "Curriculum 1 Major 1 Rule Reference",
+      "definition_table": ""
+    },
+    {
+      "name": "SHRDGMR_CCON_RULE_11_1",
+      "type": "NUMBER(8,0)",
+      "description": "Concentration 1, Major 1, Curriculum 1 Rule Reference",
+      "definition_table": ""
+    },
+    {
+      "name": "SHRDGMR_CCON_RULE_11_2",
+      "type": "NUMBER(8,0)",
+      "description": "Concentration 2, Major 1, Curriculum 1 Rule Reference",
+      "definition_table": ""
+    },
+    {
+      "name": "SHRDGMR_CCON_RULE_11_3",
+      "type": "NUMBER(8,0)",
+      "description": "Concentration 3, Major 1, Curriculum 1 Rule Reference",
+      "definition_table": ""
+    },
+    {
+      "name": "SHRDGMR_CMJR_RULE_1_2",
+      "type": "NUMBER(8,0)",
+      "description": "Major 2, Curriculum Rule Reference",
+      "definition_table": ""
+    },
+    {
+      "name": "SHRDGMR_CCON_RULE_12_1",
+      "type": "NUMBER(8,0)",
+      "description": "Concentration 1, Major 2, Curriculum 1 Rule Reference",
+      "definition_table": ""
+    },
+    {
+      "name": "SHRDGMR_CCON_RULE_12_2",
+      "type": "NUMBER(8,0)",
+      "description": "Concentration 2, Major 2, Curriculum 1 Rule Reference",
+      "definition_table": ""
+    },
+    {
+      "name": "SHRDGMR_CCON_RULE_12_3",
+      "type": "NUMBER(8,0)",
+      "description": "Concentration 3, Major 2, Curriculum 1 Rule Reference",
+      "definition_table": ""
+    },
+    {
+      "name": "SHRDGMR_CMNR_RULE_1_1",
+      "type": "NUMBER(8,0)",
+      "description": "Minor 1, Curriculum 1 Rule Reference",
+      "definition_table": ""
+    },
+    {
+      "name": "SHRDGMR_CMNR_RULE_1_2",
+      "type": "NUMBER(8,0)",
+      "description": "Minor 2, Curriculum 1 Rule Reference",
+      "definition_table": ""
+    },
+    {
+      "name": "SHRDGMR_CURR_RULE_2",
+      "type": "NUMBER(8,0)",
+      "description": "Curriculum 2 Rule Reference",
+      "definition_table": ""
+    },
+    {
+      "name": "SHRDGMR_CMJR_RULE_2_1",
+      "type": "NUMBER(8,0)",
+      "description": "Major 1, Curriculum 2 Rule Reference",
+      "definition_table": ""
+    },
+    {
+      "name": "SHRDGMR_CCON_RULE_21_1",
+      "type": "NUMBER(8,0)",
+      "description": "Concentration 1, Major 1, Curriculum 2 Rule Reference",
+      "definition_table": ""
+    },
+    {
+      "name": "SHRDGMR_CCON_RULE_21_2",
+      "type": "NUMBER(8,0)",
+      "description": "Concentration 2, Major 1, Curriculum 2 Rule Reference",
+      "definition_table": ""
+    },
+    {
+      "name": "SHRDGMR_CCON_RULE_21_3",
+      "type": "NUMBER(8,0)",
+      "description": "Concentration 3, Major 1, Curriculum 2 Rule Reference",
+      "definition_table": ""
+    },
+    {
+      "name": "SHRDGMR_CMJR_RULE_2_2",
+      "type": "NUMBER(8,0)",
+      "description": "Major 2, Curriculum 2 Rule Reference",
+      "definition_table": ""
+    },
+    {
+      "name": "SHRDGMR_CCON_RULE_22_1",
+      "type": "NUMBER(8,0)",
+      "description": "Concentration 1, Major 2, Curriculum 2 Rule Reference",
+      "definition_table": ""
+    },
+    {
+      "name": "SHRDGMR_CCON_RULE_22_2",
+      "type": "NUMBER(8,0)",
+      "description": "Concentration 2, Major 2, Curriculum 2 Rule Reference",
+      "definition_table": ""
+    },
+    {
+      "name": "SHRDGMR_CCON_RULE_22_3",
+      "type": "NUMBER(8,0)",
+      "description": "Concentration 3, Major 2, Curriculum 2 Rule Reference",
+      "definition_table": ""
+    },
+    {
+      "name": "SHRDGMR_CMNR_RULE_2_1",
+      "type": "NUMBER(8,0)",
+      "description": "Minor 1, Curriculum 2 Rule Reference",
+      "definition_table": ""
+    },
+    {
+      "name": "SHRDGMR_CMNR_RULE_2_2",
+      "type": "NUMBER(8,0)",
+      "description": "Minor 2, Curriculum 2 Rule Reference",
+      "definition_table": ""
+    },
+    {
+      "name": "SHRDGMR_DATA_ORIGIN",
+      "type": "VARCHAR2(30 CHAR)",
+      "description": "DATA SOURCE: Source system that created or updated the row",
+      "definition_table": ""
+    },
+    {
+      "name": "SHRDGMR_USER_ID",
+      "type": "VARCHAR2(30 CHAR)",
+      "description": "USER ID: The most recent user to create or update a record.",
+      "definition_table": ""
+    },
+    {
+      "name": "SHRDGMR_STSP_KEY_SEQUENCE",
+      "type": "NUMBER(2,0)",
+      "description": "STUDY PATH SEQUENCE: This field is the key sequence of the study path of the learner curriculum the outcome curriculum originted from.",
+      "definition_table": ""
+    },
+    {
+      "name": "SHRDGMR_SURROGATE_ID",
+      "type": "NUMBER(19,0)",
+      "description": "SURROGATE ID: Immutable unique key",
+      "definition_table": ""
+    },
+    {
+      "name": "SHRDGMR_VERSION",
+      "type": "NUMBER(19,0)",
+      "description": "VERSION: Optimistic lock token.",
+      "definition_table": ""
+    },
+    {
+      "name": "SHRDGMR_VPDI_CODE",
+      "type": "VARCHAR2(6 CHAR)",
+      "description": "VPDI CODE: Multi-entity processing code.",
+      "definition_table": ""
+    }
+  ]
+}
