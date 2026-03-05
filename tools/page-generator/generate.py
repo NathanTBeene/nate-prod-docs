@@ -117,12 +117,24 @@ def generate_table_page(table: dict, table_dir: Path) -> str:
     if not table.get("queries"):
         queries_section = "\n*No queries documented yet.*\n"
 
+    # Build search index content - column names and descriptions
+    search_terms = []
+    for col in table["columns"]:
+        search_terms.append(col["name"])
+        if col.get("description"):
+            search_terms.append(col["description"])
+    search_block = " ".join(search_terms)
+
     md = f"""---
 tags:
 {tags_yaml}
+hide:
+  - toc
 ---
 
 # {table_name}
+
+<div style="display:none">{search_block}</div>
 
 {table['description']}
 
@@ -133,7 +145,6 @@ tags:
 
 {definitions_section}
 ## Queries
-- - -
 {queries_section}"""
 
     return md
