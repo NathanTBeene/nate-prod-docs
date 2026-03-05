@@ -1,0 +1,162 @@
+TABLE: SHRDGMR
+	 LAST ANALYZED:2026-03-01
+	 ROWS         :98312
+	 SAMPLE SIZE  :98312
+	 INMEMORY     :DISABLED
+	 COMMENTS     :Degree Table
+
+Columns
+NAME                          DATA TYPE           NULL  DEFAULT    COMMENTS
+*SHRDGMR_PIDM                 NUMBER(8,0)         No               Internal identification number of the person
+*SHRDGMR_SEQ_NO               NUMBER(2,0)         No               Degree Sequence Number. Number assigned to each
+                                                                   degree student has.
+ SHRDGMR_DEGC_CODE            VARCHAR2(6 CHAR)    Yes              Degree Code. Students degree code (BS, BA, etc.).
+ SHRDGMR_DEGS_CODE            VARCHAR2(2 CHAR)    No               Degree Status Code. Status of students degree, for
+                                                                   example sought, awarded, etc.
+ SHRDGMR_LEVL_CODE            VARCHAR2(2 CHAR)    Yes              Degree Level Code. Level to which degree applies
+                                                                   (undergraduate, graduate, etc).
+ SHRDGMR_COLL_CODE_1          VARCHAR2(2 CHAR)    Yes              Degree College Code 1. College offering the
+                                                                   degree.
+ SHRDGMR_MAJR_CODE_1          VARCHAR2(4 CHAR)    Yes              Degree Major Code 1. First major associated with
+                                                                   the degree.
+ SHRDGMR_MAJR_CODE_MINR_1     VARCHAR2(4 CHAR)    Yes              Degree Minor Code 1. First minor associated with
+                                                                   the degree.
+ SHRDGMR_MAJR_CODE_CONC_1     VARCHAR2(4 CHAR)    Yes              Degree Concentration Code 1. First concentration
+                                                                   associated with the degree.
+ SHRDGMR_COLL_CODE_2          VARCHAR2(2 CHAR)    Yes              Degree College Code Secondary. Secondary college
+                                                                   offering the degree.
+ SHRDGMR_MAJR_CODE_2          VARCHAR2(4 CHAR)    Yes              Degree Major Code 1 Secondary. First major for the
+                                                                   secondary curriculum associated with the degree.
+ SHRDGMR_MAJR_CODE_MINR_2     VARCHAR2(4 CHAR)    Yes              Degree Minor Code 1 Secondary. First minor for the
+                                                                   secondary curriculum associated with the degree.
+ SHRDGMR_MAJR_CODE_CONC_2     VARCHAR2(4 CHAR)    Yes              Degree Concentration Code 1 Secondary. First
+                                                                   concentration for the secondary curriculum
+                                                                   associated with the degree.
+ SHRDGMR_APPL_DATE            DATE                Yes              Degee Application Date. Date of degree
+                                                                   application. Defaults to current date on entry of
+                                                                   degree.
+ SHRDGMR_GRAD_DATE            DATE                Yes              Graduation Date. Graduation date of student.
+ SHRDGMR_ACYR_CODE_BULLETIN   VARCHAR2(4 CHAR)    Yes              Degree Bulletin Year. Year of bulletin or catalog
+                                                                   under which degree is being offered.
+ SHRDGMR_ACTIVITY_DATE        DATE                No               Activity Date. Specifies the date record was
+                                                                   created or updated.
+ SHRDGMR_MAJR_CODE_MINR_1_2   VARCHAR2(4 CHAR)    Yes              Degree Minor Code 2. Second minor associated with
+                                                                   the degree.
+ SHRDGMR_MAJR_CODE_CONC_1_2   VARCHAR2(4 CHAR)    Yes              Degree Concentration Code 2. Second concentration
+                                                                   associated with the degree.
+ SHRDGMR_MAJR_CODE_CONC_1_3   VARCHAR2(4 CHAR)    Yes              Degree Concentration Code 3. Third concentration
+                                                                   associated with the degree.
+ SHRDGMR_MAJR_CODE_MINR_2_2   VARCHAR2(4 CHAR)    Yes              Degree Minor Code 2 Secondary. Second minor for
+                                                                   the secondary curriculum associated with the
+                                                                   degree.
+ SHRDGMR_MAJR_CODE_CONC_2_2   VARCHAR2(4 CHAR)    Yes              Degree Concentration Code 2 Secondary. Second
+                                                                   concentration for the secondary curriculum
+                                                                   associated with the degree.
+ SHRDGMR_MAJR_CODE_CONC_2_3   VARCHAR2(4 CHAR)    Yes              Degree Concentration Code 3 Secondary. Third
+                                                                   concentration for the secondary curriculum
+                                                                   associated with the degree.
+ SHRDGMR_TERM_CODE_STUREC     VARCHAR2(6 CHAR)    No               Term Code. The term associated with the general
+                                                                   student record when degree information is
+                                                                   defaulted.
+ SHRDGMR_MAJR_CODE_1_2        VARCHAR2(4 CHAR)    Yes              Degree Major Code 2. Second major associated with
+                                                                   the degree.
+ SHRDGMR_MAJR_CODE_2_2        VARCHAR2(4 CHAR)    Yes              Degree Major Code 2 Secondary. Second major for
+                                                                   the secondary curriculum associated with the
+                                                                   degree.
+ SHRDGMR_CAMP_CODE            VARCHAR2(3 CHAR)    Yes              Degree Campus Code. Campus offering the degree.
+ SHRDGMR_TERM_CODE_GRAD       VARCHAR2(6 CHAR)    Yes              Term in which the student graduates.
+ SHRDGMR_ACYR_CODE            VARCHAR2(4 CHAR)    Yes              Year in which the student graduates.
+ SHRDGMR_GRST_CODE            VARCHAR2(3 CHAR)    Yes              Graduation status.
+ SHRDGMR_FEE_IND              VARCHAR2(1 CHAR)    Yes              This field identifies whether a graduation fee has
+                                                                   been assessed.
+ SHRDGMR_FEE_DATE             DATE                Yes              This field identifies the date graduation fee has
+                                                                   been assessed.
+ SHRDGMR_AUTHORIZED           VARCHAR2(33 CHAR)   Yes              This field identifies the user and the grad status
+                                                                   joined together as one field to identify the
+                                                                   person who authorized graduation adds or changes.
+ SHRDGMR_TERM_CODE_COMPLETED  VARCHAR2(6 CHAR)    Yes              Term designated as the term in which graduate work
+                                                                   must be completed.
+ SHRDGMR_DEGC_CODE_DUAL       VARCHAR2(6 CHAR)    Yes              Degree code for dual degree
+ SHRDGMR_LEVL_CODE_DUAL       VARCHAR2(2 CHAR)    Yes              Level code for dual degree
+ SHRDGMR_DEPT_CODE_DUAL       VARCHAR2(4 CHAR)    Yes              Department code for dual degree
+ SHRDGMR_COLL_CODE_DUAL       VARCHAR2(2 CHAR)    Yes              College code for dual degree
+ SHRDGMR_MAJR_CODE_DUAL       VARCHAR2(4 CHAR)    Yes              Major code for dual degree
+ SHRDGMR_DEPT_CODE            VARCHAR2(4 CHAR)    Yes              Department code for degree
+ SHRDGMR_DEPT_CODE_2          VARCHAR2(4 CHAR)    Yes              2nd department code for degree
+ SHRDGMR_PROGRAM              VARCHAR2(12 CHAR)   Yes              Curriculum 1 Program Code
+ SHRDGMR_TERM_CODE_CTLG_1     VARCHAR2(6 CHAR)    Yes              Curriculum 1 Catalog Term Code
+ SHRDGMR_DEPT_CODE_1_2        VARCHAR2(4 CHAR)    Yes              Department 2, Curriculum 1 Code
+ SHRDGMR_DEPT_CODE_2_2        VARCHAR2(4 CHAR)    Yes              Department 2, Curriculum 2 Code
+ SHRDGMR_MAJR_CODE_CONC_121   VARCHAR2(4 CHAR)    Yes              Concentration Code 1 on  Major 2, Curriculum 1
+                                                                   Code
+ SHRDGMR_MAJR_CODE_CONC_122   VARCHAR2(4 CHAR)    Yes              Concentration Code 2 on Major 2, Curriculum 1
+ SHRDGMR_MAJR_CODE_CONC_123   VARCHAR2(4 CHAR)    Yes              Concentration Code 3 on Major 2, Curriculum 1
+ SHRDGMR_TERM_CODE_CTLG_2     VARCHAR2(6 CHAR)    Yes              Curriculum 2 Catalog Term Code
+ SHRDGMR_CAMP_CODE_2          VARCHAR2(3 CHAR)    Yes              Curriculum 2 Campus Code
+ SHRDGMR_MAJR_CODE_CONC_221   VARCHAR2(4 CHAR)    Yes              Concentration Code 1 on Major 2, Curriculum 2
+ SHRDGMR_MAJR_CODE_CONC_222   VARCHAR2(4 CHAR)    Yes              Concentration Code 2 on Major 2, Curriculum 2
+ SHRDGMR_MAJR_CODE_CONC_223   VARCHAR2(4 CHAR)    Yes              Concentration Code 3 on Major 2, Curriculum 2
+ SHRDGMR_CURR_RULE_1          NUMBER(8,0)         Yes              Curriculum 1 Rule reference
+ SHRDGMR_CMJR_RULE_1_1        NUMBER(8,0)         Yes              Curriculum 1 Major 1 Rule Reference
+ SHRDGMR_CCON_RULE_11_1       NUMBER(8,0)         Yes              Concentration 1, Major 1, Curriculum 1 Rule
+                                                                   Reference
+ SHRDGMR_CCON_RULE_11_2       NUMBER(8,0)         Yes              Concentration 2, Major 1, Curriculum 1 Rule
+                                                                   Reference
+ SHRDGMR_CCON_RULE_11_3       NUMBER(8,0)         Yes              Concentration 3, Major 1, Curriculum 1 Rule
+                                                                   Reference
+ SHRDGMR_CMJR_RULE_1_2        NUMBER(8,0)         Yes              Major 2, Curriculum Rule Reference
+ SHRDGMR_CCON_RULE_12_1       NUMBER(8,0)         Yes              Concentration 1, Major 2, Curriculum 1 Rule
+                                                                   Reference
+ SHRDGMR_CCON_RULE_12_2       NUMBER(8,0)         Yes              Concentration 2, Major 2, Curriculum 1 Rule
+                                                                   Reference
+ SHRDGMR_CCON_RULE_12_3       NUMBER(8,0)         Yes              Concentration 3, Major 2, Curriculum 1 Rule
+                                                                   Reference
+ SHRDGMR_CMNR_RULE_1_1        NUMBER(8,0)         Yes              Minor 1, Curriculum 1 Rule Reference
+ SHRDGMR_CMNR_RULE_1_2        NUMBER(8,0)         Yes              Minor 2, Curriculum 1 Rule Reference
+ SHRDGMR_CURR_RULE_2          NUMBER(8,0)         Yes              Curriculum 2 Rule Reference
+ SHRDGMR_CMJR_RULE_2_1        NUMBER(8,0)         Yes              Major 1, Curriculum 2 Rule Reference
+ SHRDGMR_CCON_RULE_21_1       NUMBER(8,0)         Yes              Concentration 1, Major 1, Curriculum 2 Rule
+                                                                   Reference
+ SHRDGMR_CCON_RULE_21_2       NUMBER(8,0)         Yes              Concentration 2, Major 1, Curriculum 2 Rule
+                                                                   Reference
+ SHRDGMR_CCON_RULE_21_3       NUMBER(8,0)         Yes              Concentration 3, Major 1, Curriculum 2 Rule
+                                                                   Reference
+ SHRDGMR_CMJR_RULE_2_2        NUMBER(8,0)         Yes              Major 2, Curriculum 2 Rule Reference
+ SHRDGMR_CCON_RULE_22_1       NUMBER(8,0)         Yes              Concentration 1, Major 2, Curriculum 2 Rule
+                                                                   Reference
+ SHRDGMR_CCON_RULE_22_2       NUMBER(8,0)         Yes              Concentration 2, Major 2, Curriculum 2 Rule
+                                                                   Reference
+ SHRDGMR_CCON_RULE_22_3       NUMBER(8,0)         Yes              Concentration 3, Major 2, Curriculum 2 Rule
+                                                                   Reference
+ SHRDGMR_CMNR_RULE_2_1        NUMBER(8,0)         Yes              Minor 1, Curriculum 2 Rule Reference
+ SHRDGMR_CMNR_RULE_2_2        NUMBER(8,0)         Yes              Minor 2, Curriculum 2 Rule Reference
+ SHRDGMR_DATA_ORIGIN          VARCHAR2(30 CHAR)   Yes              DATA SOURCE: Source system that created or updated
+                                                                   the row
+ SHRDGMR_USER_ID              VARCHAR2(30 CHAR)   Yes              USER ID: The most recent user to create or update
+                                                                   a record.
+ SHRDGMR_STSP_KEY_SEQUENCE    NUMBER(2,0)         Yes              STUDY PATH SEQUENCE: This field is the key
+                                                                   sequence of the study path of the learner
+                                                                   curriculum the outcome curriculum originted from.
+ SHRDGMR_SURROGATE_ID         NUMBER(19,0)        No               SURROGATE ID: Immutable unique key
+ SHRDGMR_VERSION              NUMBER(19,0)        No               VERSION: Optimistic lock token.
+ SHRDGMR_VPDI_CODE            VARCHAR2(6 CHAR)    Yes              VPDI CODE: Multi-entity processing code.
+
+Indexes
+INDEX_NAME                        UNIQUENESS    STATUS    FUNCIDX_STATUS    COLUMNS
+SATURN.PK_SHRDGMR                 UNIQUE        VALID                       SHRDGMR_PIDM, SHRDGMR_SEQ_NO
+SATURN.UK_SHRDGMR_SURROGATE_ID    UNIQUE        VALID                       SHRDGMR_SURROGATE_ID
+
+
+References
+TABLE_NAME    CONSTRAINT_NAME                DELETE_RULE    STATUS      DEFERRABLE        VALIDATED        GENERATED
+SDBDEGR       FK1_SDBDEGR_INV_SHRDGMR_KEY    NO ACTION      ENABLED     NOT DEFERRABLE    VALIDATED        USER NAME
+SHBDIPL       FK1_SHBDIPL_INV_SHRDGMR_KEY    NO ACTION      ENABLED     NOT DEFERRABLE    VALIDATED        USER NAME
+SHRDCMT       FK1_SHRDCMT_INV_SHRDGMR_KEY    NO ACTION      ENABLED     NOT DEFERRABLE    VALIDATED        USER NAME
+SHRDGCM       FK1_SHRDGCM_INV_SHRDGMR_KEY    NO ACTION      ENABLED     NOT DEFERRABLE    VALIDATED        USER NAME
+SHRDGDH       FK1_SHRDGDH_INV_SHRDGMR_KEY    NO ACTION      ENABLED     NOT DEFERRABLE    VALIDATED        USER NAME
+SHRDGIH       FK1_SHRDGIH_INV_SHRDGMR_KEY    NO ACTION      ENABLED     NOT DEFERRABLE    VALIDATED        USER NAME
+SHRNCRD       FK1_SHRNCRD_INV_SHRDGMR_KEY    NO ACTION      DISABLED    NOT DEFERRABLE    NOT VALIDATED    USER NAME
+SHRTCKD       FK1_SHRTCKD_INV_SHRDGMR_KEY    NO ACTION      DISABLED    NOT DEFERRABLE    NOT VALIDATED    USER NAME
+SHRTRCD       FK1_SHRTRCD_INV_SHRDGMR_KEY    NO ACTION      DISABLED    NOT DEFERRABLE    NOT VALIDATED    USER NAME
+SKRCOMP       FK1_SKRCOMP_INV_SHRDGMR        NO ACTION      ENABLED     NOT DEFERRABLE    VALIDATED        USER NAME
+SOBDIPL       FK1_SOBDIPL_INV_SHRDGMR_KEY    NO ACTION      ENABLED     NOT DEFERRABLE    VALIDATED        USER NAME
