@@ -9,7 +9,13 @@
     "CAN_BE_MINOR",
     "CAN_BE_CONCENTRATION"
   ],
-  "tags": [],
+  "tags": [
+    "student",
+    "major",
+    "minor",
+    "concentration",
+    "academic"
+  ],
   "queries": [],
   "columns": [
     {
