@@ -3,7 +3,6 @@
 
 import json
 import re
-import shutil
 from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).parent
@@ -11,7 +10,6 @@ ROOT = SCRIPT_DIR.parent.parent
 DEFS_DIR = ROOT / "table-definitions"
 DOCS_DIR = ROOT / "docs"
 TABLES_DIR = DOCS_DIR / "tables"
-SQL_DIR = DOCS_DIR / "sql"
 MKDOCS_YML = ROOT / "mkdocs.yml"
 INDEX_MD = DOCS_DIR / "index.md"
 DATA_INDEX = DOCS_DIR / "data-tables.md"
@@ -19,9 +17,9 @@ DEF_INDEX = DOCS_DIR / "definition-tables.md"
 
 
 def read_definitions_file(file_path: Path, headers: list[str] | None = None) -> str | None:
-    """Read a .dat file and return it as a markdown table."""
+    """Read a .dat file and return it as a filterable HTML table."""
     if not file_path.exists():
-        return None
+        return "## Values\n\n*No values loaded. Add a .dat file to populate this section.*\n"
 
     text = file_path.read_text(encoding="utf-8")
     rows = []
@@ -39,7 +37,7 @@ def read_definitions_file(file_path: Path, headers: list[str] | None = None) -> 
         rows.append([p.strip() for p in parts])
 
     if not rows:
-        return None
+        return "## Values\n\n*No values loaded. Add a .dat file to populate this section.*\n"
 
     # Determine column count from widest row
     col_count = max(len(row) for row in rows)
@@ -58,16 +56,30 @@ def read_definitions_file(file_path: Path, headers: list[str] | None = None) -> 
         else:
             headers = ["Index"] + [f"Value{i}" for i in range(1, col_count)]
 
-    header_row = "| " + " | ".join(headers) + " |"
-    separator = "| " + " | ".join("---" for _ in headers) + " |"
-    data_rows = []
+    html = '## Values\n\n'
+
+    # Input
+    html += '<input type="text" id="values-filter" placeholder="Filter values..." '
+    html += 'style="margin-bottom:1rem;padding:0.5rem;width:25%;border:1px solid var(--md-default-fg-color--lighter);border-radius:0.25rem;background:var(--md-default-bg-color);color:var(--md-default-fg-color);" '
+    html += 'onkeyup="(function(e){var q=e.value.toLowerCase();document.querySelectorAll(\'#values-table tbody tr\').forEach(function(r){r.style.display=r.textContent.toLowerCase().includes(q)?\'\':\'none\'})})(this)">\n\n'
+
+    # Table
+    html += '<table id="values-table" style="display:inline-block;height:400px;overflow-y:auto;table-layout:fixed;">\n'
+    html += '<thead style="position:sticky;top:0;background:var(--md-default-bg-color);z-index:1;">\n<tr>'
+    for h in headers:
+        html += f'<th>{h}</th>'
+    html += '</tr>\n</thead>\n<tbody>\n'
     for row in rows:
-        data_rows.append("| " + " | ".join(row) + " |")
+        html += '<tr>'
+        for cell in row:
+            html += f'<td>{cell}</td>'
+        html += '</tr>\n'
+    html += '</tbody>\n</table>\n'
 
-    return header_row + "\n" + separator + "\n" + "\n".join(data_rows)
+    return html
 
 
-def generate_table_page(table: dict, table_dir: Path) -> str:
+def generate_table_page(table: dict, table_dir: Path, documented_tables: set[str]) -> str:
     tags_yaml = "\n".join(f"  - {t}" for t in table["tags"])
     table_type = table.get("type", "data")
     table_name = table["name"]
@@ -90,14 +102,17 @@ def generate_table_page(table: dict, table_dir: Path) -> str:
         if has_definitions:
             def_table = col.get("definition_table", "").strip()
             if def_table:
-                def_link = f"[{def_table}]({def_table}.md)"
+                if def_table in documented_tables:
+                    def_link = f"[{def_table}]({def_table}.md)"
+                else:
+                    def_link = def_table
             else:
                 def_link = ""
             col_rows.append(f"| {col['name']} | `{col['type']}` | {desc} | {def_link} |")
         else:
             col_rows.append(f"| {col['name']} | `{col['type']}` | {desc} |")
 
-    schema_table = header + "\n" + "\n".join(col_rows)
+    schema_table = '<div class="schema-table" markdown>\n\n' + header + "\n" + "\n".join(col_rows) + '\n\n</div>'
 
     # Type badge
     if table_type == "definition":
@@ -109,12 +124,17 @@ def generate_table_page(table: dict, table_dir: Path) -> str:
     definitions_section = ""
     if table_type == "definition":
         dat_path = table_dir / f"{table_name}.dat"
-        headers = table.get("definitions_headers")
-        md_table = read_definitions_file(dat_path, headers)
-        if md_table:
-            definitions_section = f"## Values\n\n{md_table}\n"
-        else:
-            definitions_section = "## Values\n\n*No values loaded. Add a .dat file to populate this section.*\n"
+        headers = table.get("definition_headers")
+        definitions_section = read_definitions_file(dat_path, headers)
+
+    # References section
+    references_section = ""
+    refs = table.get("references", [])
+    if refs:
+        references_section = "## Referenced By\n\n"
+        for ref in refs:
+            if ref in documented_tables:
+                references_section += f"[{ref}]({ref}.md), "
 
     # Queries section
     queries_section = ""
@@ -131,8 +151,6 @@ def generate_table_page(table: dict, table_dir: Path) -> str:
     md = f"""---
 tags:
 {tags_yaml}
-hide:
-  - toc
 ---
 
 # {table_name}
@@ -145,6 +163,7 @@ hide:
 {schema_table}
 
 {definitions_section}
+{references_section}
 ## Queries
 - - -
 {queries_section}"""
@@ -246,7 +265,6 @@ def update_nav():
 
 def main():
     TABLES_DIR.mkdir(parents=True, exist_ok=True)
-    SQL_DIR.mkdir(parents=True, exist_ok=True)
 
     # Each subfolder in table-definitions/ is a table
     table_dirs = sorted(
@@ -257,7 +275,9 @@ def main():
         print(f"No table folders found in {DEFS_DIR}")
         return
 
+    # First pass - load all tables
     tables = []
+    dir_map = {}
     for table_dir in table_dirs:
         json_files = list(table_dir.glob("*.json"))
         if not json_files:
@@ -266,10 +286,16 @@ def main():
 
         table = json.loads(json_files[0].read_text())
         tables.append(table)
+        dir_map[table["name"]] = table_dir
 
-        # Generate markdown page
+    # Set of documented table names for link validation
+    documented_tables = {t["name"] for t in tables}
+
+    # Second pass - generate pages with validated links
+    for table in tables:
+        table_dir = dir_map[table["name"]]
         out_path = TABLES_DIR / f"{table['name']}.md"
-        out_path.write_text(generate_table_page(table, table_dir))
+        out_path.write_text(generate_table_page(table, table_dir, documented_tables))
         print(f"  Generated {out_path.relative_to(ROOT)}")
 
     # Split by type
