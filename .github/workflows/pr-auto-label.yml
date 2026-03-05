@@ -1,0 +1,91 @@
+name: PR Auto Label & Template
+
+on:
+  pull_request:
+    types: [opened]
+
+permissions:
+  pull-requests: write
+
+jobs:
+  label-and-template:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Auto label and fill PR info
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const branch = context.payload.pull_request.head.ref;
+            const prNumber = context.payload.pull_request.number;
+
+            let labels = [];
+            let prType = '';
+            let prTitle = '';
+            let tableName = '';
+            let description = '';
+
+            // Determine PR type from branch name
+            if (branch.match(/^add\/(.+)$/)) {
+              tableName = branch.replace('add/', '').toUpperCase();
+              labels = ['add-table', 'documentation'];
+              prType = 'Add Table';
+              prTitle = `Add table: ${tableName}`;
+              description = `## Summary\nAdds documentation for the \`${tableName}\` table.\n\n## Checklist\n- [ ] \`.info\` file added to \`tools/info-converter/info-files/\`\n- [ ] JSON converted and moved to \`table-definitions/${tableName}/\`\n- [ ] Tags and descriptions updated in JSON\n- [ ] SQL queries added (if applicable)\n- [ ] \`.dat\` file added (if definition table)\n- [ ] Generated and previewed locally`;
+            } else if (branch.match(/^update\/(.+)$/)) {
+              tableName = branch.replace('update/', '').toUpperCase();
+              labels = ['update-table', 'documentation'];
+              prType = 'Update Table';
+              prTitle = `Update table: ${tableName}`;
+              description = `## Summary\nUpdates documentation for the \`${tableName}\` table.\n\n## Changes\n- \n\n## Checklist\n- [ ] JSON updated in \`table-definitions/${tableName}/\`\n- [ ] SQL queries updated (if applicable)\n- [ ] \`.dat\` file updated (if applicable)\n- [ ] Generated and previewed locally`;
+            } else if (branch.match(/^tool\/update\//)) {
+              const toolDesc = branch.replace('tool/update/', '').replace(/-/g, ' ');
+              labels = ['update-tool', 'tooling'];
+              prType = 'Update Tool';
+              prTitle = `Update tool: ${toolDesc}`;
+              description = `## Summary\nUpdates tooling: ${toolDesc}\n\n## Changes\n- \n\n## Checklist\n- [ ] Changes tested locally\n- [ ] Existing tables still generate correctly`;
+            } else if (branch.match(/^tool\/add\//)) {
+              const toolDesc = branch.replace('tool/add/', '').replace(/-/g, ' ');
+              labels = ['add-tool', 'tooling'];
+              prType = 'Add Tool';
+              prTitle = `Add tool: ${toolDesc}`;
+              description = `## Summary\nAdds new tool: ${toolDesc}\n\n## Description\n\n\n## Checklist\n- [ ] Tool tested locally\n- [ ] Usage documented`;
+            } else {
+              console.log('Branch does not match expected patterns, skipping');
+              return;
+            }
+
+            // Add labels
+            if (labels.length > 0) {
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: prNumber,
+                labels: labels
+              });
+              console.log(`Added labels: ${labels.join(', ')}`);
+            }
+
+            // Update PR body if it's empty or just the default
+            const currentBody = context.payload.pull_request.body || '';
+            if (currentBody.trim() === '' || currentBody.includes('<!-- PR template placeholder -->')) {
+              await github.rest.pulls.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                pull_number: prNumber,
+                title: prTitle,
+                body: description
+              });
+              console.log(`Updated PR title to: ${prTitle}`);
+              console.log('Updated PR description with template');
+            } else {
+              // Still update the title even if body was customized
+              await github.rest.pulls.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                pull_number: prNumber,
+                title: prTitle
+              });
+              console.log(`Updated PR title to: ${prTitle}`);
+            }
+
+            console.log(`PR type: ${prType}`);
