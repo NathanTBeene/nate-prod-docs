@@ -161,5 +161,10 @@
       "description": "CATALOG GUID: Global Unique Identifier to uniquely identify the record of a resource for integration.",
       "definition_table": ""
     }
+  ],
+  "references": [
+    "SFRSTCR",
+    "SGBSTDN",
+    "SHRDGMR"
   ]
 }

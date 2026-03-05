@@ -111,5 +111,9 @@
       "description": "VPDI CODE: Multi-entity processing code.",
       "definition_table": ""
     }
+  ],
+  "references": [
+    "SGBSTDN",
+    "SHRDGMR"
   ]
 }
