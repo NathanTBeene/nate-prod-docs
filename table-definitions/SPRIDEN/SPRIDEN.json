@@ -1,8 +1,15 @@
 {
   "name": "SPRIDEN",
-  "description": "Person Identification/Name Repeating Table",
+  "description": "Name and ID information for all people: students, employees, vendors, etc.",
   "type": "data",
-  "tags": [],
+  "tags": [
+    "student",
+    "employee",
+    "vendor",
+    "identification",
+    "name",
+    "banner_id"
+  ],
   "queries": [
     {
       "file": "find_name.sql",
@@ -14,151 +21,151 @@
     {
       "name": "SPRIDEN_PIDM",
       "type": "NUMBER(8,0)",
-      "description": "Internal identification number of the person.",
+      "description": "Internal unique identifier for the person/entity.",
       "definition_table": ""
     },
     {
       "name": "SPRIDEN_ID",
       "type": "VARCHAR2(9 CHAR)",
-      "description": "This field defines the identification number used to access person on-line.",
+      "description": "The Banner ID (e.g., N00112233).",
       "definition_table": ""
     },
     {
       "name": "SPRIDEN_LAST_NAME",
       "type": "VARCHAR2(60 CHAR)",
-      "description": "This field defines the last name of person.",
+      "description": "Last name of the person.",
       "definition_table": ""
     },
     {
       "name": "SPRIDEN_FIRST_NAME",
       "type": "VARCHAR2(60 CHAR)",
-      "description": "This field identifies the first name of person.",
+      "description": "First name of the person.",
       "definition_table": ""
     },
     {
       "name": "SPRIDEN_MI",
       "type": "VARCHAR2(60 CHAR)",
-      "description": "This field identifies the middle name of person.",
+      "description": "Middle name of the person. Can be initial.",
       "definition_table": ""
     },
     {
       "name": "SPRIDEN_CHANGE_IND",
       "type": "VARCHAR2(1 CHAR)",
-      "description": "This field identifies whether type of change made to the record was an ID number change or a name change. Valid values: I - ID change, N - name change.",
+      "description": "If null, this row is the most current record. If N, this row is a historic record.",
       "definition_table": ""
     },
     {
       "name": "SPRIDEN_ENTITY_IND",
       "type": "VARCHAR2(1 CHAR)",
-      "description": "This field identifies whether record is person or non-person record. It does not display on the form. Valid values: P - person, C - non-person.",
+      "description": "This field identifies if the person is a Person (P), or non-person (C). Non-persons are usually vendors. Filtering on this = P is a good extra insurance step against non-persons in your query if only people are desired.",
       "definition_table": ""
     },
     {
       "name": "SPRIDEN_ACTIVITY_DATE",
       "type": "DATE",
-      "description": "This field defines the most current date record is created or changed.",
+      "description": "Activity record on the row.",
       "definition_table": ""
     },
     {
       "name": "SPRIDEN_USER",
       "type": "VARCHAR2(30 CHAR)",
-      "description": "USER: The ID for the user that most recently updated the record.",
+      "description": "The user that most recently updated this record. Example: BERRESG",
       "definition_table": ""
     },
     {
       "name": "SPRIDEN_ORIGIN",
       "type": "VARCHAR2(30 CHAR)",
-      "description": "ORIGIN: The name of the Banner Object that was used most recently to update the row in the spriden table.",
+      "description": "The name of the data source or Banner Object that was used to update the record.",
       "definition_table": ""
     },
     {
       "name": "SPRIDEN_SEARCH_LAST_NAME",
       "type": "VARCHAR2(60 CHAR)",
-      "description": "The Last Name field with all spaces and punctuation removed and all letters capitalized.",
+      "description": "Last name field, but with all non-alphabet characters removed, and capitalized. In essence, UPPER(spriden_last_name).",
       "definition_table": ""
     },
     {
       "name": "SPRIDEN_SEARCH_FIRST_NAME",
       "type": "VARCHAR2(60 CHAR)",
-      "description": "The First Name field with all spaces and punctuation removed and all letters capitalized.",
+      "description": "First name field, but with all non-alphabet characters removed, and capitalized. In essence, UPPER(spriden_first_name).",
       "definition_table": ""
     },
     {
       "name": "SPRIDEN_SEARCH_MI",
       "type": "VARCHAR2(60 CHAR)",
-      "description": "The MI (Middle Initial) field with all spaces and punctuation removed and all letters capitalized.",
+      "description": "MI name field, but with all non-alphabet characters removed, and capitalized. In essence, UPPER(spriden_mi).",
       "definition_table": ""
     },
     {
       "name": "SPRIDEN_SOUNDEX_LAST_NAME",
       "type": "CHAR(4 CHAR)",
-      "description": "The Last Name field in SOUNDEX phonetic format.",
+      "description": "Last name field in SOUNDEX phonetic format.",
       "definition_table": ""
     },
     {
       "name": "SPRIDEN_SOUNDEX_FIRST_NAME",
       "type": "CHAR(4 CHAR)",
-      "description": "The First Name field in SOUNDEX phonetic format.",
+      "description": "First name field in SOUNDEX phonetic format.",
       "definition_table": ""
     },
     {
       "name": "SPRIDEN_NTYP_CODE",
       "type": "VARCHAR2(4 CHAR)",
-      "description": "NAME TYPE CODE: The field is used to store the code that represents the name type associated with a person's name.",
+      "description": "Name type code, very often blank.",
       "definition_table": ""
     },
     {
       "name": "SPRIDEN_CREATE_USER",
       "type": "VARCHAR2(30 CHAR)",
-      "description": "Record Create User: This field contains Banner User ID which created new record",
+      "description": "Record create user, aka, the user ID which created the new record.",
       "definition_table": ""
     },
     {
       "name": "SPRIDEN_CREATE_DATE",
       "type": "DATE",
-      "description": "Record Create Date: This field contains date new record created",
+      "description": "Record create date, aka, the day of creation for the new record. In Oracle-SQL date format (01-JAN-1999).",
       "definition_table": ""
     },
     {
       "name": "SPRIDEN_DATA_ORIGIN",
       "type": "VARCHAR2(30 CHAR)",
-      "description": "DATA SOURCE: Source system that generated the data",
+      "description": "Source of the data. More often than not BANNER.",
       "definition_table": ""
     },
     {
       "name": "SPRIDEN_CREATE_FDMN_CODE",
       "type": "VARCHAR2(30 CHAR)",
-      "description": "PII DOMAIN: PII Domain of the user who created the spriden row.",
+      "description": "PII domain of the row. Almost always blank in my experience.",
       "definition_table": ""
     },
     {
       "name": "SPRIDEN_SURNAME_PREFIX",
       "type": "VARCHAR2(60 CHAR)",
-      "description": "SURNAME PREFIX: Name tag preceding the last name or surname. (Van, Von, Mac, etc.)",
+      "description": "Name tag preceding the last name/surname. (Van, Von, Mac, Darth, etc).",
       "definition_table": ""
     },
     {
       "name": "SPRIDEN_SURROGATE_ID",
       "type": "NUMBER(19,0)",
-      "description": "SURROGATE ID: Immutable unique key",
+      "description": "Immutable unique key for the event of a duplicate PIDM/ID.",
       "definition_table": ""
     },
     {
       "name": "SPRIDEN_VERSION",
       "type": "NUMBER(19,0)",
-      "description": "VERSION: Optimistic lock token.",
+      "description": "Lock token. For my rows, I have a 0 and a 1.",
       "definition_table": ""
     },
     {
       "name": "SPRIDEN_USER_ID",
       "type": "VARCHAR2(30 CHAR)",
-      "description": "USER ID: The user ID of the person who inserted or last updated this record.",
+      "description": "Also, the last user to update this row. Exact same thing as SPRIDEN_USER, just used less.",
       "definition_table": ""
     },
     {
       "name": "SPRIDEN_VPDI_CODE",
       "type": "VARCHAR2(6 CHAR)",
-      "description": "VPDI CODE: Multi-entity processing code.",
+      "description": "Multi-entity processing code.",
       "definition_table": ""
     }
   ]
