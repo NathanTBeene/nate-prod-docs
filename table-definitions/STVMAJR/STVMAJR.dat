@@ -1,0 +1,1674 @@
+0974	Undeclared-Graduate	Y	Y
+0975	Undeclared-Undergrad	Y	Y
+1000	General Studies	Y
+1024	Pre-Business_I	Y
+1025	Accounting	Y	Y
+1026	ACCT Managerial Account			Y
+1027	ACCT Public Accounting			Y
+1050	Organizational Leadership	Y	Y
+1100	Business Administration	Y	Y
+1101	BADM Economics_I			Y
+1102	BADM Financial Planning_I			Y
+1103	BADM General			Y
+1105	Business Major-Undeclared_I	Y
+1120	Entrepreneurship_I	Y	Y
+1125	Business Education_I	Y
+1130	Health Care Administration_I	Y	Y
+1150	Computer and Information Sci_I	Y	Y
+1200	Economics		Y
+1280	FIN Financial Management_I			Y
+1282	FIN Financial Planning_I			Y
+1300	Acct and Finan Analysis, MS	Y
+1550	MGMT General			Y
+1551	Basic Management Certificate_I			Y
+1552	MGMT Human Resource			Y
+1560	Information Systems	Y	Y
+1561	Management Information Syst_I	Y	Y
+1570	Telecom Management_I	Y	Y
+1575	Marketing	Y	Y
+1576	International Business_I	Y
+1577	IBUS Finance/Economics_I			Y
+1578	IBUS Global Strategies_I			Y
+1579	IBUS Information Systems_I			Y
+1580	IBUS Marketing_I			Y
+1585	Masters Business Admin_I	Y
+1590	Prof Masters Business Admin_I	Y
+1775	Office Administration_I	Y
+1780	Secretarial Training Cert_I	Y
+1950	Hospitality/Tourism Mgmt_I	Y	Y
+1951	HTM Destinations_I			Y
+1952	HTM Gaming_I			Y
+1953	HTM Meetings_I			Y
+2095	Unknown Minor		Y
+2858	Vision Science	Y
+2859	Vision Science I_I	Y
+2860	Vision Science II_I	Y
+2861	Optometry III_I	Y
+2862	Optometry IV	Y
+3010	Pre-Education_I	Y
+3040	CERT-School Administrator Cert	Y		Y
+3045	Provisional Supt Cert			Y
+3050	Provisional Elem School			Y
+3055	Provisional Sec School			Y
+3060	CERT-Principal Cert			Y
+3065	Stand Sec School			Y
+3070	CERT-Superintendent Cert			Y
+3160	Cherokee Bilingual_I	Y
+0000	Undeclared	Y
+3195	Early Childhood Education	Y
+3225	Elementary Education	Y
+3226	Elementary Education, MED_I	Y
+3300	Library Media and Info Tech,MS	Y
+3310	CERT-Library Media Specialist	Y		Y
+3400	Early Childhood Education, MEd	Y
+3500	Collegiate Scholarship/Serv_I	Y
+3505	Behavioral Sciences_I			Y
+3509	Biological Science_I			Y
+3513	Business Administration-MEd_I			Y
+3517	Business Education_I			Y
+3521	Economics_I			Y
+3526	English - MED			Y
+3533	Health and Physical Educ_I			Y
+3537	History - MED_I			Y
+3543	Humanities/Fine Arts - MED			Y
+EDUC	Education - DO NOT USE	Y	Y
+3553	Language Arts			Y
+3557	Mathematics			Y
+3561	Physical Science_I			Y
+3565	Psychology			Y
+3569	Political Science_I			Y
+3571	Reading_I			Y
+3573	Safety and PE - Med_I			Y
+3581	Social Science_I			Y
+3585	Student Personnel Services			Y
+3600	Higher Ed Admin andServ-HIED_I	Y
+3601	Higher Ed Admin and Serv-SPS_I	Y
+3755	CERT-Reading Specialist Cert	Y		Y
+3760	Reading, MEd	Y
+3765	School Administration, MEd	Y
+3770	Secondary Education-MEd_I	Y
+3771	Art_I			Y
+3779	Business Education_I			Y
+3783	Chemistry_I			Y
+3791	English_I			Y
+3795	Foreign Language - MED Minor_I			Y
+3801	English Specialization_I			Y
+3803	Health & Phys Educ Specializ_I			Y
+3807	Liberal Studies Specializtn_I			Y
+3823	Visually Impaired Cognate_I			Y
+3827	Reading Instruction Speclztn_I			Y
+3831	Instructnal Leadrshp Specztn_I			Y
+3843	Classroom Guidance Specatn_i			Y
+3848	Professional Enhancement			Y
+3900	Curriculum and Instruction_I	Y
+3910	Teaching, MEd_I	Y
+4000	Asian Studies		Y
+4050	Art-Fine Arts Emphasis_I		Y	Y
+4051	Art Education	Y
+4101	Humanities		Y
+4120	VISCOM Photog_I			Y
+4122	VISCOM Web Des_I			Y
+4200	Cherokee Education	Y
+4201	Cherokee		Y
+4203	CHCS Cultural Heritage_I			Y
+4204	CHCS Lang Revitalizatn			Y
+4205	CHCS Sovereign/SelfDeterm_I			Y
+4240	Applied Linguistics_I		Y
+4251	English Education	Y
+4253	ENGL Literature			Y
+4254	ENGL Rhetoric/Comp			Y
+4257	CERT-Writing Program Admin_I	Y		Y
+4260	Communication Arts, MA_I	Y
+4275	French_I		Y
+4301	Dance_I		Y
+4325	German		Y
+4450	Journalism/Broadcast_I			Y
+4451	Mass Comm Education_I	Y
+7420	Science Education_I	Y
+7428	SCI EDUC Earth/Space			Y
+4055	Art	Y	Y
+7078	Biology_I	Y	Y
+7076	BIOL Molecular_I			Y
+4921	Communication Studies	Y	Y
+9708	Criminal Justice	Y
+8410	Human and Family Sciences_I	Y	Y
+1284	Finance	Y	Y
+5340	Health and Human Performance	Y	Y
+1554	Management	Y	Y
+4455	Mass Communication_I	Y	Y
+7621	Medical Laboratory Science	Y
+9720	Political Science	Y	Y
+4110	Visual Communication_I	Y	Y
+9706	CRJ Degree Completion			Y
+1131	HCA General_I			Y
+1132	HCA Administration_I			Y
+H054	Human Perf Educ	Y
+H055	Human Perf/Athl Train	Y
+H056	Human Perf/Dance Educ	Y
+H057	Human Perf/Exercise Sci	Y
+H058	Human Perf/Recreation	Y
+H059	Human Perf/Teach Cert	Y
+H060	Human Physiology	Y
+H061	Human Relations	Y
+H062	Human Resource Mgmt	Y
+H063	Human Resource/CRJ	Y
+H064	Human Resources	Y
+H065	Human Sciences	Y
+H066	Human Serv Coun/Deaf	Y
+H067	Human Serv Coun/Rehab	Y
+H068	Human Serv/Child Fam	Y
+H069	Human Serv/Counsel	Y
+H070	Human Serv/Mgmt	Y
+A001	AC/Heating/Refrig	Y
+A002	Accounting	Y
+A003	Accounting & Finance	Y
+A004	Accounting & Gen Bus	Y
+A005	Accounting/Bus Admin	Y
+A006	Accounting/Marketing	Y
+A007	Administrative Mgmt/Serv	Y
+A009	Advertising	Y
+A010	Advertising/PR	Y
+A011	Aerospace Eng	Y
+A012	Afro-Amer Studies	Y
+A013	Aging	Y
+A014	Agribusiness	Y
+A015	Agricultural Educ	Y
+A016	Agriculture	Y
+A017	Agriculture Biology	Y
+A018	Agriculture Comm	Y
+A019	Agriculture Econ	Y
+A020	Agriculture Journalism	Y
+A021	Agriculture/Animal Sci	Y
+A022	Agri-Equine Tech	Y
+A023	Agri-Horticulture	Y
+A024	Agronomy	Y
+A025	Allied Health	Y
+A026	Allied Health Education	Y
+A027	Amer Indian Studies	Y
+A028	Amer Sign Lang	Y
+A029	American Studies	Y
+A030	Animal Science	Y
+A031	Anthropology	Y
+A032	Application Software	Y
+A033	Applied Arts	Y
+A034	Applied Arts/Sciences	Y
+A035	Applied Behav Studies	Y
+A036	Applied Chemistry	Y
+A037	Applied Econ/Fin	Y
+A038	Applied Health	Y
+A039	Applied Liberal Arts	Y
+A040	Applied Management	Y
+A041	Applied Mathematics	Y
+A042	Applied Psychology	Y
+A043	Applied Science	Y
+A044	Applied Technology	Y
+A045	Architecture	Y
+A046	Architecture Engineer	Y
+A047	Art	Y
+A048	Art Education	Y
+A049	Art History	Y
+A051	Art/Design	Y
+A052	Art/English	Y
+A053	Art/Fine Art	Y
+A055	Art/Painting	Y
+A056	Art/Studio	Y
+A057	Athletic Trainer	Y
+A059	Aviation	Y
+A060	Avionics	Y
+B001	Ballet	Y
+B003	Behavior Sci/Alc and Drug	Y
+B004	Behavioral Sci & Ethics	Y
+B005	Behavioral Sci/Theology	Y
+B007	Biblical Studies	Y
+B008	Biblical Studies & Bus Adm	Y
+B009	Biochem & Molecular Biol	Y
+B010	Biochemistry	Y
+B012	Biological Sci/Pre-Med	Y
+B013	Biological Sci/Zoology	Y
+B014	Biology	Y
+B016	Biology & Health Educ	Y
+B017	Biology & History	Y
+B018	Biology & Pre-Prof Health	Y
+B020	Biology/Allied Health	Y
+B021	Biology/Biological Science	Y
+B022	Biology/Human Biol	Y
+B023	Biology/Marine	Y
+B025	Biology/Pre-Prof Health	Y
+B026	Biomedical	Y
+B027	Biostatistics	Y
+B029	Biotechnology	Y
+B030	Botany	Y
+B031	Broadcasting	Y
+B033	Business & Entrepren	Y
+B034	Business & Mgmt	Y
+B035	Business Adm & Mgmt	Y
+B037	Business Communications	Y
+B038	Business Data Processing	Y
+B039	Business Education	Y
+B041	Business Tech	Y
+C001	CAD/Multimedia	Y
+C002	Cardioresp Sci	Y
+C003	Career Guidance	Y
+C005	CDIS	Y
+C006	Cell Biol & Molecular Biol	Y
+C007	Certified CSU Bl	Y
+C009	Chemistry	Y
+C010	Chemistry & Biology	Y
+C011	Chemistry/Health Sci	Y
+C012	Child Devel/Early Child Educ	Y
+C014	Child/Family	Y
+C015	Christian Counseling	Y
+C016	Christian Education	Y
+C018	Church Recreation	Y
+C019	Civil Engineering	Y
+C020	Classical Civilization	Y
+C022	Clinical Lab Sci/Med Tech	Y
+C023	Clinical Psychology	Y
+C025	CMP Specialist, Bus Micro	Y
+C026	CNS Sci	Y
+C027	Comm Arts & English	Y
+8408	HFS Degree Completion_I			Y
+C029	Comm Sci & Disorders	Y
+C030	Commerce	Y
+C031	Commercial Art	Y
+C032	Commercial Design	Y
+C034	Communication	Y
+C035	Communication & Geography	Y
+C036	Communication & Pol Sci	Y
+C037	Communication Arts	Y
+C038	Communication Disorders	Y
+C039	Communication Educ	Y
+C033	Communication/Advertising	Y
+C040	Communication/Broadcast	Y
+C041	Communication/Corp Comm	Y
+C042	Communication/Journalism	Y
+C043	Communication/Media	Y
+C044	Communication/PR	Y
+C045	Communication/Radio TV	Y
+C046	Community Counsel	Y
+C047	Community Health	Y
+C048	Community/Human Serv	Y
+C049	Comp and Inform Sci/Sys	Y
+C050	Comp Sci & Bus Admin	Y
+C051	Comp Spec Bus Micro	Y
+C052	Comparative Literature	Y
+C053	Compt Sc Acctg	Y
+C054	Computer Educ	Y
+C055	Computer End User Tech	Y
+C056	Computer Engineering	Y
+C057	Computer Info Sys	Y
+C058	Computer Info Sys/Network	Y
+C059	Computer Info Sys/Program	Y
+C060	Computer Info Sys/Tech	Y
+C061	Computer Info Sys/Web Graph	Y
+C062	Computer Info Sys/Web Site	Y
+C063	Computer Intg Mfg/Ent	Y
+C064	Computer Oper Mgmt	Y
+E029	Electronic Tech	Y
+C065	Computer Programming	Y
+C066	Computer Sci & MIS	Y
+C067	Computer Sci & Quant Anlys	Y
+C068	Computer Science	Y
+C069	Computer Syst Tech	Y
+C070	Conservation	Y
+C071	Construction Tech	Y
+C072	Consumer and Family Econ	Y
+C073	Continuing Education	Y
+C074	Conversion	Y
+C075	Corrections	Y
+C076	Counseling	Y
+C077	Counseling Psychology	Y
+C078	Counseling Secondary	Y
+C079	Counselor Training	Y
+C080	Court Reporting	Y
+C081	Creative Writing	Y
+C082	Credentials/Certificates	Y
+C083	Criminal Forensic Studies	Y
+C084	Criminal Justice	Y
+C085	Criminal Justice & Psych	Y
+C086	Criminal Justice/Admin	Y
+C087	Criminal Justice/Law Enforc	Y
+C088	Criminal Justice/Police	Y
+C089	Criminal Justice/Sociology	Y
+C090	Criminology	Y
+C091	Cross Cultural	Y
+C092	Cross Cultural Educ	Y
+C093	CSCI	Y
+C094	Cultural Anthropology	Y
+C095	Curriculum and Instruction	Y
+C096	Curriculum and Supervision	Y
+C097	Curriculum Development	Y
+C098	Cytotechnology	Y
+D001	Dance	Y
+D002	Dance Management	Y
+D003	Data Processing	Y
+D004	Deaf Education	Y
+D005	Dental Assist	Y
+D006	Dental Hygiene	Y
+D007	Dentistry	Y
+D008	Design	Y
+D010	Design, House, Merch	Y
+D011	Design/Visual Comm	Y
+D012	Desktop Publishing	Y
+D014	Development Studies	Y
+D015	Diesel and Heavy Equip	Y
+D016	Dietetics	Y
+D017	Dist Manufacturing	Y
+D019	Drafting	Y
+D020	Drama	Y
+D022	Drama/Communication	Y
+D023	Drama/TV/Film	Y
+D024	Dramatic Arts	Y
+D026	Driver and Safety Educ	Y
+E001	Early Childhood	Y
+E002	Early/Late Childhood	Y
+E004	Earth Science	Y
+E005	e-Business	Y
+E006	Ecology and Ethology	Y
+E007	Econ/Banking and Finance	Y
+E009	Economics & Bus Admin	Y
+E010	Economics & Finance	Y
+E012	Economics and Finance	Y
+E013	Economics/Bus Admin	Y
+E014	Educ & Behavioral Sci	Y
+E015	Educ Admin and Higher Ed	Y
+E017	Educ Dist	Y
+E018	Educ Studies	Y
+E019	Education	Y
+E020	Education Admin	Y
+E022	Educational Leadership	Y
+E023	Educational Ministries	Y
+E024	Educational Psychology	Y
+E025	Educational Technology	Y
+E027	Electrical Engineering	Y
+E028	Electro-Mechanical	Y
+E031	Elem Educ/Comp Sci	Y
+E032	Elem Educ/Early Child	Y
+E033	Elem Educ/English	Y
+E035	Elem Educ/Math, Science	Y
+E036	Elem Educ/Reading	Y
+E037	Elem Educ/Rem Read	Y
+E039	Elem Educ/Social Stud	Y
+E040	Elem Educ/Sociology	Y
+E041	Elem Educ/Spec Ed	Y
+E043	Elementary Education	Y
+E044	Elementary Principal	Y
+E045	Emerg Med Tech	Y
+E046	Energy Mgmt	Y
+E048	Engineering Design Tech	Y
+E049	Engineering Math	Y
+E050	Engineering Mgmt	Y
+E052	Engineering Tech	Y
+E053	English	Y
+E054	English & Philosophy	Y
+E056	English Bible	Y
+E057	English Classics	Y
+E058	English Education	Y
+E059	English Lit	Y
+E061	English/Communication	Y
+E062	English/Corp Comm	Y
+E063	English/Creative Writing	Y
+E064	English/Drama	Y
+4454	Advertising_I			Y
+4645	Musical Arts	Y
+4646	Music-Performance_I	Y
+4647	Music (Business)_I	Y
+4648	Music-Theatre_I	Y	Y
+4649	Music-Jazz Studies_I	Y
+464A	MUS Instrumental			Y
+464B	MUS Piano			Y
+464C	MUS Vocal			Y
+4650	Music-Applied_I	Y	Y
+4651	Music-Instrumental/Vocal_I	Y	Y
+4652	Music Education	Y
+4653	Music-Piano_I	Y	Y
+4654	Music-Church Music_I	Y	Y
+4655	Music-Vocal_I	Y	Y
+465A	MUSED Instrumental			Y
+465B	MUSED Keyboard/Instrum			Y
+465C	MUSED Keyboard/Vocal			Y
+465D	MUSED Percussion			Y
+465E	MUSED Vocal			Y
+4851	Spanish Education_I	Y
+4920	Leadership Communication		Y
+4923	COMM Corporate Comm			Y
+4925	COMM Comm Process_I			Y
+4926	Communication Education_I	Y
+4927	Speech-Legal Comm_I	Y	Y
+4929	Speech-Theatre_I	Y	Y
+4950	Theatre_I	Y	Y
+5190	Driver Education_I		Y	Y
+5347	HHP Recreation/Fitness_I			Y
+5349	HHP Clinical/Wellnes_I			Y
+5350	Health and Physical Education	Y
+5440	Athletic Training_I	Y
+5500	Health and Kinesiology, MS_I	Y
+5760	Safety_I	Y	Y
+6125	Substance Abuse Counsel, MS_I	Y
+6145	Counseling Psychology, MS_I	Y
+6147	CERT-School Psychology Cert_I	Y
+6180	CERT-Counseling Certificate_I	Y		Y
+6185	School Counseling, MEd_I	Y
+6525	Library Media_I	Y
+6750	Psychology-General_I	Y	Y
+6751	Psychology-Experimental_I	Y	Y
+6752	CERT-Psychometric Cert_I	Y
+6753	Psychology-Developmental_I	Y	Y
+6754	Psychology-Human Resour Dev_I	Y	Y
+6755	Psychology-Mental Health_I	Y	Y
+6870	Speech-Language Pathology, MS	Y
+6871	CERT-Visually Impaired Cert	Y		Y
+6872	Spec Educ-Administration_I	Y		Y
+6873	Spec Educ-Mild/Mod Disorder_I	Y
+6875	Spec Educ-Early Child_I	Y		Y
+6876	Spec Educ-Mental Retardation_I	Y
+6877	Spec Educ-Gifted_I	Y		Y
+6879	Special Education, Med_I	Y
+6900	Speech-Language Pathology	Y
+6901	Speech Lang Path Educ_I	Y
+6902	Special Education Education_I	Y
+7045	Health Care Administration_I	Y	Y
+7070	Post Baccalaureate Pre-Hlth_I	Y
+7071	BIOL Organismic_I			Y
+7072	BIOL Cellular_I			Y
+7073	Biology-Fisheries_I	Y	Y
+7074	BIOL Fish and Wildlife_I			Y
+7075	Biology-Botany_I	Y	Y
+7077	Biology-Zoology_I	Y	Y
+7079	Biology_I	Y
+7080	Pre-Professional Health_I	Y
+7081	PPH-MED-Medicine			Y
+7082	PPH-DENT-Dental			Y
+7083	PPH-VET-Veterinary			Y
+7084	PPH-OT-Occupational Therapy			Y
+7085	PPH-PT-Physical Therapy			Y
+7086	PPH-DHYG-Dental Hygiene			Y
+7087	PPH-RAD-Medical Imaging			Y
+7088	PPH-PHAR-Pharmacy			Y
+7089	PPH-CHIR-Chiropractor			Y
+7091	PPH-PA-Phys Asst/Assoc			Y
+7092	PPH-OPT-Optometry			Y
+7150	Chemistry	Y	Y
+7235	Engineering Physics_I	Y	Y
+7360	Geology		Y
+7425	SCI EDUC Biology			Y
+7426	SCI EDUC Chemistry			Y
+7427	SCI EDUC Physics			Y
+7600	Mathematics	Y	Y
+7602	Computer Science	Y	Y
+7620	MLS Medical Lab Sci 2+2			Y
+7625	MLS Medical Lab Sci 3+1			Y
+7635	Radiologic Technology_I	Y
+7675	Physics_I	Y	Y
+7710	Mathematics Education, MEd	Y
+7720	Science Education, MEd	Y
+7880	Nursing	Y
+7885	Nursing Education, MSN_I	Y
+8086	Environmental Management_I	Y	Y
+8300	Environmntl/Health/Safety Mgmt	Y	Y
+8301	EHSM Major/Minor_I			Y
+8303	EHSM Safety Mgmt_I			Y
+8400	HFS General_I			Y
+8401	Home Economics Education_I	Y
+8402	HFS-Vocational_I	Y	Y
+8404	HFS-Fam Rel/Child_I	Y	Y
+8405	HFS-Fashion Marketing_I	Y	Y
+8406	HFS Dietetics_I			Y
+8407	HFS Early Care_I			Y
+19IA	English_I			Y
+8425	Technology Educ_I	Y
+8441	IOM-Engineering Design_I	Y	Y
+8442	IOM-Electronics_I	Y	Y
+8444	IOM-Elect/Prt/Mgt_I	Y	Y
+8445	Industrial Management, MS_I	Y
+8446	IOM-Manufacturing Systems_I	Y	Y
+8448	IOM-Quality Systems_I	Y	Y
+8449	IOM-Industrial Training_I	Y	Y
+8450	Safety Management_I	Y	Y
+8500	Technology	Y	Y
+8600	Supply Chain Management_I	Y
+9011	Post Baccalaur-Alternate Cert			Y
+9300	Geography_I	Y	Y
+9301	Applied Geography_I	Y
+9375	History	Y	Y
+9376	History Education_I	Y
+9420	Ethnic Studies		Y
+F044	Foundations of Business	Y
+9700	CRJ Criminal Justice		Y	Y
+9701	Paralegal Training_I	Y
+9702	CRJ Legal Studies_I		Y	Y
+9703	CRJ-Adm Of Justice_I	Y
+9705	CRJ Homeland Security_I		Y	Y
+9710	CRJ-Justice Studies		Y
+9725	POLS General			Y
+9726	POLS Public Adm_I			Y
+9800	Social Studies Education	Y
+9810	Social Welfare		Y
+9814	Pre-Social Work_I	Y
+9815	Social Work	Y
+9820	Anthropology		Y
+9825	Sociology	Y	Y
+9826	HCA-Gerontology_I	Y	Y
+9828	Gerontology_I		Y
+9830	HCA-Health Services_I	Y	Y
+9835	Health Care Admin_Minor_I		Y
+9840	CERT-Voc Bus and Office Educ_I	Y
+9850	Criminal Justice, MS	Y
+9855	American Studies, MA	Y
+9888	Human Ecology		Y
+9907	Military Science Minor		Y
+7900	Occupational Therapy, MS	Y
+7700	Natural Sciences, MS	Y
+3602	Higher Education Leadership_I	Y
+4999	Women/Gender Studies Minor		Y
+8430	Environ/Hlth/Safety Mgmt, MS_I	Y
+5348	HHP Athletic Train_I			Y
+E072	Entrepreneurship	Y
+E073	Environmental Engineering	Y
+E074	Environmental Geography	Y
+E075	Environmental Health	Y
+E076	Environmental Pol	Y
+E077	Environmental Science	Y
+E078	Equine Tech	Y
+E079	Except Child & Comm Dis	Y
+E080	Executive Fellows	Y
+E081	Exercise and Sports	Y
+E082	Exercise Science	Y
+E083	Exploratory	Y
+F001	Fam Cons Sci & Bus Adm	Y
+F002	Family Consumer Sci Ed	Y
+F003	Family Consumer Science	Y
+F004	Family Development	Y
+F005	Family Relations	Y
+F006	Family Science	Y
+F007	Family/Gerontology	Y
+F008	Family/Human Services	Y
+F009	Farm/Ranch Mgmt	Y
+F010	Fashion Design	Y
+F011	Fashion Marketing	Y
+F012	Fashion Merchandising	Y
+F013	Fashion Trades	Y
+F014	Film	Y
+F015	Finance	Y
+F016	Finance and Banking	Y
+F017	Finance Mgmt	Y
+F018	Finance/Accounting	Y
+F019	Finance/Banking	Y
+F020	Finance/Comm Bank Mgmt	Y
+F021	Finance/Real Estate	Y
+F022	Fine Arts	Y
+F023	Fine Arts & Reading	Y
+F024	Fine Arts/Painting, Drawing	Y
+F025	Fire and Emerg Serv	Y
+F026	Fire Protect Tech	Y
+F027	Fire Science	Y
+F028	Fitness and Exercise	Y
+F029	FNRE	Y
+F030	Food Service Mgmt	Y
+F031	Food Service Mgmt/Dietetic	Y
+F032	Food, Nutritionm Inst Admin	Y
+F033	Foods and Nutrition	Y
+F034	Foreign Language	Y
+F035	Foreign Language and Lit	Y
+F036	Foreign Missions	Y
+F037	Forest Technology	Y
+F038	Forestry	Y
+F039	French	Y
+F040	French Education	Y
+F041	French/Intnl Mgmt	Y
+F042	Funeral Service	Y
+G001	General Admin	Y
+G003	General Studies	Y
+G004	General Studies/Bus Tech	Y
+G005	General Studies/Business	Y
+G007	General Studies/Electronic	Y
+G008	General Studies/History	Y
+G009	General Studies/Sociology	Y
+G010	Geography	Y
+G012	Geology Engineering	Y
+G013	Geophysics	Y
+G014	Geosciences	Y
+G016	Gerontology	Y
+G017	Gifted-Talented Educ	Y
+G019	Government & Spanish	Y
+G020	Government/Political Sci	Y
+G021	Graphic Design	Y
+G023	Gunsmithing	Y
+H001	Health	Y
+H002	Health Admin	Y
+H004	Health and Human Perf	Y
+H005	Health and Phys Educ	Y
+H006	Health and Sport Sci	Y
+H007	Health Care Admin	Y
+H009	Health Education	Y
+H010	Health Info Mgmt	Y
+H011	Health Professions	Y
+H012	Health Promotion	Y
+H014	Health Science	Y
+H015	Health Service Admin	Y
+H016	Health Tech/EMT	Y
+H017	Health/Comm Wellness	Y
+H019	Hearing and Speech	Y
+H020	Hearing Impaired	Y
+H021	HEED	Y
+H023	History & Political Science	Y
+H024	History Educ	Y
+H025	History/Government	Y
+H027	History/Pre-Law	Y
+H028	HKR	Y
+H029	HM Serv Spec/Rec Mgmt 	Y
+H031	Home Ec Vocational	Y
+H032	Home Ec/Fashion Merch	Y
+H033	Home Ec/Human Dev	Y
+H034	Home Economics	Y
+H036	Horticulture	Y
+H037	Horticulture/Landscape	Y
+H038	Hospitality Admin	Y
+H040	Housing and Merchand	Y
+H041	Housing Design	Y
+H042	Housing/Interior Design	Y
+H044	HPE & Recreation	Y
+H045	HPE Exceptional Child	Y
+H046	HPE/Athletic Coaching	Y
+H047	HRAD	Y
+H049	Human Environ Sci	Y
+H050	Human Learning	Y
+H051	Human Nutrition	Y
+H052	Human Perf	Y
+S008	School Administration	Y
+S009	School Counseling	Y
+S010	School Counseling/Elem	Y
+S011	School Counseling/Second	Y
+S012	School Psychology	Y
+S013	Science	Y
+S014	Science Education	Y
+S015	Science Engineering	Y
+S016	Sec School Admin	Y
+S017	Secondary Arts	Y
+S018	Secondary Educ	Y
+S019	Secondary Educ/Business	Y
+S020	Secondary Educ/English	Y
+S021	Secondary Educ/Geology	Y
+S022	Secondary Educ/Math	Y
+S023	Secondary Educ/Music	Y
+S024	Secondary Educ/PE	Y
+S025	Secondary Educ/Science	Y
+S026	Secondary Educ/Soc Stud	Y
+S027	Secondary Education	Y
+S028	Secondary Principal	Y
+S029	Secretarial	Y
+S030	SEED SEMA	Y
+S031	Self-Designed Major	Y
+S032	Shoe, Boot and Saddle	Y
+S033	Small Business Mgmt	Y
+S034	Social Ecology	Y
+S035	Social Psychology	Y
+S036	Social Sci/Economoics	Y
+S037	Social Sci/History	Y
+S038	Social Sci/History, Pol Sci	Y
+S039	Social Sci/Human Dev	Y
+S040	Social Sci/Pre-Social Work	Y
+S041	Social Sci/Psych	Y
+S042	Social Sci/Psych&Soc	Y
+S043	Social Sci/Sociology	Y
+S044	Social Science	Y
+S045	Social Science Educ	Y
+S046	Social Services	Y
+S047	Social Studies	Y
+S048	Social Studies Educ	Y
+S049	Social Studies/History	Y
+S050	Social Welfare	Y
+S051	Social Work	Y
+S052	Social Work & Agri-business	Y
+S053	Sociology	Y
+S054	Sociology & Human Serv	Y
+S055	Sociology & Phys Ed/Rec	Y
+S056	Sociology Education	Y
+S057	Sociology/Anthropology	Y
+S058	Sociology/Chemical Depen	Y
+S059	Sociology/Criminology	Y
+S060	Sociology/CRJ	Y
+S061	Sociology/Pre-Social Work	Y
+S062	Sociology/Psychology	Y
+S063	Sociology/Social Work	Y
+S064	Soil and Water Sci	Y
+S065	Sociology/CRJ	Y
+S066	Southwest Studies	Y
+S067	SP Dist	Y
+S068	Spanish	Y
+S069	Spanish & Polical Sci	Y
+S080	Spanish Education	Y
+S081	SPCH/DR/DBT-SEC TCH	Y
+S082	SPDR	Y
+S083	Spec Ed/Learng Dis	Y
+S084	Spec Ed/Mental Ret	Y
+S085	Spec Educ/Deaf	Y
+S086	Spec Educ/Elem	Y
+S087	Spec Educ/Emot Dis	Y
+S088	Spec Educ/Exc Child	Y
+S089	Spec Educ/LD	Y
+S090	Spec Educ/Mental Ret	Y
+S091	Spec Educ/Mild Mod	Y
+S092	Spec Educ/MultiH	Y
+S093	Special Education	Y
+S094	Speech	Y
+S095	Speech & Theatre	Y
+S096	Speech Education	Y
+S097	Speech Lang Path	Y
+S098	Speech Lang Path Educ	Y
+S099	Speech/Theatre	Y
+S100	SPMD/Athletic Train	Y
+S101	Sports Admin/Mgmt	Y
+S103	Sports Med/Exercise Sci	Y
+S104	Statistics	Y
+S105	Student Personnel/Guidance	Y
+S106	Studio Art	Y
+S108	Surveying Tech	Y
+S109	Swedish	Y
+S110	Systems Management	Y
+T002	Teach, Learning, Leader	Y
+T003	Teacher Education	Y
+T005	Teaching/English	Y
+T006	Teaching/ESL	Y
+T007	Teaching/Social Studies	Y
+T009	Technical Education	Y
+T010	Technical Illustration	Y
+T011	Technology	Y
+T012	Technology & Military Sci	Y
+T014	Telecomm Tech	Y
+T015	Telecommunication	Y
+T016	Television	Y
+T018	Textile Tech	Y
+T019	Theatre	Y
+T021	Theatre/History	Y
+T022	Theology	Y
+T023	Therapeutic Recreation	Y
+T025	Tourism	Y
+T026	Trade and Indust Educ	Y
+T028	Tran Traffic Mgmt	Y
+T029	Transportation	Y
+T030	Travel and Tourism	Y
+U001	University Parallel	Y
+U003	Unknown	Y
+V001	Veterinary Medicine	Y
+V002	Veterinary Tech	Y
+V004	Visual Arts/Studio	Y
+V005	Visual Communications	Y
+V006	Vocal	Y
+W001	Wellness	Y
+W002	Western Lang and lit	Y
+W004	Wildlife Conserv Mgmt	Y
+W005	Wildlife Ecology	Y
+W007	Wildlife/Fisheries Ecology	Y
+W008	Word Processing	Y
+W009	Workforce Educ/Develop	Y
+W010	World Lang/Cultures Educ	Y
+W012	Writing/English	Y
+W013	Writing/Lit	Y
+4644	Music-Minor		Y
+01IA	Counseling_I	Y
+M081	Multidisciplinary Studies	Y
+E084	Elementary & Secondary Educ	Y
+4453	Media Studies	Y	Y
+02IA	Music-Instrumental_I	Y
+1104	Business (non-Business majors)		Y
+06IA	Business Administration_I	Y
+07IA	Psychology_I			Y
+9817	SOWK Child Welfare			Y
+A061	Administrative Leadership	Y
+8087	Environmental Management Minor		Y
+6140	Counseling, MS	Y
+03IA	College Teaching_I	Y
+04IA	Behavioral Sciences_I			Y
+A062	Admin Office Tech Executive	Y
+10IA	Jr College Teaching_I	Y
+P095	Physical Therapist Asst	Y
+09IA	Spec Ed-Spch Hrng Ed_I	Y
+11IA	Student Personnel Serv_I			Y
+1106	BADM Global Sourcing_I			Y
+1107	BADM Healthcare Mgmt			Y
+1954	HTM General_I			Y
+7093	PPH-NURS-Nursing			Y
+C101	Construction Administration	Y
+0001	Continuing Education Only	Y
+E086	Early Care Educ Admin	Y
+R018	Rehabilitation Services	Y
+E087	Emergency Responder Admin	Y
+M082	Museum Studies	Y
+A064	Addiction Studies	Y
+18IA	Marketing_I	Y
+B044	Biological Clinical Science	Y
+3227	ELED Certification			Y
+3228	ELED Non-certification			Y
+3196	ECED Certification			Y
+3197	ECED Non-certification			Y
+6874	SPED Certification			Y
+6878	SPED Non-certification			Y
+4258	Creative Writing	Y	Y
+7095	Prehealth		Y
+5345	Coaching		Y
+L028	Legal Studies	Y
+F045	Family Nurse Practioner	Y
+6880	Spec Educ-Autism Spectrum Dis	Y
+8420	Nutritional Sciences	Y	Y
+8421	NUTR Dietetics			Y
+8422	NUTR Allied Health			Y
+N016	Networking	Y
+A065	Aircraft Struct Mtnc Tech	Y
+E090	Electronics Systems Technology	Y
+L030	Leadership Studies	Y
+G024	Gaming	Y
+T031	Tribal Services	Y
+M083	Meat Proc Food Safety	Y
+D028	Diagnostic Medical Sonography	Y
+22IA	Journalism_I	Y
+23IA	Education_I	Y
+24IA	Chemistry Educ_I	Y
+25IA	Music_I	Y		Y
+I048	Info & Comm Engineering	Y
+P098	Petroleum Technology	Y
+I049	Intelligence Op Studies	Y
+S113	Screen Printing Tech	Y
+G025	Graphic Comm Tech	Y
+C106	Ceramics	Y
+0977	Non-degree Seeking	Y
+9715	Cyber Security	Y	Y
+9709	Legal Studies	Y	Y
+9711	Homeland Security_I	Y	Y
+4951	Drama	Y	Y
+L031	Liberal Arts & Sciences	Y
+P099	Pre-Medical Imaging	Y
+319A	ECED Early Care - ASL_I			Y
+319B	ECED Early Care - CHCS_I			Y
+319C	ECED Early Care - ETHST_I			Y
+319D	ECED Early Care - SOCWEL_I			Y
+319E	ECED Early Care - SPAN_I			Y
+1121	Entrepreneurship_I		Y
+9818	Social Work, MSW	Y
+9811	SOWK Adv Standing Pathway			Y
+9819	SOWK Traditional Pathway			Y
+G026	General Education	Y
+G027	Gen Technical Studies	Y
+N019	Nurse Science	Y
+1135	Health Organizations Admin	Y	Y
+1136	HOA Healthcare Admin_I			Y
+1137	HOA Health Informatics_I			Y
+1138	HOA Long Term Care_I			Y
+3603	Leadership	Y
+3608	LEAD Training and Development			Y
+3604	LEAD Amer Indian Leadership			Y
+3605	LEAD College Teaching			Y
+3606	LEAD Higher Ed Admin			Y
+3607	LEAD Professional Studies			Y
+A068	Animal & Veterinary Sci	Y
+1581	International Business Mgmt	Y	Y
+D031	Digital Film & Video Prod	Y
+C108	Cinematic Arts & Tech	Y
+7721	CERT-STEM Education Cert	Y
+M084	Math, Phys Sci, Pre-Engineer	Y
+F050	Food Science  & Industry	Y
+Q002	Quality Technology	Y
+P105	Programming	Y
+L033	Linguistics	Y
+P044	Pre-Business	Y
+P047	Pre-Education/Elementary	Y
+P052	Pre-Law	Y
+P056	Pre-Med, Pharm and Vet	Y
+P061	Pre-Pharmacy	Y
+P064	Pre-School Education	Y
+P069	Prof Aeronautics	Y
+P073	Promotions Management	Y
+P078	Psychology & Spec Educ	Y
+P083	Psychology/Marriage Family	Y
+P090	Public School Admin	Y
+R001	Radio and Television	Y
+R006	Recreation	Y
+R010	Religion	Y
+R013	Retail Merchandising	Y
+S001	Safety	Y
+S004	Safety/Environmental	Y
+P106	Park Law Enforcement	Y
+9712	Global Security & Survival		Y
+6758	Human Devel & Family Studies		Y
+1010	Social Sciences Minor		Y
+4261	Communication, MA_I	Y
+F051	Family Life/Child Care Admin	Y
+9704	Collegiate Officer Program_I		Y
+A063	Arts and Sciences	Y
+13IA	Biology - Botany Educ_I	Y
+16IA	Speech Educ_I	Y
+H076	Healthcare Spec/EMT-Paramedic	Y
+B045	Business English	Y
+21IA	Business Education_I			Y
+H078	Health Care Bus Operation	Y
+1595	Prof Business Adm, MBA_I	Y
+E091	Emergency Srvc Admin	Y
+R019	Radiologic Sciences	Y
+A067	Arts and Letters	Y
+7679	Applied Physics_I	Y
+3825	Online Teaching Cognate_I			Y
+3816	Classroom Teaching Cognate_I			Y
+3920	Instructional Leadership, MEd	Y
+1586	Business Administration, MBA	Y
+1587	MBA General Management			Y
+1588	MBA Managerial Acct & Finance			Y
+1589	MBA Native American Enterprise			Y
+7063	Biology Minor		Y
+P100	Philosophy	Y
+I050	International Hospitality Mgmt	Y
+F047	Film and Media Studies	Y
+C107	Cardiovascular Tech	Y
+P104	Pre-Professional	Y
+F049	Food Technology	Y
+H080	Human & Social Serv Admin	Y
+7940	CERT-Public Health	Y
+7941	CERT-Public Health Leadership	Y
+7942	CERT-Global Health	Y
+7930	Public Health, MPH	Y
+7931	MPH Public Health Nutrition			Y
+7932	MPH Public Health Leadership			Y
+7933	MPH Global Health			Y
+T032	3D Modeling Animation	Y
+A069	Aviation Maint Tech	Y
+L032	Liberal Arts	Y
+N020	Nursing-Transition	Y
+L034	Law & Business Mgmt	Y
+M085	Medicine	Y
+31IA	Meeting & Dest Mgmt_I	Y
+7890	CERT-Adm Lead Nurs	Y
+1110	CERT-Business Analytics	Y
+1597	CERT-Data Analytics	Y
+1122	ENTR Small Business/Digital_I			Y
+1123	ENTR Social Entrepreneurship_I			Y
+C109	Comm-Entertainment & Tourism	Y
+1598	CERT-Healthcare Admin Lead	Y
+3609	CERT-Higher Educ Admin	Y
+1582	CERT-International Business	Y
+7891	CERT-Nursing Education	Y
+7892	CERT-Nursing Informatics	Y
+1599	CERT-Operations Leadership	Y
+3610	CERT-Am Indian Leadership	Y
+3611	CERT-Training & Development	Y
+3921	CERT-Classroom Teaching_I	Y
+H082	Healthcare Admin & Mgmt	Y
+A070	Applied Exercise Science	Y
+I051	Industrial Maintenance Tech	Y
+A071	Acct Software App Spec	Y
+3922	CERT-Online Teaching_I	Y
+O019	Occupational Therapy Asst	Y
+M086	Media Studies	Y
+W015	Womens & Gender Studies	Y
+H083	Hospitality Management	Y
+M087	Music-Theatre	Y
+G028	Global Studies	Y
+S115	Services to the Deaf	Y
+7630	MATH Generalist			Y
+7631	MATH Education			Y
+4643	Music-Jazz Studies/Comm_I	Y
+7154	CERT-Am Chemical Society	Y
+7050	Freshwater Sciences	Y
+1955	CERT-Event Management	Y
+8601	CERT-Operations&Sup Chain Mgmt	Y
+1139	CERT-Healthcare Admin	Y
+1140	CERT-Healthcare Info Analytics	Y
+1141	CERT-Long Term Care Admin_I	Y
+1600	CERT-Health Informatics	Y
+M088	Music/Jazz	Y
+M089	Meteorology	Y
+P108	Pharmacology	Y
+D032	Disaster Management	Y
+M090	Medical Science	Y
+32IA	Paralegal_I			Y
+33IA	Commercial Art_I			Y
+34IA	Family & Consumer Sci_I	Y
+1601	MBA Digital Marketing			Y
+1602	MBA Project Management			Y
+8304	EHSM General			Y
+9713	Homeland Security&Emergency Mg	Y	Y
+1556	MGMT Project Management			Y
+1111	CERT-Business Basics	Y
+7155	CHEM Chemistry Education			Y
+4440	Public Relations, MA	Y
+1028	CERT-Fund of Accounting	Y
+7064	IBIO Biology Education			Y
+1124	CERT-Small Business	Y
+1559	CERT-Soft Skills	Y
+6882	CERT-Special Education	Y
+1029	CERT-Tax Compliance	Y
+1603	CERT-Applied Digital Mkt	Y
+3923	CERT-Curriculum Director	Y
+1604	CERT-Program Management	Y
+4241	Applied Linguistics/TESOL		Y
+36IA	History Education_I	Y
+9320	Appl Geographic Info Sys, MS	Y
+9325	CERT-Adv Geographic Info Sys	Y
+9321	AGIS Sustainability_I			Y
+9322	AGIS Prof Enhancement_I			Y
+9851	CERT-Crime and Society	Y
+9852	CERT-CR J Lead and Admin	Y
+37IA	Industrial Tech_I	Y
+4620	Music	Y
+4621	MUS Performance (Vocal & Inst)			Y
+4622	MUS Jazz Studies/Commerc Music			Y
+3613	CERT-DEI in the Workplace	Y
+B042	Business Application Prof	Y
+L027	Landscape & Golf Course Mgmt	Y
+F043	Family Services & Child Devel	Y
+B043	Business & Industry Tech	Y
+D027	Diversified Studies	Y
+17IA	Economics_I	Y
+9411	AIS General			Y
+9412	AIS Sovergnty, Hlth&Cur Issues			Y
+20IA	German_I	Y
+C104	Counseling & Student Personnel	Y
+N017	Neuroscience	Y
+6881	American Sign Language Studies		Y
+4456	M S Multimedia			Y
+4457	M S Public Rel/Advertising			Y
+7704	NAT SCI General			Y
+7060	Integrative Biology	Y
+7062	IBIO Fish and Wildlife			Y
+7061	IBIO Organismic			Y
+7065	Cell and Molecular Biology	Y
+9750	Global Studies Minor		Y
+7153	CHEM Biochemistry			Y
+1573	MKT General			Y
+1574	MKT Digital Marketing			Y
+1108	BADM International Business			Y
+4206	CHCS Cultr Heritage/SelfDeterm			Y
+9302	CERT-Geographic Info Systems	Y
+1553	MGMT Entrepreneurship_I			Y
+4458	Professional Media Comm		Y
+4459	Public Relations		Y
+D030	Digital Media Specialist	Y
+P103	Pre-Allied Health & Rehab Sci	Y
+F048	Fire Technology	Y
+B047	Biological & Pre-Prof Sciences	Y
+1109	BADM Business Analytics			Y
+5191	CERT-Driver Education_I	Y
+6757	Early Care Minor		Y
+9303	Geography & Sustainability Stu	Y	Y
+5501	Health and Sport Science, MS	Y
+5502	HSSCI Health Education_I			Y
+5503	HSSCI Sport Admin/Mgmt			Y
+4252	ENGL Generalist			Y
+4256	ENGL TESOL			Y
+1555	CERT-Human Res Mgmt	Y
+3612	CERT-Leadership	Y
+P107	Pre-Professional Sciences	Y
+I052	Industrial Biotechnology	Y
+6759	Health Psychology		Y
+5341	HHP Clinical Health & Wellness			Y
+5342	HHP Fitness Mgmt_I			Y
+5343	HHP Recreation & Leisure_I			Y
+7689	Mechanical Engineering	Y
+1572	CERT-Digital Marketing	Y
+7677	PHYS Applied Physics			Y
+7678	PHYS Physics Education			Y
+1557	CERT-Project Management	Y
+1558	CERT-Quality Management	Y
+35IA	Home Economics_I	Y
+9730	Advocacy and Justice Studies	Y
+9731	AJS Environmental Advocacy			Y
+9732	AJS Human Rights Advocacy			Y
+9733	AJS Legal Advocacy			Y
+7705	CERT-Natural Sciences	Y
+7603	CERT-Programming	Y
+9377	CERT-Public History	Y
+1605	CERT-Strategic Human Resources	Y
+7950	Respiratory Care Therapy	Y
+3924	CERT-Classrm Teaching&Learning	Y
+3811	Classroom Teaching & Learning			Y
+3812	Online Teaching & Learning			Y
+3614	LEAD DEI in the Workplace			Y
+3925	CERT-Online Teaching & Learn	Y
+6883	Special Education	Y
+9714	CERT-Plan, Resil & Incid Mgmt	Y
+1281	FIN Applied Portfolio Mgmt_I			Y
+A072	Archaeology	Y
+F052	Family Life Education	Y
+M091	Multicultural Studies	Y
+S116	Supervision & Management	Y
+I053	Indigenous Peoples Law	Y
+C110	Customer Interface Excellence	Y
+4919	CERT-Collab Comm in Wkplce	Y
+1562	CERT-Cyber Risk Mgmt	Y
+6760	Forensic Psychology		Y
+4918	CERT-Pres Design & Deliv	Y
+3229	CERT-Elem Education	Y
+7935	CERT-Nutritional Health	Y
+7934	MPH Nutritional Health			Y
+1606	Management & Technology, MS	Y
+1607	M&T Analytics			Y
+1608	M&T Enterprise Management			Y
+1609	M&T General			Y
+1610	M&T Industrial Leadership			Y
+7619	Medical Lab Science, MSMLS	Y
+5351	Sport/Recreation Mgmt	Y
+5352	SRM Sport Management			Y
+5353	SRM Recreation			Y
+7618	MSMLS Advanced Pathway			Y
+7617	MSMLS Traditional Pathway			Y
+9908	Military Leadership		Y
+8501	TECH Comp Tech & Analysis			Y
+8502	TECH Innovations in Tech			Y
+8503	TECH Operations Management			Y
+7632	CERT-MATH Statistics	Y
+4852	Spanish		Y
+4850	Spanish_I	Y	Y
+4630	CERT-Digital Audio Engineering	Y
+4623	Jazz Studies/Comm Music Minor		Y
+4624	Music Production Minor		Y
+9716	CERT-Law & Paralegalism I	Y
+9717	CERT-Law & Paralegalism II	Y
+5504	CERT-Sport Analytics	Y
+5505	CERT-Sport Leadership & Mgmt	Y
+1112	BADM Entrepreneurship			Y
+9707	CERT-Emergency Mgmt & Planning	Y
+7701	NAT SCI Chemistry_I			Y
+7702	NAT SCI Biology_I			Y
+7703	NAT SCI Physics_I			Y
+6141	COUN Addiction Counseling			Y
+6142	COUN Clinical Mental Hlth Coun			Y
+6143	COUN School Counseling			Y
+08IA	Industrial Arts Educ_I	Y
+C100	Church Admin & Leadership	Y
+S111	Speech Communication	Y
+E085	Equine and Ranch Management	Y
+S112	Software Engineering	Y
+I047	Infant Toddler	Y
+C102	Clinical Laboratory Technology	Y
+14IA	Health PE & Safety_I	Y
+15IA	Industrial Arts_I	Y
+P096	Public Affairs & Admin	Y
+C103	Chemistry & Biochemistry	Y
+E089	Enterprise Development	Y
+H077	Health and Human Physiology	Y
+P097	Pre-Dentist/Medicine/Optometry	Y
+N018	New Testament	Y
+D029	Digital Media Animation & Dsgn	Y
+7920	Physician Assistant Studies	Y
+W014	Welding Technology	Y
+F046	Fashion Business	Y
+26IA	Special Ed-Learning Disability	Y
+27IA	SPED-Visually Impaired_I			Y
+28IA	Mod Lang: French_I	Y
+6756	Psychology	Y	Y
+P101	Pre-Occupational Therapy	Y
+7886	Nursing, MSN	Y
+7887	NURS Adm Leadership in Nursing			Y
+7888	NURS Nursing Education			Y
+7889	NURS Nursing Informatics			Y
+29IA	Home Ec in Business_I	Y
+1591	MBA Business Analytics			Y
+1592	MBA Healthcare Administration			Y
+1593	MBA Health Informatics			Y
+1594	MBA Long Term Care_I			Y
+1596	MBA Envir, Hlth, & Safety Mgmt			Y
+5346	Recreation		Y
+H081	Health Services Technology	Y
+30IA	SPED: Spch/Lang Path_I			Y
+S114	Actuarial Science	Y
+3577	Sociology_I			Y
+3740	CERT-Professional Cert-Elem_I	Y		Y
+3775	Biology - MED_I			Y
+3799	Geography_I			Y
+3819	Early Childhood Specializtn_I			Y
+3855	Bilingual/Multicultl Specztn_I			Y
+4052	ART Graphic Design		Y	Y
+4202	Cherokee Cultural Studies	Y	Y
+4250	English	Y	Y
+4255	English, MA	Y
+4276	French Education_I	Y
+4452	Public Relations_I			Y
+A050	Art Therapy	Y
+A054	Art/Graphic Design	Y
+A058	Automotive	Y
+B002	Banking and Finance	Y
+B006	Behavioral Sciences	Y
+B011	Bioengineering	Y
+B015	Biology & Chemistry	Y
+B019	Biology Education	Y
+B024	Biology/Molecular	Y
+B028	Biosystems Engin	Y
+B032	Business	Y
+B036	Business Administration	Y
+B040	Business Leadership	Y
+C004	CCDS Teacher Cert	Y
+C008	Chemical Engineering	Y
+C013	Child Development	Y
+C017	Church Music	Y
+C021	Classics	Y
+C024	Clothing	Y
+C028	Comm Coll & Higher Educ	Y
+D009	Design Drafting	Y
+D013	Development Sociology	Y
+D018	Divinity	Y
+D021	Drama and Theater	Y
+D025	Drawing	Y
+E003	Earth and Space Science	Y
+E008	Economics	Y
+E011	Economics and Accounting	Y
+E016	Educ Admin/Curr Superv	Y
+E021	Education/Bilingual	Y
+E026	Electrical	Y
+E030	Elem Educ/Art	Y
+E034	Elem Educ/Math	Y
+E038	Elem Educ/Science	Y
+E042	Elementary Ed & HPE	Y
+E047	Engineering	Y
+E051	Engineering Physics	Y
+E055	English as Foreign Lang	Y
+E060	English Lit & Anthropology	Y
+E065	English/History	Y
+7090	PPH-POD-Podiatry			Y
+7310	Environmental Science_I	Y	Y
+7601	Mathematics Education_I	Y
+7660	Horticulture Tech_I			Y
+7881	Pre-Nursing_I	Y
+8302	EHSM Environ Mgmt_I			Y
+I046	Intercultural Studies	Y
+N013	Native American Gaming	Y
+P093	Pre-Allied Health	Y
+7151	CHEM Professional			Y
+7152	CHEM Environment Maj/Min			Y
+7311	Environmental Science		Y
+4053	ART Studio 2D		Y	Y
+4054	ART Studio 3D		Y	Y
+4924	COMM Comm in Relations			Y
+4922	COMM Theory & Research_I			Y
+4928	COMM Appl Perf & Deliv_I			Y
+4121	VISCOM General_I			Y
+3810	National Board			Y
+3815	Alternative Placement Cognat_I			Y
+7676	Physics	Y	Y
+P094	Professional Studies	Y
+N015	Native American Studies	Y
+12IA	Health PE & Recreat_I	Y
+L029	Law	Y
+A066	Air Traffic Control	Y
+C105	Chiropractic	Y
+O017	Opticianry	Y
+7882	Nursing RN to BSN-1st Session	Y
+B046	Biological Science	Y
+H079	Health Info Tech	Y
+P102	Plumbing & Pipefitting	Y
+O018	Occupational Studies	Y
+B048	Business Management	Y
+8403	HFS-Foods/Nutrition_I	Y	Y
+E088	Electronics	Y
+8440	Industrial Operation Mgmt_I	Y	Y
+8447	IOM-Industrial Supervision_I	Y	Y
+9010	Post Baccalaur-Teaching Cert			Y
+9410	American Indian Studies	Y	Y
+G002	General Science	Y
+G006	General Studies/Comp Sci	Y
+G011	Geology	Y
+G015	German	Y
+G018	Government	Y
+G022	Guidance and Counseling	Y
+H003	Health and Exercise Sci	Y
+H008	Health Care Mgmt	Y
+H013	Health Promotion/Wellness	Y
+H018	Health/Computer Educ	Y
+H022	History	Y
+H026	History/Political Sci	Y
+H030	Home Ec Education	Y
+H035	Horse/Ranch Mgmt	Y
+H039	Hotel and Restaurant	Y
+H043	HPE & Industrial Educ	Y
+H048	Human Dev/Family Sci	Y
+H053	Human Perf & History	Y
+S102	Sports Med/Athletic Train	Y
+S107	Surgical Tech	Y
+T001	Taxation	Y
+T004	Teaching	Y
+T008	Technical Draft and Design	Y
+T013	Telecomm Mgmt	Y
+T017	TESOL	Y
+T020	Theatre & Education	Y
+T024	TLHT	Y
+T027	Training Systems	Y
+U002	University Studies	Y
+V003	Visual Arts	Y
+V007	Voice	Y
+W003	Wildlife	Y
+W006	Wildlife Management	Y
+W011	Writing	Y
+Z001	Zoology	Y
+C099	Culinary Arts	Y
+N014	Nanotechnology	Y
+05IA	Safety_I	Y
+9816	SOWK General			Y
+8451	Safety Management Minor		Y
+L006	Law Enf & Political Sci	Y
+L011	Learning Disabilities	Y
+L016	Liberal Studies	Y
+L020	Library Info Studies	Y
+L025	Life Science	Y
+M002	Magazines	Y
+M006	Management & Marketing	Y
+M011	Marketing	Y
+M014	Marketing & Management	Y
+M019	Mass Comm/Advertising	Y
+M024	Mass Comm/Radio TV	Y
+M028	Master Business Admin	Y
+M033	Mathematics	Y
+M037	Mathematics Education	Y
+M041	Med Office Admin	Y
+M045	Medical Record Admin	Y
+M050	Mental Health Tech	Y
+M054	Metal and Material Engin	Y
+P031	Physical Therapy	Y
+P036	Police	Y
+P039	Political Science/Asian	Y
+E066	English/Journalism	Y
+E067	English/Law and Society	Y
+E068	English/License	Y
+E069	English/Teach Cert	Y
+E070	English/Writing	Y
+E071	English/Writing & Dance	Y
+H071	Human Serv/Pre-Social Work	Y
+H072	Human Serv/Social Work	Y
+H073	Human Services	Y
+H074	Humanistic Studies	Y
+H075	Humanities	Y
+I001	I&A St	Y
+I002	IDIS	Y
+I003	Imaging Sciences	Y
+I004	Indian Studies	Y
+I005	Indisp Early Childhood	Y
+I006	Indiv Fam and Comm Serv	Y
+I007	Individual Studies	Y
+I008	Industrial Admin	Y
+I009	Industrial Arts	Y
+I010	Industrial Arts Educ	Y
+I011	Industrial Drafting_I	Y
+I012	Industrial Education_I	Y
+I013	Industrial Elect Tech_I	Y
+I014	Industrial Engineering_I	Y
+I015	Industrial Management_I	Y
+I016	Industrial Relations_I	Y
+I017	Industrial Safety_I	Y
+I018	Industrial Technology_I	Y
+I019	Inform Assirance & Forensics	Y
+I020	Information Management	Y
+I021	Information Systems	Y
+I022	Information Tech/Network	Y
+I023	Information Technology	Y
+I024	Instructional Media	Y
+I025	Instrumental Music	Y
+I026	Insurance	Y
+I027	Interdisciplinary Studies	Y
+I028	Interdisciplinary/Agricult	Y
+I029	Interdisciplinary/C&I	Y
+I030	Interdisciplinary/Elem Educ	Y
+I031	Interdisciplinary/Medical	Y
+I032	Interdisciplinary/Reading	Y
+I033	Interior Design	Y
+I034	International Business	Y
+I035	International Comm Dev	Y
+I036	International Marketing	Y
+I037	International Ministry	Y
+I038	International Politics	Y
+I039	International Relations	Y
+I040	International Studies	Y
+I041	International Studies/Asia	Y
+I042	International Studies/Europe	Y
+I043	International Trade	Y
+I044	Interpreter	Y
+I045	Interpreter Educ	Y
+J001	Japanese	Y
+J002	Jewelry Tech	Y
+J003	Journalism	Y
+J004	Journalism Education	Y
+J005	Journalism/Advertising	Y
+J006	Journalism/Broadcast	Y
+J007	Journalism/History	Y
+J008	Journalism/Magazine	Y
+J009	Journalism/Mass Comm	Y
+J010	Journalism/Photo	Y
+J011	Journalism/PR	Y
+J012	Junionr College/Art	Y
+J013	Junior College Teaching	Y
+J014	Junior College/English	Y
+J015	Justice Admin	Y
+K001	Kinesiology	Y
+K002	Kinesiology/Athl Train	Y
+K003	Kinesiology/Phys Ed	Y
+K004	Kinesiology/Recreation	Y
+L001	Lab Tech	Y
+L002	LAEN	Y
+L003	Landscape Architecture	Y
+L004	Language Arts	Y
+L005	Latin American Studies	Y
+L007	Law Enforcement	Y
+L008	Law Justice Career/CRJ	Y
+L009	Law Justice Careers	Y
+L010	Leadership in Bus Admin	Y
+L012	Legal Assistant	Y
+L013	Legal Secretary	Y
+L014	Leisure	Y
+L015	Letters	Y
+L017	Liberal Studies & Radiogr	Y
+L018	Liberal Studies/Bus Admin	Y
+L019	Liberal Studies/Engl	Y
+L021	Library Media Educ	Y
+L022	Library Media/Info Tech	Y
+L023	Library Sci Educ & English	Y
+L024	Library Science	Y
+L026	Literature	Y
+M001	Maching Tool Tech	Y
+M003	Malay-Indon Lang and Lit	Y
+M004	Management	Y
+M005	Management & Ethics	Y
+M007	Management Info Systems	Y
+M008	Management Tech	Y
+M009	Management/Human Res	Y
+M010	Management/Marketing	Y
+M012	Marketing & Finance	Y
+M013	Marketing & French	Y
+M015	Marketing/Bus Admin	Y
+M016	Marketing/Economics	Y
+M017	Marketing/Management	Y
+M018	Marriage and Family Therapy	Y
+M020	Mass Comm/Broadcast	Y
+M021	Mass Comm/Interpersonal	Y
+M022	Mass Comm/News and Edit	Y
+M023	Mass Comm/Print Media	Y
+M025	Mass Communication	Y
+M026	Mass Communication/Film	Y
+M027	Mass Media	Y
+M029	Master Business Admin/Fin	Y
+M030	Materials Engineering	Y
+M031	Materials Science	Y
+M032	Math/Science Educ	Y
+M034	Mathematics & Engineering	Y
+M035	Mathematics & English	Y
+M036	Mathematics & Philosophy	Y
+M038	Mechanical Engineering	Y
+M039	Mechanical Tech	Y
+M040	Med Lab Tech	Y
+M042	Media Communication	Y
+M043	Medical Assistant	Y
+M044	Medical Imaging	Y
+M046	Medical Secretary	Y
+M047	Medical Technology	Y
+M048	Medical/Molecular	Y
+M049	Medicine/Pre-professional	Y
+M051	Mental Retardation	Y
+M052	Mental/Phys Handicap	Y
+M053	Merchandising	Y
+M055	Mgmt Sci & Comp Syst	Y
+M056	Microbiology	Y
+M057	Middle Child Educ	Y
+M058	Middle Level Educ	Y
+M059	Middle School Educ	Y
+M060	Mid-management	Y
+M061	Ministry	Y
+M062	Missions	Y
+M063	Modern Lang German	Y
+M064	Modern Languages	Y
+M065	Modern Letters	Y
+M066	Movement Science	Y
+M067	Multimedia Design	Y
+M068	Music	Y
+M069	Music & Sociology	Y
+M070	Music Arts	Y
+M071	Music Education	Y
+M072	Music Education/Inst	Y
+M073	Music Education/Vocal	Y
+M074	Music Therapy	Y
+M075	Music/Business	Y
+M076	Music/Inst, Band	Y
+M077	Music/Instr Teach Cert	Y
+M078	Music/Sacred	Y
+M079	Music/Vocal	Y
+M080	Music/Wind	Y
+N001	Natural and Applied Science	Y
+N002	Natural Resource Mgmt	Y
+N003	Natural Sci/Biol Educ	Y
+N004	Natural Sciences	Y
+N005	News Editorial	Y
+N006	Non-certification	Y
+N007	Nuclear Medicine	Y
+N008	Numerical Control	Y
+N009	Nurse Practioner	Y
+N010	Nursing	Y
+N011	Nursing Tech	Y
+N012	Nutritional Sci	Y
+O001	OC Radio and TV	Y
+O002	Occupational Educ	Y
+O003	Occupational Safety	Y
+O004	Occupational Therapy	Y
+O005	Occupational/Adult Educ	Y
+O006	Office Administration/Mgmt	Y
+O007	Optometry	Y
+O008	Optometry/Pre-professional	Y
+O009	Oral Comm/Applied	Y
+O010	Oral Comm/Broadcast	Y
+O011	Organiz/Interperson Comm	Y
+O012	Organizational Admin	Y
+O013	Organizational Leadership	Y
+O014	Organizational Mgmt	Y
+O015	Orth and Prosth Tech	Y
+O016	Osteopathic Medicine	Y
+P001	P A	Y
+P002	Packaging	Y
+P003	Pahr	Y
+P004	Painting	Y
+P005	Painting/Drawing	Y
+P006	Paralegal	Y
+P007	Paramedic Tech	Y
+P008	Park and Recreat Mgmt	Y
+P009	Performance	Y
+P010	Performance Theatre	Y
+P011	Personalized Prog of Study	Y
+P012	Personnel Admin	Y
+P013	Petroleum Engineering	Y
+P014	Petroleum Land Tech	Y
+P015	Pharmacy	Y
+P016	Philosophy and Religion	Y
+P017	Photography Tech	Y
+P018	Physical and Health Educ	Y
+P019	Physical Educ & Coaching	Y
+P020	Physical Educ & Recreation	Y
+P021	Physical Educ and Health	Y
+P022	Physical Educ and Sport	Y
+P023	Physical Educ/Activity Train	Y
+P024	Physical Educ/Athl Train	Y
+P025	Physical Educ/Coach	Y
+P026	Physical Educ/Curriculum	Y
+P027	Physical Educ/Health	Y
+P028	Physical Educ/Recreation	Y
+P029	Physical Education	Y
+P030	Physical Science	Y
+P032	Physics	Y
+P033	Physiology	Y
+P034	Plant and Pest Mgmt	Y
+P035	Plant and Soil Science	Y
+P037	Political Science	Y
+P038	Political Science Educ	Y
+P040	Political Science/Public Adm	Y
+P041	Portuguese	Y
+P042	Pre-Accounting	Y
+P043	Pre-Athletic Training	Y
+P045	Pre-Criminal Justice	Y
+P046	Pre-Education	Y
+P048	Pre-Education/Second Math	Y
+P049	Pre-Education/Secondary	Y
+P050	Pre-Engineering	Y
+P051	Pre-Journalism	Y
+P053	Pre-Law/CRJ	Y
+P054	Pre-Law/Sociology	Y
+P055	Pre-Med	Y
+P057	Pre-Med/Dental	Y
+P058	Pre-Med/Dental & Pharm	Y
+P059	Pre-Nursing	Y
+P060	Pre-Optometry	Y
+P062	Pre-Physical Therapy	Y
+P063	Pre-Professional Med	Y
+P065	Pre-Social Work	Y
+P066	Pre-Veterinary	Y
+P067	Prod and Oper Mgmt	Y
+P068	Prof Accountancy	Y
+P070	Prof Counseling	Y
+P071	Prof Elementary Educ	Y
+P072	Prof Health Occupation	Y
+P084	Prov El Reading	Y
+P075	Psych Educ & Spec Educ	Y
+P076	Psychology	Y
+P077	Psychology & Sociology	Y
+P079	Psychology/Develop	Y
+P080	Psychology/Family	Y
+P081	Psychology/HR	Y
+P082	Psychology/Indust Org	Y
+P085	Public Accounting	Y
+P086	Public Administration	Y
+P087	Public Health	Y
+P088	Public Relations	Y
+P091	Public School Music	Y
+P092	Publication Design	Y
+Q001	Quality Control Tech	Y
+R002	Radiography	Y
+R003	Radiology Tech	Y
+R004	Reading	Y
+R005	Reading Educ	Y
+R007	Recreation Admin	Y
+R008	Recreation Leadership	Y
+R009	Recreation/Tourism	Y
+R011	Religious Educ	Y
+R012	Respiratory Therapy	Y
+R014	Rhetoric and Comm Studies	Y
+R015	Rhetoric and Writing	Y
+R016	Romance Languages	Y
+R017	Russian	Y
+S002	Safety and Environ Tech	Y
+S003	Safety/Envir Tech & Biology	Y
+S005	Safety/Loss Control	Y
+S006	Sales and Marketing	Y
+S007	School Admin/Elementary	Y
+1090	AI & Data Analytics	Y
+9906	Military Science	Y
+7779	Nursing (Prelicensure)	Y
+6761	Gerontology		Y
+P110	Physician Assistant Studies	Y
+9323	AGIS Traditional Option			Y
+9324	AGIS Advanced Option			Y
+1563	MGMT Oper & Supply Chain Mgmt			Y
+1571	MKT Hospitality & Tourism Mgmt			Y
+1949	Hospitality/Tourism Mgmt		Y
+5344	HHP Exercise Science			Y
+7059	CERT-Molecular Ecology & Evol	Y
+4262	Strategic Comm & Dig Strat, MA	Y
+5506	HSSCI School Health Education			Y
+5507	HSSCI Sport Analytics			Y
+5508	HSSCI Exercise Rehabilitation			Y
+W016	Wood Science & Engineering	Y
+A073	Adult & Lifelong Learning	Y
+E092	Educ Practice & Innovation	Y
+F053	Forensic Sciences	Y
+S117	Strategic Comm & Digital Strat	Y
+W017	Wood Science & Technology	Y
+P109	Physician Associate	Y
+1119	Entrepreneurship		Y

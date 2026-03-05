@@ -1,0 +1,152 @@
+{
+  "name": "STVMAJR",
+  "description": "Major, Minor, Concentration Validation Table",
+  "type": "definition",
+  "definition_headers": [
+    "STVMAJR_CODE",
+    "STVMAJR_DESC",
+    "CAN_BE_MAJOR",
+    "CAN_BE_MINOR",
+    "CAN_BE_CONCENTRATION"
+  ],
+  "tags": [],
+  "queries": [],
+  "columns": [
+    {
+      "name": "STVMAJR_CODE",
+      "type": "VARCHAR2(4 CHAR)",
+      "description": "This field identifies the major code referenced in the Catalog, Class Sched., Recruit., Admissions, Gen. Student, Registr., and Acad. Hist. Modules. Reqd. value: 00 - Major Not Declared.",
+      "definition_table": ""
+    },
+    {
+      "name": "STVMAJR_DESC",
+      "type": "VARCHAR2(30 CHAR)",
+      "description": "This field specifies the major area of study associated with the major code.",
+      "definition_table": ""
+    },
+    {
+      "name": "STVMAJR_CIPC_CODE",
+      "type": "VARCHAR2(6 CHAR)",
+      "description": "This field identifies the Classification of Institutional Programs (CIP) code associated with the major area of study.",
+      "definition_table": ""
+    },
+    {
+      "name": "STVMAJR_VALID_MAJOR_IND",
+      "type": "VARCHAR2(1 CHAR)",
+      "description": "This field indicates whether the area of study is a valid major.",
+      "definition_table": ""
+    },
+    {
+      "name": "STVMAJR_VALID_MINOR_IND",
+      "type": "VARCHAR2(1 CHAR)",
+      "description": "This field indicates whether the area of study is a valid minor.",
+      "definition_table": ""
+    },
+    {
+      "name": "STVMAJR_VALID_CONCENTRATN_IND",
+      "type": "VARCHAR2(1 CHAR)",
+      "description": "This field indicates whether the area of study is a valid concentration.",
+      "definition_table": ""
+    },
+    {
+      "name": "STVMAJR_ACTIVITY_DATE",
+      "type": "DATE",
+      "description": "This field identifies the most recent date a record was created or updated.",
+      "definition_table": ""
+    },
+    {
+      "name": "STVMAJR_OCCUPATION_IND",
+      "type": "VARCHAR2(1 CHAR)",
+      "description": "Occupation specific indicator. Y indicates program has been designated as occupation specific",
+      "definition_table": ""
+    },
+    {
+      "name": "STVMAJR_AID_ELIGIBILITY_IND",
+      "type": "VARCHAR2(1 CHAR)",
+      "description": "A indicator which indicates the eligibility for aid",
+      "definition_table": ""
+    },
+    {
+      "name": "STVMAJR_SYSTEM_REQ_IND",
+      "type": "VARCHAR2(1 CHAR)",
+      "description": "System Required Indicator",
+      "definition_table": ""
+    },
+    {
+      "name": "STVMAJR_VR_MSG_NO",
+      "type": "NUMBER(6,0)",
+      "description": "The Voice Response message number assigned to the recorded message that describes the major code.",
+      "definition_table": ""
+    },
+    {
+      "name": "STVMAJR_DISP_WEB_IND",
+      "type": "RAW(1 BYTE)",
+      "description": "Display on Web Indicator is now obsolete.",
+      "definition_table": ""
+    },
+    {
+      "name": "STVMAJR_SEVIS_EQUIV",
+      "type": "VARCHAR2(6 CHAR)",
+      "description": "SEVIS EQUIVALENCY: SEVIS code for primary major",
+      "definition_table": ""
+    },
+    {
+      "name": "STVMAJR_SURROGATE_ID",
+      "type": "NUMBER(19,0)",
+      "description": "SURROGATE ID: Immutable unique key",
+      "definition_table": ""
+    },
+    {
+      "name": "STVMAJR_VERSION",
+      "type": "NUMBER(19,0)",
+      "description": "VERSION: Optimistic lock token.",
+      "definition_table": ""
+    },
+    {
+      "name": "STVMAJR_USER_ID",
+      "type": "VARCHAR2(30 CHAR)",
+      "description": "USER ID: The user ID of the person who inserted or last updated this record.",
+      "definition_table": ""
+    },
+    {
+      "name": "STVMAJR_DATA_ORIGIN",
+      "type": "VARCHAR2(30 CHAR)",
+      "description": "DATA ORIGIN: Source system that created or updated the data.",
+      "definition_table": ""
+    },
+    {
+      "name": "STVMAJR_VPDI_CODE",
+      "type": "VARCHAR2(6 CHAR)",
+      "description": "VPDI CODE: Multi-entity processing code.",
+      "definition_table": ""
+    },
+    {
+      "name": "STVMAJR_MAJOR_DESC",
+      "type": "VARCHAR2(100 BYTE)",
+      "description": "MAJOR DESC: The MAJOR description.",
+      "definition_table": ""
+    },
+    {
+      "name": "STVMAJR_MINOR_DESC",
+      "type": "VARCHAR2(100 BYTE)",
+      "description": "MINOR DESC: The MINOR description.",
+      "definition_table": ""
+    },
+    {
+      "name": "STVMAJR_CONCENTRATION_DESC",
+      "type": "VARCHAR2(100 BYTE)",
+      "description": "CONCENTRATION DESC: The CONCENTRATION description.",
+      "definition_table": ""
+    },
+    {
+      "name": "STVMAJR_TOPS_CODE",
+      "type": "VARCHAR2(6 BYTE)",
+      "description": "Taxonomy of Program Code: Validated by STVTOPS_CODE field and define with same format, VARCHAR2(6).",
+      "definition_table": ""
+    }
+  ],
+  "references": [
+    "SGBSTDN",
+    "SHRDGMR"
+  ]
+}
