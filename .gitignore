@@ -1,7 +1,12 @@
 site/
-docs/tables/
-docs/sql/
 tools/info-converter/converted/
 __pycache__/
 *.pyc
 .venv/
+
+# Ignore generated Docs files
+docs/tables/
+docs/index.md
+docs/data-tables.md
+docs/definition-tables.md
+docs/tags.md
