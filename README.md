@@ -31,91 +31,9 @@ tools/
 docs/                      ← generated (don't edit directly)
 ```
 
-## Adding a Table
-
-### 1. Get the .info file
-
-In the SQL editor, run:
-
-```sql
-INFO <TABLE_NAME>;
-```
-
-Copy the entire output and save it as `<TABLE_NAME>.info` in `tools/info-converter/info-files/`.
-
-### 2. Convert to JSON
-
-```bash
-python tools/info-converter/convert.py           # all files
-python tools/info-converter/convert.py SPRIDEN    # single table
-```
-
-### 3. Create the table folder
-
-Move the JSON from `converted/` into a new folder in `table-definitions/`:
-
-```
-table-definitions/SPRIDEN/
-└── SPRIDEN.json
-```
-
-### 4. Edit the JSON
-
-Fill in `tags`, `definition_table` links on columns, and `queries`. Also change any descriptions that may not be as accurate as we need.
-
-### 5. Add queries (optional)
-
-Create a `sql/` subfolder and add `.sql` files:
-
-```
-table-definitions/SPRIDEN/
-├── SPRIDEN.json
-└── sql/
-    └── find-name.sql
-```
-
-Reference them in the JSON:
-
-```json
-"queries": [
-  {
-    "file": "find-name.sql",
-    "name": "Find Name by ID",
-    "description": "Look up a person's name by their PIDM."
-  }
-]
-```
-
-### 6. Add lookup values (definition tables only)
-
-Set `"type": "definition"` in the JSON and add a `.dat` file with the raw data:
-
-```
-table-definitions/STVDEGC/
-├── STVDEGC.json
-└── STVDEGC.dat
-```
-
-### 7. Generate and preview
-
-```bash
-python tools/page-generator/generate.py
-mkdocs serve
-```
-
 ## Contributing
 
-Don't push directly to `main`. Create a branch, make your changes, and open a pull request.
-
-```bash
-git checkout -b add-spriden
-# make your changes
-git add .
-git commit -m "add SPRIDEN table"
-git push origin add-spriden
-```
-
-Then open a PR on GitHub and request a review. The site deploys automatically once the PR is merged into `main`.
+See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## JSON Reference
 
