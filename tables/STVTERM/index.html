@@ -1,0 +1,1128 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Internal database schema and query reference">
+      
+      
+      
+        <link rel="canonical" href="https://nathantbeene.github.io/nate-prod-docs/tables/STVTERM/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>STVTERM - NSU Banner Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#stvterm" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="NSU Banner Documentation" class="md-header__button md-logo" aria-label="NSU Banner Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            NSU Banner Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              STVTERM
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../data-tables/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Data Tables
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../definition-tables/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Definition Tables
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../tags/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Tags
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="NSU Banner Documentation" class="md-nav__button md-logo" aria-label="NSU Banner Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    NSU Banner Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-tables/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Tables
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../definition-tables/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Definition Tables
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tags
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#schema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schema
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#values" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Values
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referenced-by" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Referenced By
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#queries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Queries
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Queries">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#find-current-term-roll-forward" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Find current term (Roll forward)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  <nav class="md-tags" >
+    
+      
+      
+      
+      
+        <span class="md-tag">term</span>
+      
+    
+  </nav>
+
+
+
+<h1 id="stvterm">STVTERM</h1>
+<p>Term Code Validation Table</p>
+<div class="admonition abstract">
+<p class="admonition-title">Definition Table</p>
+<p>This is a validation/lookup table that defines valid codes for other tables.</p>
+</div>
+<h2 id="schema">Schema</h2>
+<div class="schema-table">
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>STVTERM_CODE</td>
+<td><code>VARCHAR2(6 CHAR)</code></td>
+<td>The term code. This is formatted YYYYTT, TT being Term. Understanding term codes: Term codes contain a year, followed by 20, 30, or 10. 20 - Fall, 30 - Spring, 10 - Summer. Spring is the only term whose calendar year matches the year code. For example, 202630 is Spring 2026, 202710 is Summer 2026, and 202720 is Fall 2026.</td>
+</tr>
+<tr>
+<td>STVTERM_DESC</td>
+<td><code>VARCHAR2(30 CHAR)</code></td>
+<td>This field specifies the term associated with the term code. The term is identified by the academic year and term number and is formatted YYYYTT.</td>
+</tr>
+<tr>
+<td>STVTERM_START_DATE</td>
+<td><code>DATE</code></td>
+<td>This field identifies the term start date and is formatted DD-MON-YY.</td>
+</tr>
+<tr>
+<td>STVTERM_END_DATE</td>
+<td><code>DATE</code></td>
+<td>This field identifies the term end date and is fomatted DD-MON-YY.</td>
+</tr>
+<tr>
+<td>STVTERM_FA_PROC_YR</td>
+<td><code>VARCHAR2(4 CHAR)</code></td>
+<td>This field identifies the financial aid processing start and end years (e.g. The financial aid processing year 1988 - 1989 is formatted 8889.).</td>
+</tr>
+<tr>
+<td>STVTERM_ACTIVITY_DATE</td>
+<td><code>DATE</code></td>
+<td>This field identifies the most recent date a record was created or updated.</td>
+</tr>
+<tr>
+<td>STVTERM_FA_TERM</td>
+<td><code>VARCHAR2(1 CHAR)</code></td>
+<td>This field identifies the financial aid award term.</td>
+</tr>
+<tr>
+<td>STVTERM_FA_PERIOD</td>
+<td><code>NUMBER(2,0)</code></td>
+<td>This field identifies the financial aid award beginning period.</td>
+</tr>
+<tr>
+<td>STVTERM_FA_END_PERIOD</td>
+<td><code>NUMBER(2,0)</code></td>
+<td>This field identifies the financial aid award ending period.</td>
+</tr>
+<tr>
+<td>STVTERM_ACYR_CODE</td>
+<td><code>VARCHAR2(4 CHAR)</code></td>
+<td>This field is not currently in use.</td>
+</tr>
+<tr>
+<td>STVTERM_HOUSING_START_DATE</td>
+<td><code>DATE</code></td>
+<td>Housing Start Date.</td>
+</tr>
+<tr>
+<td>STVTERM_HOUSING_END_DATE</td>
+<td><code>DATE</code></td>
+<td>Housing End Date.</td>
+</tr>
+<tr>
+<td>STVTERM_SYSTEM_REQ_IND</td>
+<td><code>VARCHAR2(1 CHAR)</code></td>
+<td>System Required Indicator</td>
+</tr>
+<tr>
+<td>STVTERM_TRMT_CODE</td>
+<td><code>VARCHAR2(1 CHAR)</code></td>
+<td>Term type for this term. Will default from SHBCGPA_TRMT_CODE.</td>
+</tr>
+<tr>
+<td>STVTERM_FA_SUMMER_IND</td>
+<td><code>VARCHAR2(1 CHAR)</code></td>
+<td>SUMMER INDICATOR: Indicates a summer term to financial aid.</td>
+</tr>
+<tr>
+<td>STVTERM_SURROGATE_ID</td>
+<td><code>NUMBER(19,0)</code></td>
+<td>SURROGATE ID: Immutable unique key</td>
+</tr>
+<tr>
+<td>STVTERM_VERSION</td>
+<td><code>NUMBER(19,0)</code></td>
+<td>VERSION: Optimistic lock token.</td>
+</tr>
+<tr>
+<td>STVTERM_USER_ID</td>
+<td><code>VARCHAR2(30 CHAR)</code></td>
+<td>USER ID: The user ID of the person who inserted or last updated this record.</td>
+</tr>
+<tr>
+<td>STVTERM_DATA_ORIGIN</td>
+<td><code>VARCHAR2(30 CHAR)</code></td>
+<td>DATA ORIGIN: Source system that created or updated the data.</td>
+</tr>
+<tr>
+<td>STVTERM_VPDI_CODE</td>
+<td><code>VARCHAR2(6 CHAR)</code></td>
+<td>VPDI CODE: Multi-entity processing code.</td>
+</tr>
+<tr>
+<td>STVTERM_GUID</td>
+<td><code>VARCHAR2(36 BYTE)</code></td>
+<td>GUID: Global Unique Identifier to uniquely identify the record of a resource for integration.</td>
+</tr>
+<tr>
+<td>STVTERM_APPORT_CDE</td>
+<td><code>VARCHAR2(1 BYTE)</code></td>
+<td>APPORTIONMENT CATEGORY: Valid values are (null) = the same as "N", "N" = not reported (skipped on apportionment reports), "1" = first primary term, "2" = second primary term, "3" = third primary term, "I" = intersession term.</td>
+</tr>
+<tr>
+<td>STVTERM_MIS_TERM_CTG</td>
+<td><code>VARCHAR2(1 BYTE)</code></td>
+<td>MIS TERM CATALOG: Obsolete; will be dropped from the table at a future date.</td>
+</tr>
+<tr>
+<td>STVTERM_MIS_TERM_ID</td>
+<td><code>VARCHAR2(3 BYTE)</code></td>
+<td>MIS TERM INDICATOR: 3-character; user-entered; the field is mandatory when adding new terms or updating existing terms (This entry is used in the majority of the MIS Reports as field GI03 TERM-IDENTIFIER).</td>
+</tr>
+<tr>
+<td>STVTERM_TERM_LEN_MULT</td>
+<td><code>NUMBER(5,2)</code></td>
+<td>TERM LENGTH MULTIPLIER: Optional, but required if STVTERM_APPORT_CDE not in ("N",null); 999.99 valid values.</td>
+</tr>
+<tr>
+<td>STVTERM_TERM_LEN_MULT_IS</td>
+<td><code>NUMBER(5,2)</code></td>
+<td>TERM LENGTH MULTIPLIER IS: Independent study term length multiplier for apportionment reporting and calculation of FTES.</td>
+</tr>
+<tr>
+<td>STVTERM_CATALOG_GUID</td>
+<td><code>VARCHAR2(36 BYTE)</code></td>
+<td>CATALOG GUID: Global Unique Identifier to uniquely identify the record of a resource for integration.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="values">Values</h2>
+<div class="filterable values-table">
+<table>
+<thead>
+<tr><th>STVTERM_CODE</th><th>STVTERM_DESC</th><th>STVTERM_START_DATE</th><th>STVTERM_END_DATE</th><th>STVTERM_FA_PROC_YR</th><th>STVTERM_ACTIVITY_DATE</th></tr>
+</thead>
+<tbody>
+<tr><td>999999</td><td>The End of Time</td><td>01-JAN-99</td><td>15-MAY-99</td><td>9999</td><td>13-JUL-06</td></tr>
+<tr><td>202930</td><td>Spring 2029</td><td>15-JAN-29</td><td>15-MAY-29</td><td>2829</td><td>29-JUL-25</td></tr>
+<tr><td>202920</td><td>Fall 2028</td><td>15-AUG-28</td><td>15-DEC-28</td><td>2829</td><td>29-JUL-25</td></tr>
+<tr><td>202910</td><td>Summer 2028</td><td>15-MAY-28</td><td>15-AUG-28</td><td>2728</td><td>29-JUL-25</td></tr>
+<tr><td>202830</td><td>Spring 2028</td><td>15-JAN-28</td><td>15-MAY-28</td><td>2728</td><td>17-JAN-25</td></tr>
+<tr><td>202820</td><td>Fall 2027</td><td>15-AUG-27</td><td>15-DEC-27</td><td>2728</td><td>17-JAN-25</td></tr>
+<tr><td>202810</td><td>Summer 2027</td><td>15-MAY-27</td><td>15-AUG-27</td><td>2627</td><td>03-OCT-24</td></tr>
+<tr><td>202730</td><td>Spring 2027</td><td>15-JAN-27</td><td>15-MAY-27</td><td>2627</td><td>03-OCT-24</td></tr>
+<tr><td>202720</td><td>Fall 2026</td><td>17-AUG-26</td><td>11-DEC-26</td><td>2627</td><td>01-DEC-25</td></tr>
+<tr><td>202710</td><td>Summer 2026</td><td>11-MAY-26</td><td>13-AUG-26</td><td>2526</td><td>24-NOV-25</td></tr>
+<tr><td>202630</td><td>Spring 2026</td><td>12-JAN-26</td><td>08-MAY-26</td><td>2526</td><td>17-JAN-25</td></tr>
+<tr><td>202620</td><td>Fall 2025</td><td>18-AUG-25</td><td>12-DEC-25</td><td>2526</td><td>16-JAN-25</td></tr>
+<tr><td>202610</td><td>Summer 2025</td><td>12-MAY-25</td><td>14-AUG-25</td><td>2425</td><td>16-JAN-25</td></tr>
+<tr><td>202530</td><td>Spring 2025</td><td>13-JAN-25</td><td>09-MAY-25</td><td>2425</td><td>12-JAN-24</td></tr>
+<tr><td>202520</td><td>Fall 2024</td><td>19-AUG-24</td><td>13-DEC-24</td><td>2425</td><td>11-JAN-24</td></tr>
+<tr><td>202510</td><td>Summer 2024</td><td>13-MAY-24</td><td>15-AUG-24</td><td>2324</td><td>10-JAN-24</td></tr>
+<tr><td>202430</td><td>Spring 2024</td><td>16-JAN-24</td><td>10-MAY-24</td><td>2324</td><td>26-JUL-23</td></tr>
+<tr><td>202420</td><td>Fall 2023</td><td>14-AUG-23</td><td>08-DEC-23</td><td>2324</td><td>04-JAN-23</td></tr>
+<tr><td>202410</td><td>Summer 2023</td><td>08-MAY-23</td><td>10-AUG-23</td><td>2223</td><td>07-DEC-22</td></tr>
+<tr><td>202330</td><td>Spring 2023</td><td>09-JAN-23</td><td>05-MAY-23</td><td>2223</td><td>12-JUL-22</td></tr>
+<tr><td>202320</td><td>Fall 2022</td><td>15-AUG-22</td><td>09-DEC-22</td><td>2223</td><td>17-JAN-22</td></tr>
+<tr><td>202310</td><td>Summer 2022</td><td>09-MAY-22</td><td>11-AUG-22</td><td>2122</td><td>14-DEC-21</td></tr>
+<tr><td>202230</td><td>Spring 2022</td><td>10-JAN-22</td><td>06-MAY-22</td><td>2122</td><td>27-JUL-21</td></tr>
+<tr><td>202220</td><td>Fall 2021</td><td>23-AUG-21</td><td>17-DEC-21</td><td>2122</td><td>17-JAN-21</td></tr>
+<tr><td>202210</td><td>Summer 2021</td><td>10-MAY-21</td><td>12-AUG-21</td><td>2021</td><td>17-JAN-21</td></tr>
+<tr><td>202130</td><td>Spring 2021</td><td>11-JAN-21</td><td>07-MAY-21</td><td>2021</td><td>27-JUL-20</td></tr>
+<tr><td>202120</td><td>Fall 2020</td><td>17-AUG-20</td><td>11-DEC-20</td><td>2021</td><td>06-JAN-20</td></tr>
+<tr><td>202110</td><td>Summer 2020</td><td>11-MAY-20</td><td>13-AUG-20</td><td>1920</td><td>06-JAN-20</td></tr>
+<tr><td>202030</td><td>Spring 2020</td><td>13-JAN-20</td><td>08-MAY-20</td><td>1920</td><td>26-JUL-19</td></tr>
+<tr><td>202020</td><td>Fall 2019</td><td>19-AUG-19</td><td>13-DEC-19</td><td>1920</td><td>15-JAN-19</td></tr>
+<tr><td>202010</td><td>Summer 2019</td><td>13-MAY-19</td><td>15-AUG-19</td><td>1819</td><td>15-JAN-19</td></tr>
+<tr><td>201935</td><td>CE Spring 2019</td><td>01-JAN-19</td><td>31-MAY-19</td><td>1819</td><td>23-AUG-18</td></tr>
+<tr><td>201930</td><td>Spring 2019</td><td>14-JAN-19</td><td>10-MAY-19</td><td>1819</td><td>30-JUL-18</td></tr>
+<tr><td>201925</td><td>CE Fall 2018</td><td>01-AUG-18</td><td>31-DEC-18</td><td>1819</td><td>23-AUG-18</td></tr>
+<tr><td>201920</td><td>Fall 2018</td><td>20-AUG-18</td><td>14-DEC-18</td><td>1819</td><td>15-JAN-18</td></tr>
+<tr><td>201915</td><td>CE Summer 2018</td><td>01-JUN-18</td><td>31-JUL-18</td><td>1718</td><td>04-OCT-16</td></tr>
+<tr><td>201910</td><td>Summer 2018</td><td>07-MAY-18</td><td>16-AUG-18</td><td>1718</td><td>16-MAY-18</td></tr>
+<tr><td>201835</td><td>CE Spring 2018</td><td>01-JAN-18</td><td>31-MAY-18</td><td>1718</td><td>11-JAN-18</td></tr>
+<tr><td>201830</td><td>Spring 2018</td><td>08-JAN-18</td><td>04-MAY-18</td><td>1718</td><td>10-JAN-18</td></tr>
+<tr><td>201825</td><td>CE Fall 2017</td><td>01-AUG-17</td><td>31-DEC-17</td><td>1718</td><td>04-OCT-16</td></tr>
+<tr><td>201820</td><td>Fall 2017</td><td>21-AUG-17</td><td>15-DEC-17</td><td>1718</td><td>19-DEC-16</td></tr>
+<tr><td>201810</td><td>Summer 2017</td><td>08-MAY-17</td><td>10-AUG-17</td><td>1617</td><td>05-JAN-17</td></tr>
+<tr><td>201735</td><td>CE Spring 2017</td><td>01-JAN-17</td><td>31-MAY-17</td><td>1617</td><td>09-MAR-16</td></tr>
+<tr><td>201730</td><td>Spring 2017</td><td>12-DEC-16</td><td>05-MAY-17</td><td>1617</td><td>30-AUG-16</td></tr>
+<tr><td>201725</td><td>CE Fall 2016</td><td>01-AUG-16</td><td>31-DEC-16</td><td>1617</td><td>09-MAR-16</td></tr>
+<tr><td>201720</td><td>Fall 2016</td><td>01-AUG-16</td><td>09-DEC-16</td><td>1617</td><td>07-JAN-16</td></tr>
+<tr><td>201715</td><td>CE Summer 2016</td><td>01-JUN-16</td><td>31-JUL-16</td><td>1516</td><td>09-MAR-16</td></tr>
+<tr><td>201710</td><td>Summer 2016</td><td>09-MAY-16</td><td>28-JUL-16</td><td>1516</td><td>11-DEC-15</td></tr>
+<tr><td>201635</td><td>CE Spring 2016</td><td>01-JAN-16</td><td>31-MAY-16</td><td>1516</td><td>01-JUN-15</td></tr>
+<tr><td>201630</td><td>Spring 2016</td><td>14-DEC-15</td><td>06-MAY-16</td><td>1516</td><td>09-SEP-15</td></tr>
+<tr><td>201625</td><td>CE Fall 2015</td><td>01-AUG-15</td><td>31-DEC-15</td><td>1516</td><td>01-JUN-15</td></tr>
+<tr><td>201620</td><td>Fall 2015</td><td>27-JUL-15</td><td>11-DEC-15</td><td>1516</td><td>21-JAN-15</td></tr>
+<tr><td>201615</td><td>CE Summer 2015</td><td>01-JUN-15</td><td>31-JUL-15</td><td>1415</td><td>01-JUN-15</td></tr>
+<tr><td>201610</td><td>Summer 2015</td><td>11-MAY-15</td><td>23-JUL-15</td><td>1415</td><td>16-JAN-15</td></tr>
+<tr><td>201535</td><td>CE Spring 2015</td><td>01-JAN-15</td><td>31-MAY-15</td><td>1415</td><td>15-MAY-14</td></tr>
+<tr><td>201530</td><td>Spring 2015</td><td>15-DEC-14</td><td>08-MAY-15</td><td>1415</td><td>15-SEP-14</td></tr>
+<tr><td>201525</td><td>CE Fall 2014</td><td>01-AUG-14</td><td>31-DEC-14</td><td>1415</td><td>15-MAY-14</td></tr>
+<tr><td>201520</td><td>Fall 2014</td><td>28-JUL-14</td><td>12-DEC-14</td><td>1415</td><td>10-FEB-14</td></tr>
+<tr><td>201515</td><td>CE Summer 2014</td><td>01-JUN-14</td><td>31-JUL-14</td><td>1314</td><td>15-MAY-14</td></tr>
+<tr><td>201510</td><td>Summer 2014</td><td>12-MAY-14</td><td>24-JUL-14</td><td>1314</td><td>10-FEB-14</td></tr>
+<tr><td>201435</td><td>CE Spring 2014</td><td>01-JAN-14</td><td>31-MAY-14</td><td>1314</td><td>17-MAY-13</td></tr>
+<tr><td>201430</td><td>Spring 2014</td><td>16-DEC-13</td><td>09-MAY-14</td><td>1314</td><td>14-JAN-13</td></tr>
+<tr><td>201425</td><td>CE Fall 2013</td><td>01-AUG-13</td><td>31-DEC-13</td><td>1314</td><td>17-MAY-13</td></tr>
+<tr><td>201420</td><td>Fall 2013</td><td>29-JUL-13</td><td>13-DEC-13</td><td>1314</td><td>10-DEC-12</td></tr>
+<tr><td>201415</td><td>CE Summer 2013</td><td>01-JUN-13</td><td>31-JUL-13</td><td>1213</td><td>17-MAY-13</td></tr>
+<tr><td>201410</td><td>Summer 2013</td><td>13-MAY-13</td><td>25-JUL-13</td><td>1213</td><td>10-DEC-12</td></tr>
+<tr><td>201330</td><td>Spring 2013</td><td>17-DEC-12</td><td>10-MAY-13</td><td>1213</td><td>08-FEB-12</td></tr>
+<tr><td>201320</td><td>Fall 2012</td><td>30-JUL-12</td><td>14-DEC-12</td><td>1213</td><td>08-FEB-12</td></tr>
+<tr><td>201315</td><td>Continuing Educ Summer 2012</td><td>10-MAY-12</td><td>29-JUL-12</td><td>1112</td><td>09-MAY-12</td></tr>
+<tr><td>201310</td><td>Summer 2012</td><td>10-MAY-12</td><td>26-JUL-12</td><td>1112</td><td>08-FEB-12</td></tr>
+<tr><td>201230</td><td>Spring 2012</td><td>19-DEC-11</td><td>09-MAY-12</td><td>1112</td><td>09-NOV-11</td></tr>
+<tr><td>201220</td><td>Fall 2011</td><td>01-AUG-11</td><td>14-DEC-11</td><td>1112</td><td>07-FEB-11</td></tr>
+<tr><td>201210</td><td>Summer 2011</td><td>20-MAY-11</td><td>01-AUG-11</td><td>1011</td><td>19-JAN-12</td></tr>
+<tr><td>201130</td><td>Spring  2011</td><td>10-JAN-11</td><td>06-MAY-11</td><td>1011</td><td>11-NOV-10</td></tr>
+<tr><td>201120</td><td>Fall 2010</td><td>16-AUG-10</td><td>10-DEC-10</td><td>1011</td><td>11-NOV-10</td></tr>
+<tr><td>201110</td><td>Summer  2010</td><td>20-MAY-10</td><td>29-JUL-10</td><td>0910</td><td>19-JAN-12</td></tr>
+<tr><td>201030</td><td>Spring 2010</td><td>15-JAN-10</td><td>15-MAY-10</td><td>0910</td><td>25-JUL-06</td></tr>
+<tr><td>201020</td><td>Fall 2009</td><td>01-SEP-09</td><td>15-DEC-09</td><td>0910</td><td>25-JUL-06</td></tr>
+<tr><td>201010</td><td>Summer 2009</td><td>20-MAY-09</td><td>01-AUG-09</td><td>0809</td><td>19-JAN-12</td></tr>
+<tr><td>200930</td><td>Spring 2009</td><td>15-JAN-09</td><td>15-MAY-09</td><td>0809</td><td>25-JUL-06</td></tr>
+<tr><td>200920</td><td>Fall 2008</td><td>01-SEP-08</td><td>15-DEC-08</td><td>0809</td><td>25-JUL-06</td></tr>
+<tr><td>200910</td><td>Summer 2008</td><td>20-MAY-08</td><td>01-AUG-08</td><td>0708</td><td>19-JAN-12</td></tr>
+<tr><td>200830</td><td>Spring 2008</td><td>15-JAN-08</td><td>15-MAY-08</td><td>0708</td><td>12-JUL-06</td></tr>
+<tr><td>200820</td><td>Fall 2007</td><td>01-SEP-07</td><td>15-DEC-07</td><td>0708</td><td>12-JUL-06</td></tr>
+<tr><td>200810</td><td>Summer 2007</td><td>20-MAY-07</td><td>01-AUG-07</td><td>0607</td><td>19-JAN-12</td></tr>
+<tr><td>200730</td><td>Spring 2007</td><td>15-JAN-07</td><td>15-MAY-07</td><td>0607</td><td>12-JUL-06</td></tr>
+<tr><td>200720</td><td>Fall 2006</td><td>01-SEP-06</td><td>15-DEC-06</td><td>0607</td><td>12-JUL-06</td></tr>
+<tr><td>200710</td><td>Summer 2006</td><td>20-MAY-06</td><td>01-AUG-06</td><td>0506</td><td>19-JAN-12</td></tr>
+<tr><td>200630</td><td>Spring 2006</td><td>15-JAN-06</td><td>15-MAY-06</td><td>0506</td><td>12-JUL-06</td></tr>
+<tr><td>200620</td><td>Fall 2005</td><td>01-SEP-05</td><td>15-DEC-05</td><td>0506</td><td>12-JUL-06</td></tr>
+<tr><td>200610</td><td>Summer 2005</td><td>20-MAY-05</td><td>01-AUG-05</td><td>0405</td><td>19-JAN-12</td></tr>
+<tr><td>200530</td><td>Spring 2005</td><td>15-JAN-05</td><td>15-MAY-05</td><td>0405</td><td>12-JUL-06</td></tr>
+<tr><td>200520</td><td>Fall 2004</td><td>01-SEP-04</td><td>15-DEC-04</td><td>0405</td><td>12-JUL-06</td></tr>
+<tr><td>200510</td><td>Summer 2004</td><td>20-MAY-04</td><td>01-AUG-04</td><td>0304</td><td>19-JAN-12</td></tr>
+<tr><td>200430</td><td>Spring 2004</td><td>15-JAN-04</td><td>15-MAY-04</td><td>0304</td><td>12-JUL-06</td></tr>
+<tr><td>200420</td><td>Fall 2003</td><td>01-SEP-03</td><td>15-DEC-03</td><td>0304</td><td>12-JUL-06</td></tr>
+<tr><td>200410</td><td>Summer 2003</td><td>20-MAY-03</td><td>01-AUG-03</td><td>0203</td><td>19-JAN-12</td></tr>
+<tr><td>200330</td><td>Spring 2003</td><td>20-JAN-03</td><td>12-MAY-03</td><td>0203</td><td>12-JUL-06</td></tr>
+<tr><td>200320</td><td>Fall 2002</td><td>03-SEP-02</td><td>20-DEC-02</td><td>0203</td><td>12-JUL-06</td></tr>
+<tr><td>200310</td><td>Summer 2002</td><td>20-MAY-02</td><td>01-AUG-02</td><td>0102</td><td>19-JAN-12</td></tr>
+<tr><td>200240</td><td>Summer II 2002</td><td>01-JUL-02</td><td>25-AUG-02</td><td>0203</td><td>18-JAN-00</td></tr>
+<tr><td>200230</td><td>Spring 2002</td><td>01-JAN-02</td><td>31-MAY-02</td><td>0102</td><td>12-JUL-06</td></tr>
+<tr><td>200220</td><td>Fall 2001</td><td>01-SEP-01</td><td>15-DEC-01</td><td>0102</td><td>12-JUL-06</td></tr>
+<tr><td>200210</td><td>Summer 2001</td><td>20-MAY-01</td><td>01-AUG-01</td><td>0001</td><td>19-JAN-12</td></tr>
+<tr><td>200140</td><td>Summer II 2001</td><td>01-JUL-01</td><td>25-AUG-01</td><td>0102</td><td>18-JAN-00</td></tr>
+<tr><td>200130</td><td>Spring 2001</td><td>15-JAN-01</td><td>15-MAY-01</td><td>0001</td><td>12-JUL-06</td></tr>
+<tr><td>200120</td><td>Fall 2000</td><td>01-SEP-00</td><td>15-DEC-00</td><td>0001</td><td>12-JUL-06</td></tr>
+<tr><td>200110</td><td>Summer 2000</td><td>20-MAY-00</td><td>01-AUG-00</td><td>9900</td><td>19-JAN-12</td></tr>
+<tr><td>200030</td><td>Spring 2000</td><td>15-JAN-00</td><td>15-MAY-00</td><td>9900</td><td>12-JUL-06</td></tr>
+<tr><td>200020</td><td>Fall 1999</td><td>01-SEP-99</td><td>31-DEC-99</td><td>9900</td><td>12-JUL-06</td></tr>
+<tr><td>200010</td><td>Summer 1999</td><td>20-MAY-99</td><td>01-AUG-99</td><td>9899</td><td>19-JAN-12</td></tr>
+<tr><td>200005</td><td>Summer 1999</td><td>01-JUL-99</td><td>15-AUG-99</td><td>9900</td><td>02-SEP-99</td></tr>
+<tr><td>1BA001</td><td>mm</td><td>10-JUL-08</td><td>10-JUL-08</td><td>0000</td><td>10-JUL-08</td></tr>
+<tr><td>199930</td><td>Spring 1999</td><td>15-JAN-99</td><td>15-MAY-99</td><td>9899</td><td>12-JUL-06</td></tr>
+<tr><td>199920</td><td>Fall 1998</td><td>01-SEP-98</td><td>31-DEC-98</td><td>9899</td><td>12-JUL-06</td></tr>
+<tr><td>199910</td><td>Summer 1998</td><td>20-MAY-98</td><td>01-AUG-98</td><td>9798</td><td>19-JAN-12</td></tr>
+<tr><td>199830</td><td>Spring 1998</td><td>15-JAN-98</td><td>15-MAY-98</td><td>9798</td><td>12-JUL-06</td></tr>
+<tr><td>199820</td><td>Fall 1997</td><td>01-SEP-97</td><td>15-DEC-98</td><td>9798</td><td>12-JUL-06</td></tr>
+<tr><td>199810</td><td>Summer 1997</td><td>20-MAY-97</td><td>01-AUG-97</td><td>9697</td><td>19-JAN-12</td></tr>
+<tr><td>199730</td><td>Spring 1997</td><td>15-JAN-97</td><td>15-MAY-97</td><td>9697</td><td>12-JUL-06</td></tr>
+<tr><td>199720</td><td>Fall 1996</td><td>01-SEP-96</td><td>15-DEC-96</td><td>9697</td><td>12-JUL-06</td></tr>
+<tr><td>199710</td><td>Summer 1996</td><td>20-MAY-96</td><td>01-AUG-96</td><td>9596</td><td>19-JAN-12</td></tr>
+<tr><td>199630</td><td>Spring 1996</td><td>15-JAN-96</td><td>15-MAY-96</td><td>9596</td><td>12-JUL-06</td></tr>
+<tr><td>199620</td><td>Fall 1995</td><td>28-AUG-95</td><td>15-DEC-95</td><td>9596</td><td>12-JUL-06</td></tr>
+<tr><td>199610</td><td>Summer 1995</td><td>20-MAY-95</td><td>01-AUG-95</td><td>9495</td><td>19-JAN-12</td></tr>
+<tr><td>199530</td><td>Spring 1995</td><td>16-JAN-95</td><td>12-MAY-95</td><td>9495</td><td>12-JUL-06</td></tr>
+<tr><td>199520</td><td>Fall 1994</td><td>29-AUG-94</td><td>16-DEC-94</td><td>9495</td><td>12-JUL-06</td></tr>
+<tr><td>199510</td><td>Summer 1994</td><td>20-MAY-94</td><td>01-AUG-94</td><td>9394</td><td>19-JAN-12</td></tr>
+<tr><td>199430</td><td>Spring 1994</td><td>15-JAN-94</td><td>15-MAY-94</td><td>9394</td><td>12-JUL-06</td></tr>
+<tr><td>199420</td><td>Fall 1993</td><td>01-SEP-93</td><td>15-DEC-93</td><td>9394</td><td>12-JUL-06</td></tr>
+<tr><td>199410</td><td>Summer 1993</td><td>20-MAY-93</td><td>01-AUG-93</td><td>9293</td><td>19-JAN-12</td></tr>
+<tr><td>199330</td><td>Spring 1993</td><td>15-JAN-93</td><td>15-MAY-93</td><td>9293</td><td>12-JUL-06</td></tr>
+<tr><td>199320</td><td>Fall 1992</td><td>01-SEP-92</td><td>15-DEC-92</td><td>9293</td><td>12-JUL-06</td></tr>
+<tr><td>199310</td><td>Summer 1992</td><td>20-MAY-92</td><td>01-AUG-92</td><td>9192</td><td>19-JAN-12</td></tr>
+<tr><td>199230</td><td>Spring 1992</td><td>15-JAN-92</td><td>15-MAY-92</td><td>9192</td><td>12-JUL-06</td></tr>
+<tr><td>199220</td><td>Fall 1991</td><td>01-SEP-91</td><td>15-DEC-91</td><td>9192</td><td>12-JUL-06</td></tr>
+<tr><td>199210</td><td>Summer 1991</td><td>20-MAY-91</td><td>01-AUG-91</td><td>9091</td><td>19-JAN-12</td></tr>
+<tr><td>199130</td><td>Spring 1991</td><td>15-JAN-91</td><td>15-MAY-91</td><td>9091</td><td>12-JUL-06</td></tr>
+<tr><td>199120</td><td>Fall 1990</td><td>01-SEP-90</td><td>15-DEC-90</td><td>9091</td><td>12-JUL-06</td></tr>
+<tr><td>199110</td><td>Summer 1990</td><td>20-MAY-90</td><td>01-AUG-90</td><td>8990</td><td>19-JAN-12</td></tr>
+<tr><td>199030</td><td>Spring 1990</td><td>15-JAN-90</td><td>15-MAY-90</td><td>8990</td><td>12-JUL-06</td></tr>
+<tr><td>199020</td><td>Fall 1989</td><td>01-SEP-89</td><td>15-DEC-89</td><td>8990</td><td>12-JUL-06</td></tr>
+<tr><td>199010</td><td>Summer 1989</td><td>20-MAY-89</td><td>01-AUG-89</td><td>8889</td><td>19-JAN-12</td></tr>
+<tr><td>198930</td><td>Spring 1989</td><td>15-JAN-89</td><td>15-MAY-89</td><td>8889</td><td>12-JUL-06</td></tr>
+<tr><td>198920</td><td>Fall 1988</td><td>01-SEP-88</td><td>15-DEC-88</td><td>8889</td><td>12-JUL-06</td></tr>
+<tr><td>198910</td><td>Summer 1988</td><td>20-MAY-88</td><td>01-AUG-88</td><td>8788</td><td>19-JAN-12</td></tr>
+<tr><td>198830</td><td>Spring 1988</td><td>15-JAN-88</td><td>15-MAY-88</td><td>8788</td><td>12-JUL-06</td></tr>
+<tr><td>198820</td><td>Fall 1987</td><td>01-SEP-87</td><td>15-DEC-87</td><td>8788</td><td>12-JUL-06</td></tr>
+<tr><td>198810</td><td>Summer 1987</td><td>20-MAY-87</td><td>01-AUG-87</td><td>8687</td><td>19-JAN-12</td></tr>
+<tr><td>198730</td><td>Spring 1987</td><td>15-JAN-87</td><td>15-MAY-87</td><td>8687</td><td>25-JUL-06</td></tr>
+<tr><td>198720</td><td>Fall 1986</td><td>01-SEP-86</td><td>15-DEC-86</td><td>8687</td><td>25-JUL-06</td></tr>
+<tr><td>198710</td><td>Summer 1986</td><td>20-MAY-86</td><td>01-AUG-86</td><td>8586</td><td>19-JAN-12</td></tr>
+<tr><td>198630</td><td>Spring 1986</td><td>15-JAN-86</td><td>15-MAY-86</td><td>8586</td><td>25-JUL-06</td></tr>
+<tr><td>198620</td><td>Fall 1985</td><td>01-SEP-85</td><td>15-DEC-85</td><td>8586</td><td>25-JUL-06</td></tr>
+<tr><td>198610</td><td>Summer 1985</td><td>20-MAY-85</td><td>01-AUG-85</td><td>8485</td><td>19-JAN-12</td></tr>
+<tr><td>198530</td><td>Spring 1985</td><td>15-JAN-85</td><td>15-MAY-85</td><td>8485</td><td>25-JUL-06</td></tr>
+<tr><td>198520</td><td>Fall 1984</td><td>01-SEP-84</td><td>15-DEC-84</td><td>8485</td><td>25-JUL-06</td></tr>
+<tr><td>198510</td><td>Summer 1984</td><td>20-MAY-84</td><td>01-AUG-84</td><td>8384</td><td>19-JAN-12</td></tr>
+<tr><td>198430</td><td>Spring 1984</td><td>15-JAN-84</td><td>15-MAY-84</td><td>8384</td><td>25-JUL-06</td></tr>
+<tr><td>198420</td><td>Fall 1983</td><td>01-SEP-83</td><td>15-DEC-83</td><td>8384</td><td>25-JUL-06</td></tr>
+<tr><td>198410</td><td>Summer 1983</td><td>20-MAY-83</td><td>01-AUG-83</td><td>8283</td><td>19-JAN-12</td></tr>
+<tr><td>198330</td><td>Spring 1983</td><td>15-JAN-83</td><td>15-MAY-83</td><td>8283</td><td>25-JUL-06</td></tr>
+<tr><td>198320</td><td>Fall 1982</td><td>01-SEP-82</td><td>15-DEC-82</td><td>8283</td><td>25-JUL-06</td></tr>
+<tr><td>198310</td><td>Summer 1982</td><td>20-MAY-82</td><td>01-AUG-82</td><td>8182</td><td>19-JAN-12</td></tr>
+<tr><td>198230</td><td>Spring 1982</td><td>15-JAN-82</td><td>15-MAY-82</td><td>8182</td><td>25-JUL-06</td></tr>
+<tr><td>198220</td><td>Fall 1981</td><td>01-SEP-81</td><td>15-DEC-81</td><td>8182</td><td>25-JUL-06</td></tr>
+<tr><td>198210</td><td>Summer 1981</td><td>20-MAY-81</td><td>01-AUG-81</td><td>8081</td><td>19-JAN-12</td></tr>
+<tr><td>198130</td><td>Spring 1981</td><td>15-JAN-81</td><td>15-MAY-81</td><td>8081</td><td>25-JUL-06</td></tr>
+<tr><td>198120</td><td>Fall 1980</td><td>01-SEP-80</td><td>15-DEC-80</td><td>8081</td><td>25-JUL-06</td></tr>
+<tr><td>198110</td><td>Summer 1980</td><td>20-MAY-80</td><td>01-AUG-80</td><td>7980</td><td>19-JAN-12</td></tr>
+<tr><td>198030</td><td>Spring 1980</td><td>15-JAN-80</td><td>15-MAY-80</td><td>7980</td><td>25-JUL-06</td></tr>
+<tr><td>198020</td><td>Fall 1979</td><td>01-SEP-79</td><td>15-DEC-79</td><td>7980</td><td>25-JUL-06</td></tr>
+<tr><td>198010</td><td>Summer 1979</td><td>20-MAY-79</td><td>01-AUG-79</td><td>7879</td><td>19-JAN-12</td></tr>
+<tr><td>197930</td><td>Spring 1979</td><td>15-JAN-79</td><td>15-MAY-79</td><td>7879</td><td>25-JUL-06</td></tr>
+<tr><td>197920</td><td>Fall 1978</td><td>01-SEP-78</td><td>15-DEC-78</td><td>7879</td><td>25-JUL-06</td></tr>
+<tr><td>197910</td><td>Summer 1978</td><td>20-MAY-78</td><td>01-AUG-78</td><td>7778</td><td>19-JAN-12</td></tr>
+<tr><td>197830</td><td>Spring 1978</td><td>15-JAN-78</td><td>15-MAY-78</td><td>7778</td><td>25-JUL-06</td></tr>
+<tr><td>197820</td><td>Fall 1977</td><td>01-SEP-77</td><td>15-DEC-77</td><td>7778</td><td>25-JUL-06</td></tr>
+<tr><td>197810</td><td>Summer 1977</td><td>20-MAY-77</td><td>01-AUG-77</td><td>7677</td><td>19-JAN-12</td></tr>
+<tr><td>197730</td><td>Spring 1977</td><td>15-JAN-77</td><td>15-MAY-77</td><td>7677</td><td>25-JUL-06</td></tr>
+<tr><td>197720</td><td>Fall 1976</td><td>01-SEP-76</td><td>15-DEC-76</td><td>7677</td><td>25-JUL-06</td></tr>
+<tr><td>197710</td><td>Summer 1976</td><td>20-MAY-76</td><td>01-AUG-76</td><td>7576</td><td>19-JAN-12</td></tr>
+<tr><td>197630</td><td>Spring 1976</td><td>15-JAN-76</td><td>15-MAY-76</td><td>7576</td><td>25-JUL-06</td></tr>
+<tr><td>197620</td><td>Fall 1975</td><td>01-SEP-75</td><td>15-DEC-75</td><td>7576</td><td>25-JUL-06</td></tr>
+<tr><td>197610</td><td>Summer 1975</td><td>20-MAY-75</td><td>01-AUG-75</td><td>7475</td><td>19-JAN-12</td></tr>
+<tr><td>197530</td><td>Spring 1975</td><td>15-JAN-75</td><td>15-MAY-75</td><td>7475</td><td>25-JUL-06</td></tr>
+<tr><td>197520</td><td>Fall 1974</td><td>01-SEP-74</td><td>15-DEC-74</td><td>7475</td><td>25-JUL-06</td></tr>
+<tr><td>197510</td><td>Summer 1974</td><td>20-MAY-74</td><td>01-AUG-74</td><td>7374</td><td>19-JAN-12</td></tr>
+<tr><td>197430</td><td>Spring 1974</td><td>15-JAN-74</td><td>15-MAY-74</td><td>7374</td><td>25-JUL-06</td></tr>
+<tr><td>197420</td><td>Fall 1973</td><td>01-SEP-73</td><td>15-DEC-73</td><td>7374</td><td>25-JUL-06</td></tr>
+<tr><td>197410</td><td>Summer 1973</td><td>20-MAY-73</td><td>01-AUG-73</td><td>7273</td><td>19-JAN-12</td></tr>
+<tr><td>197330</td><td>Spring 1973</td><td>15-JAN-73</td><td>15-MAY-73</td><td>7273</td><td>25-JUL-06</td></tr>
+<tr><td>197320</td><td>Fall 1972</td><td>01-SEP-72</td><td>15-DEC-72</td><td>7273</td><td>25-JUL-06</td></tr>
+<tr><td>197310</td><td>Summer 1972</td><td>20-MAY-72</td><td>01-AUG-72</td><td>7172</td><td>19-JAN-12</td></tr>
+<tr><td>197230</td><td>Spring 1972</td><td>15-JAN-72</td><td>15-MAY-72</td><td>7172</td><td>25-JUL-06</td></tr>
+<tr><td>197220</td><td>Fall 1971</td><td>01-SEP-71</td><td>15-DEC-71</td><td>7172</td><td>25-JUL-06</td></tr>
+<tr><td>197210</td><td>Summer 1971</td><td>20-MAY-71</td><td>01-AUG-71</td><td>7071</td><td>19-JAN-12</td></tr>
+<tr><td>197130</td><td>Spring 1971</td><td>15-JAN-71</td><td>15-MAY-71</td><td>7071</td><td>25-JUL-06</td></tr>
+<tr><td>197120</td><td>Fall 1970</td><td>01-SEP-70</td><td>15-DEC-70</td><td>7071</td><td>25-JUL-06</td></tr>
+<tr><td>197110</td><td>Summer 1970</td><td>20-MAY-70</td><td>01-AUG-70</td><td>6970</td><td>19-JAN-12</td></tr>
+<tr><td>197030</td><td>Spring 1970</td><td>15-JAN-70</td><td>15-MAY-70</td><td>6970</td><td>25-JUL-06</td></tr>
+<tr><td>197020</td><td>Fall 1969</td><td>01-SEP-69</td><td>15-DEC-69</td><td>6970</td><td>25-JUL-06</td></tr>
+<tr><td>197010</td><td>Summer 1969</td><td>20-MAY-69</td><td>01-AUG-69</td><td>6869</td><td>19-JAN-12</td></tr>
+<tr><td>196930</td><td>Spring 1969</td><td>15-JAN-69</td><td>15-MAY-69</td><td>6869</td><td>06-MAY-08</td></tr>
+<tr><td>196920</td><td>Fall 1968</td><td>01-SEP-68</td><td>15-DEC-68</td><td>6869</td><td>06-MAY-08</td></tr>
+<tr><td>196911</td><td>Interim 1969</td><td>01-JAN-69</td><td>31-JAN-69</td><td>6869</td><td>06-MAY-08</td></tr>
+<tr><td>196910</td><td>Summer 1968</td><td>20-MAY-68</td><td>01-AUG-68</td><td>6768</td><td>19-JAN-12</td></tr>
+<tr><td>196830</td><td>Spring 1968</td><td>15-JAN-68</td><td>15-MAY-68</td><td>6768</td><td>06-MAY-08</td></tr>
+<tr><td>196821</td><td>Interim 1968</td><td>01-JAN-68</td><td>31-JAN-68</td><td>6768</td><td>06-MAY-08</td></tr>
+<tr><td>196820</td><td>Fall 1967</td><td>01-SEP-67</td><td>15-DEC-67</td><td>6768</td><td>06-MAY-08</td></tr>
+<tr><td>196810</td><td>Summer 1967</td><td>20-MAY-67</td><td>01-AUG-67</td><td>6667</td><td>19-JAN-12</td></tr>
+<tr><td>196730</td><td>Spring 1967</td><td>15-JAN-67</td><td>15-MAY-67</td><td>6667</td><td>06-MAY-08</td></tr>
+<tr><td>196720</td><td>Fall 1966</td><td>01-SEP-66</td><td>15-DEC-66</td><td>6667</td><td>06-MAY-08</td></tr>
+<tr><td>196710</td><td>Summer 1966</td><td>20-MAY-66</td><td>01-AUG-66</td><td>6566</td><td>19-JAN-12</td></tr>
+<tr><td>196630</td><td>Spring 1966</td><td>15-JAN-66</td><td>15-MAY-66</td><td>6566</td><td>06-MAY-08</td></tr>
+<tr><td>196620</td><td>Fall 1965</td><td>01-SEP-65</td><td>15-DEC-65</td><td>6566</td><td>06-MAY-08</td></tr>
+<tr><td>196610</td><td>Summer 1965</td><td>20-MAY-65</td><td>01-AUG-65</td><td>6465</td><td>19-JAN-12</td></tr>
+<tr><td>196530</td><td>Spring 1965</td><td>15-JAN-65</td><td>15-MAY-65</td><td>6465</td><td>06-MAY-08</td></tr>
+<tr><td>196520</td><td>Fall 1964</td><td>01-SEP-64</td><td>15-DEC-64</td><td>6465</td><td>06-MAY-08</td></tr>
+<tr><td>196510</td><td>Summer 1964</td><td>20-MAY-64</td><td>01-AUG-64</td><td>6364</td><td>19-JAN-12</td></tr>
+<tr><td>196430</td><td>Spring 1964</td><td>15-JAN-64</td><td>15-MAY-64</td><td>6364</td><td>06-MAY-08</td></tr>
+<tr><td>196420</td><td>Fall 1963</td><td>01-SEP-63</td><td>15-DEC-63</td><td>6364</td><td>06-MAY-08</td></tr>
+<tr><td>196410</td><td>Summer 1963</td><td>20-MAY-63</td><td>01-AUG-63</td><td>6263</td><td>19-JAN-12</td></tr>
+<tr><td>196330</td><td>Spring 1963</td><td>15-JAN-63</td><td>15-MAY-63</td><td>6263</td><td>06-MAY-08</td></tr>
+<tr><td>196320</td><td>Fall 1962</td><td>01-SEP-62</td><td>15-DEC-62</td><td>6263</td><td>06-MAY-08</td></tr>
+<tr><td>196310</td><td>Summer 1962</td><td>20-MAY-62</td><td>01-AUG-62</td><td>6162</td><td>19-JAN-12</td></tr>
+<tr><td>196230</td><td>Spring 1962</td><td>15-JAN-62</td><td>15-MAY-62</td><td>6162</td><td>06-MAY-08</td></tr>
+<tr><td>196220</td><td>Fall 1961</td><td>01-SEP-61</td><td>15-DEC-61</td><td>6162</td><td>06-MAY-08</td></tr>
+<tr><td>196210</td><td>Summer 1961</td><td>20-MAY-61</td><td>01-AUG-61</td><td>6061</td><td>19-JAN-12</td></tr>
+<tr><td>196130</td><td>Spring 1961</td><td>15-JAN-61</td><td>15-MAY-61</td><td>6061</td><td>06-MAY-08</td></tr>
+<tr><td>196120</td><td>Fall 1960</td><td>01-SEP-60</td><td>15-DEC-60</td><td>6061</td><td>06-MAY-08</td></tr>
+<tr><td>196110</td><td>Summer 1960</td><td>20-MAY-60</td><td>01-AUG-60</td><td>5960</td><td>19-JAN-12</td></tr>
+<tr><td>196030</td><td>Spring 1960</td><td>15-JAN-60</td><td>15-MAY-60</td><td>5960</td><td>06-MAY-08</td></tr>
+<tr><td>196020</td><td>Fall 1959</td><td>01-SEP-59</td><td>15-DEC-59</td><td>5960</td><td>06-MAY-08</td></tr>
+<tr><td>196010</td><td>Summer 1959</td><td>20-MAY-59</td><td>01-AUG-59</td><td>5859</td><td>19-JAN-12</td></tr>
+<tr><td>195930</td><td>Spring 1959</td><td>15-JAN-59</td><td>15-MAY-59</td><td>5859</td><td>06-MAY-08</td></tr>
+<tr><td>195920</td><td>Fall 1958</td><td>01-SEP-58</td><td>15-DEC-58</td><td>5859</td><td>06-MAY-08</td></tr>
+<tr><td>195910</td><td>Summer 1958</td><td>20-MAY-58</td><td>01-AUG-58</td><td>5758</td><td>19-JAN-12</td></tr>
+<tr><td>195830</td><td>Spring 1958</td><td>15-JAN-58</td><td>15-MAY-58</td><td>5758</td><td>06-MAY-08</td></tr>
+<tr><td>195820</td><td>Fall 1957</td><td>01-SEP-57</td><td>15-DEC-57</td><td>5758</td><td>06-MAY-08</td></tr>
+<tr><td>195810</td><td>Summer 1957</td><td>20-MAY-57</td><td>01-AUG-57</td><td>5657</td><td>19-JAN-12</td></tr>
+<tr><td>195730</td><td>Spring 1957</td><td>15-JAN-57</td><td>15-MAY-57</td><td>5657</td><td>06-MAY-08</td></tr>
+<tr><td>195720</td><td>Fall 1956</td><td>01-SEP-56</td><td>15-DEC-56</td><td>5657</td><td>06-MAY-08</td></tr>
+<tr><td>195710</td><td>Summer 1956</td><td>20-MAY-56</td><td>01-AUG-56</td><td>5556</td><td>19-JAN-12</td></tr>
+<tr><td>195630</td><td>Spring 1956</td><td>15-JAN-56</td><td>15-MAY-56</td><td>5556</td><td>06-MAY-08</td></tr>
+<tr><td>195620</td><td>Fall 1955</td><td>01-SEP-55</td><td>15-DEC-55</td><td>5556</td><td>06-MAY-08</td></tr>
+<tr><td>195610</td><td>Summer 1955</td><td>20-MAY-55</td><td>01-AUG-55</td><td>5455</td><td>19-JAN-12</td></tr>
+<tr><td>195530</td><td>Spring 1955</td><td>15-JAN-55</td><td>15-MAY-55</td><td>5455</td><td>06-MAY-08</td></tr>
+<tr><td>195520</td><td>Fall 1954</td><td>01-SEP-54</td><td>15-DEC-54</td><td>5455</td><td>06-MAY-08</td></tr>
+<tr><td>195510</td><td>Summer 1954</td><td>20-MAY-54</td><td>01-AUG-54</td><td>5354</td><td>19-JAN-12</td></tr>
+<tr><td>195430</td><td>Spring 1954</td><td>15-JAN-54</td><td>15-MAY-54</td><td>5354</td><td>06-MAY-08</td></tr>
+<tr><td>195420</td><td>Fall 1953</td><td>01-SEP-53</td><td>15-DEC-53</td><td>5354</td><td>06-MAY-08</td></tr>
+<tr><td>195410</td><td>Summer 1953</td><td>20-MAY-53</td><td>01-AUG-53</td><td>5253</td><td>19-JAN-12</td></tr>
+<tr><td>195330</td><td>Spring 1953</td><td>15-JAN-53</td><td>15-MAY-53</td><td>5253</td><td>06-MAY-08</td></tr>
+<tr><td>195320</td><td>Fall 1952</td><td>01-SEP-52</td><td>15-DEC-52</td><td>5253</td><td>06-MAY-08</td></tr>
+<tr><td>195310</td><td>Summer 1952</td><td>20-MAY-52</td><td>01-AUG-52</td><td>5152</td><td>19-JAN-12</td></tr>
+<tr><td>195230</td><td>Spring 1952</td><td>15-JAN-52</td><td>15-MAY-52</td><td>5152</td><td>06-MAY-08</td></tr>
+<tr><td>195220</td><td>Fall 1951</td><td>01-SEP-51</td><td>15-DEC-51</td><td>5152</td><td>06-MAY-08</td></tr>
+<tr><td>195210</td><td>Summer 1951</td><td>20-MAY-51</td><td>01-AUG-51</td><td>5051</td><td>19-JAN-12</td></tr>
+<tr><td>195130</td><td>Spring 1951</td><td>15-JAN-51</td><td>15-MAY-51</td><td>5051</td><td>06-MAY-08</td></tr>
+<tr><td>195126</td><td>Intersession 1951</td><td>01-MAY-51</td><td>31-MAY-51</td><td>5051</td><td>06-MAY-08</td></tr>
+<tr><td>195120</td><td>Fall 1950</td><td>01-SEP-50</td><td>15-DEC-50</td><td>5051</td><td>06-MAY-08</td></tr>
+<tr><td>195111</td><td>Winter 1951</td><td>01-JAN-51</td><td>31-JAN-51</td><td>5051</td><td>06-MAY-08</td></tr>
+<tr><td>195110</td><td>Summer 1950</td><td>20-MAY-50</td><td>01-AUG-50</td><td>4950</td><td>19-JAN-12</td></tr>
+<tr><td>195030</td><td>Spring 1950</td><td>15-JAN-50</td><td>15-MAY-50</td><td>4950</td><td>06-MAY-08</td></tr>
+<tr><td>195020</td><td>Fall 1949</td><td>01-SEP-49</td><td>15-DEC-49</td><td>4950</td><td>06-MAY-08</td></tr>
+<tr><td>195011</td><td>Winter 1950</td><td>01-JAN-50</td><td>31-JAN-50</td><td>4951</td><td>06-MAY-08</td></tr>
+<tr><td>195010</td><td>Summer 1949</td><td>20-MAY-49</td><td>01-AUG-49</td><td>4849</td><td>19-JAN-12</td></tr>
+<tr><td>194930</td><td>Spring 1949</td><td>15-JAN-49</td><td>15-MAY-49</td><td>4849</td><td>06-MAY-08</td></tr>
+<tr><td>194920</td><td>Fall 1948</td><td>01-SEP-48</td><td>15-DEC-48</td><td>4849</td><td>06-MAY-08</td></tr>
+<tr><td>194911</td><td>Winter 1949</td><td>01-JAN-49</td><td>31-JAN-49</td><td>4849</td><td>06-MAY-08</td></tr>
+<tr><td>194910</td><td>Summer 1948</td><td>20-MAY-48</td><td>01-AUG-48</td><td>4748</td><td>19-JAN-12</td></tr>
+<tr><td>194830</td><td>Spring 1948</td><td>15-JAN-48</td><td>15-MAY-48</td><td>4748</td><td>06-MAY-08</td></tr>
+<tr><td>194820</td><td>Fall 1947</td><td>01-SEP-47</td><td>15-DEC-47</td><td>4748</td><td>06-MAY-08</td></tr>
+<tr><td>194810</td><td>Summer 1947</td><td>20-MAY-47</td><td>01-AUG-47</td><td>4647</td><td>19-JAN-12</td></tr>
+<tr><td>194730</td><td>Spring 1947</td><td>15-JAN-47</td><td>15-MAY-47</td><td>4647</td><td>06-MAY-08</td></tr>
+<tr><td>194720</td><td>Fall 1946</td><td>01-SEP-46</td><td>15-DEC-46</td><td>4647</td><td>06-MAY-08</td></tr>
+<tr><td>194710</td><td>Summer 1946</td><td>20-MAY-46</td><td>01-AUG-46</td><td>4546</td><td>19-JAN-12</td></tr>
+<tr><td>194630</td><td>Spring 1946</td><td>15-JAN-46</td><td>15-MAY-46</td><td>4546</td><td>06-MAY-08</td></tr>
+<tr><td>194620</td><td>Fall 1945</td><td>01-SEP-45</td><td>15-DEC-45</td><td>4546</td><td>06-MAY-08</td></tr>
+<tr><td>194610</td><td>Summer 1945</td><td>20-MAY-45</td><td>01-AUG-45</td><td>4445</td><td>19-JAN-12</td></tr>
+<tr><td>194530</td><td>Spring 1945</td><td>15-JAN-45</td><td>15-MAY-45</td><td>4445</td><td>06-MAY-08</td></tr>
+<tr><td>194520</td><td>Fall 1944</td><td>01-SEP-44</td><td>15-DEC-44</td><td>4445</td><td>06-MAY-08</td></tr>
+<tr><td>194510</td><td>Summer 1944</td><td>20-MAY-44</td><td>01-AUG-44</td><td>4344</td><td>19-JAN-12</td></tr>
+<tr><td>194420</td><td>Fall 1943</td><td>01-SEP-43</td><td>15-DEC-43</td><td>4344</td><td>06-MAY-08</td></tr>
+<tr><td>194410</td><td>Summer 1943</td><td>20-MAY-43</td><td>01-AUG-43</td><td>4243</td><td>19-JAN-12</td></tr>
+<tr><td>194330</td><td>Spring 1943</td><td>15-JAN-43</td><td>15-MAY-43</td><td>4243</td><td>23-SEP-11</td></tr>
+<tr><td>194320</td><td>Fall 1942</td><td>01-SEP-42</td><td>15-DEC-42</td><td>4243</td><td>06-MAY-08</td></tr>
+<tr><td>194310</td><td>Summer 1942</td><td>20-MAY-42</td><td>01-AUG-42</td><td>4142</td><td>19-JAN-12</td></tr>
+<tr><td>194230</td><td>Spring 1942</td><td>15-JAN-42</td><td>15-MAY-42</td><td>4142</td><td>23-SEP-11</td></tr>
+<tr><td>194220</td><td>Fall 1941</td><td>01-SEP-41</td><td>15-DEC-41</td><td>4142</td><td>06-MAY-08</td></tr>
+<tr><td>194210</td><td>Summer 1941</td><td>20-MAY-41</td><td>01-AUG-41</td><td>4041</td><td>19-JAN-12</td></tr>
+<tr><td>194120</td><td>Fall 1940</td><td>01-SEP-40</td><td>15-DEC-40</td><td>4041</td><td>06-MAY-08</td></tr>
+<tr><td>194110</td><td>Summer 1940</td><td>20-MAY-40</td><td>01-AUG-40</td><td>3940</td><td>19-JAN-12</td></tr>
+<tr><td>194020</td><td>Fall 1939</td><td>01-SEP-39</td><td>15-DEC-39</td><td></td><td>26-NOV-18</td></tr>
+<tr><td>194010</td><td>Fall 1939</td><td>01-SEP-39</td><td>15-DEC-39</td><td></td><td>26-NOV-18</td></tr>
+<tr><td>193920</td><td>Fall 1938</td><td>01-SEP-38</td><td>15-DEC-38</td><td></td><td>26-NOV-18</td></tr>
+<tr><td>193910</td><td>Fall 1938</td><td>01-SEP-38</td><td>15-DEC-38</td><td></td><td>26-NOV-18</td></tr>
+<tr><td>193820</td><td>Fall 1937</td><td>01-SEP-37</td><td>15-DEC-37</td><td></td><td>26-NOV-18</td></tr>
+<tr><td>193810</td><td>Fall 1937</td><td>01-SEP-37</td><td>15-DEC-37</td><td></td><td>26-NOV-18</td></tr>
+<tr><td>193720</td><td>Fall 1936</td><td>01-SEP-36</td><td>15-DEC-36</td><td></td><td>26-NOV-18</td></tr>
+<tr><td>193710</td><td>Fall 1936</td><td>01-SEP-36</td><td>15-DEC-36</td><td></td><td>26-NOV-18</td></tr>
+<tr><td>193630</td><td>Spring 1936</td><td>15-JAN-36</td><td>15-MAY-36</td><td></td><td>26-NOV-18</td></tr>
+<tr><td>193620</td><td>Fall 1935</td><td>01-SEP-35</td><td>15-DEC-35</td><td></td><td>26-NOV-18</td></tr>
+<tr><td>193610</td><td>Fall 1935</td><td>01-SEP-35</td><td>15-DEC-35</td><td></td><td>26-NOV-18</td></tr>
+<tr><td>193520</td><td>Fall 1934</td><td>01-SEP-34</td><td>15-DEC-34</td><td></td><td>26-NOV-18</td></tr>
+<tr><td>193510</td><td>Fall 1934</td><td>01-SEP-34</td><td>15-DEC-34</td><td></td><td>26-NOV-18</td></tr>
+<tr><td>193420</td><td>Fall 1933</td><td>01-SEP-33</td><td>15-DEC-33</td><td></td><td>26-NOV-18</td></tr>
+<tr><td>193410</td><td>Fall 1933</td><td>01-SEP-33</td><td>15-DEC-33</td><td></td><td>26-NOV-18</td></tr>
+<tr><td>193320</td><td>Fall 1932</td><td>01-SEP-32</td><td>15-DEC-32</td><td></td><td>26-NOV-18</td></tr>
+<tr><td>193310</td><td>Fall 1932</td><td>01-SEP-32</td><td>15-DEC-32</td><td></td><td>26-NOV-18</td></tr>
+<tr><td>193220</td><td>Fall 1931</td><td>01-SEP-31</td><td>15-DEC-31</td><td></td><td>26-NOV-18</td></tr>
+<tr><td>193210</td><td>Fall 1931</td><td>01-SEP-31</td><td>15-DEC-31</td><td></td><td>26-NOV-18</td></tr>
+<tr><td>193130</td><td>Spring 1931</td><td>15-JAN-31</td><td>15-MAY-31</td><td></td><td>26-NOV-18</td></tr>
+<tr><td>193120</td><td>Fall 1930</td><td>01-SEP-30</td><td>15-DEC-30</td><td></td><td>26-NOV-18</td></tr>
+<tr><td>193110</td><td>Fall 1930</td><td>01-SEP-30</td><td>15-DEC-30</td><td></td><td>26-NOV-18</td></tr>
+<tr><td>193020</td><td>Fall 1929</td><td>01-SEP-29</td><td>15-DEC-29</td><td></td><td>26-NOV-18</td></tr>
+<tr><td>193010</td><td>Fall 1929</td><td>01-SEP-29</td><td>15-DEC-29</td><td></td><td>26-NOV-18</td></tr>
+<tr><td>192920</td><td>Fall 1928</td><td>01-SEP-28</td><td>15-DEC-28</td><td></td><td>26-NOV-18</td></tr>
+<tr><td>192910</td><td>Fall 1928</td><td>01-SEP-28</td><td>15-DEC-28</td><td></td><td>26-NOV-18</td></tr>
+<tr><td>192820</td><td>Fall 1927</td><td>01-SEP-27</td><td>15-DEC-27</td><td></td><td>26-NOV-18</td></tr>
+<tr><td>192810</td><td>Fall 1927</td><td>01-SEP-27</td><td>15-DEC-27</td><td></td><td>26-NOV-18</td></tr>
+<tr><td>192720</td><td>Fall 1926</td><td>01-SEP-26</td><td>15-DEC-26</td><td></td><td>26-NOV-18</td></tr>
+<tr><td>192710</td><td>Fall 1926</td><td>01-SEP-26</td><td>15-DEC-26</td><td></td><td>26-NOV-18</td></tr>
+<tr><td>192620</td><td>Fall 1925</td><td>01-SEP-25</td><td>15-DEC-25</td><td></td><td>26-NOV-18</td></tr>
+<tr><td>192610</td><td>Fall 1925</td><td>01-SEP-25</td><td>15-DEC-25</td><td></td><td>26-NOV-18</td></tr>
+<tr><td>192520</td><td>Fall 1924</td><td>01-SEP-24</td><td>15-DEC-24</td><td></td><td>26-NOV-18</td></tr>
+<tr><td>192510</td><td>Fall 1924</td><td>01-SEP-24</td><td>15-DEC-24</td><td></td><td>26-NOV-18</td></tr>
+<tr><td>192420</td><td>Fall 1923</td><td>01-SEP-23</td><td>15-DEC-23</td><td></td><td>26-NOV-18</td></tr>
+<tr><td>192410</td><td>Fall 1923</td><td>01-SEP-23</td><td>15-DEC-23</td><td></td><td>26-NOV-18</td></tr>
+<tr><td>192320</td><td>Fall 1922</td><td>01-SEP-22</td><td>15-DEC-22</td><td></td><td>26-NOV-18</td></tr>
+<tr><td>192310</td><td>Fall 1922</td><td>01-SEP-22</td><td>15-DEC-22</td><td></td><td>26-NOV-18</td></tr>
+<tr><td>192220</td><td>Fall 1921</td><td>01-SEP-21</td><td>15-DEC-21</td><td></td><td>26-NOV-18</td></tr>
+<tr><td>192210</td><td>Fall 1921</td><td>01-SEP-21</td><td>15-DEC-21</td><td></td><td>26-NOV-18</td></tr>
+<tr><td>192120</td><td>Fall 1920</td><td>01-SEP-20</td><td>15-DEC-20</td><td></td><td>26-NOV-18</td></tr>
+<tr><td>192110</td><td>Fall 1920</td><td>01-SEP-20</td><td>15-DEC-20</td><td></td><td>26-NOV-18</td></tr>
+<tr><td>192020</td><td>Fall 1919</td><td>01-SEP-19</td><td>15-DEC-19</td><td></td><td>26-NOV-18</td></tr>
+<tr><td>192010</td><td>Fall 1919</td><td>01-SEP-19</td><td>15-DEC-19</td><td></td><td>26-NOV-18</td></tr>
+<tr><td>000000</td><td>The Beginning of Time</td><td>01-JAN-00</td><td>30-DEC-00</td><td>0000</td><td>13-JUL-06</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2 id="referenced-by">Referenced By</h2>
+<p><a href="../SFRSTCR/">SFRSTCR</a>, <a href="../SGBSTDN/">SGBSTDN</a>, <a href="../SHRDGMR/">SHRDGMR</a>, </p>
+<h2 id="queries">Queries</h2>
+<hr />
+<h3 id="find-current-term-roll-forward">Find current term (Roll forward)</h3>
+<p>Find current term, rolling forward in intercession (The time between terms)</p>
+<div class="language-sql highlight"><span class="filename">current_term.sql</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">-- Current term with roll forward in the event of intercession (between terms).</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="c1">-- 4/9/26 Gabriel Berres</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="k">SELECT</span><span class="w"> </span><span class="k">DISTINCT</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="k">MIN</span><span class="p">(</span><span class="n">stvterm_code</span><span class="p">)</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="k">FROM</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="n">stvterm</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="k">WHERE</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">    </span><span class="n">stvterm_end_date</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">sysdate</span>
+</span></code></pre></div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["search.suggest", "search.highlight", "search.share", "navigation.instant", "navigation.tabs", "navigation.sections", "content.code.copy", "content.code.annotate", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../javascripts/table-filter.js"></script>
+      
+    
+  </body>
+</html>
