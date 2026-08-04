@@ -180,12 +180,21 @@ def _build_schema_table(table: dict, documented_tables: set[str]) -> str:
     return schema_table
 
 
+def _find_dat_file(table_dir: Path, name: str) -> Path:
+    """Locate the .dat file for a table, matching name case-insensitively."""
+    expected_dat = f"{name}.dat"
+    for candidate in table_dir.glob("*.dat"):
+        if candidate.name.lower() == expected_dat.lower():
+            return candidate
+    return table_dir / expected_dat  # Fallback to expected path if not found
+
+
 def _build_definitions_section(table: dict, table_dir: Path) -> str | None:
     """Build the definitions section for a given table definition."""
     if not _is_definition_table(table):
         return None
 
-    dat_path = table_dir / f"{table['name']}.dat"
+    dat_path = _find_dat_file(table_dir, table["name"])
     headers = table.get("definition_headers")
     return _read_definitions_file(dat_path, headers)
 
